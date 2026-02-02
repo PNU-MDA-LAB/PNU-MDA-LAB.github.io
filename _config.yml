@@ -33,5 +33,5 @@ minima:
 
 # 4. 상단 메뉴에 표시할 페이지 순서
 header_pages:
-  - about.md
+  - index.md
   - portfolio.md
