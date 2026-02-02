@@ -1,8 +1,9 @@
 # 1. 테마 설정
-plugins:
-  - jekyll-remote-theme
+theme: minima
 
-remote_theme: jekyll/minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
 
 # 2. 사이트 기본 정보
 title: 우리 회사 이름
@@ -13,16 +14,10 @@ description: > # > 표시는 줄바꿈을 의미합니다
   여기는 회사 소개 문구가 들어가는 곳입니다.
   Minima 테마를 사용하여 만들었습니다.
 
-# 3. Minima 테마 전용 설정 (공유해주신 문서 내용 적용)
+# 3. Minima 테마 전용 설정
 minima:
-  # 스킨 설정 (classic, dark, auto, solarized 등 선택 가능)
-  # auto로 설정하면 방문자의 기기 설정(다크모드)에 따라 자동으로 변합니다.
   skin: auto
-  
-  # 날짜 형식 변경
   date_format: "%Y년 %m월 %d일"
-
-  # 소셜 링크 (v3.0 방식)
   social_links:
     - title: GitHub
       icon: github

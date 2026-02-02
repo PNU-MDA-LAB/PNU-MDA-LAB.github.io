@@ -1,7 +1,6 @@
 ---
 layout: page
 title: 회사 소개
-permalink: /about/
 ---
 
 ## 우리 회사는...
