@@ -1,0 +1,170 @@
+---
+layout: default
+---
+
+<div class="hero-slider">
+  <div class="slider-container">
+    <div class="slide active">
+      <img src="{{ '/assets/images/slider1.jpg' | relative_url }}" alt="MDA Lab Visual 1">
+      <div class="slide-content">
+        <h2>Manufacturing Data Analytics Lab</h2>
+        <p>데이터 기반 스마트 제조 혁신을 선도합니다</p>
+      </div>
+    </div>
+    <div class="slide">
+      <img src="{{ '/assets/images/slider2.jpg' | relative_url }}" alt="MDA Lab Visual 2">
+      <div class="slide-content">
+        <h2>인공지능과 제조 시스템의 융합</h2>
+        <p>차세대 제조 기술 연구개발</p>
+      </div>
+    </div>
+    <div class="slide">
+      <img src="{{ '/assets/images/slider3.jpg' | relative_url }}" alt="MDA Lab Visual 3">
+      <div class="slide-content">
+        <h2>글로벌 연구 협력</h2>
+        <p>세계 수준의 연구 성과 창출</p>
+      </div>
+    </div>
+  </div>
+  <button class="slider-btn prev" onclick="moveSlide(-1)">
+    <i class="fas fa-chevron-left"></i>
+  </button>
+  <button class="slider-btn next" onclick="moveSlide(1)">
+    <i class="fas fa-chevron-right"></i>
+  </button>
+  <div class="slider-dots">
+    <span class="dot active" onclick="currentSlide(0)"></span>
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+  </div>
+</div>
+
+<section class="intro-section">
+  <div class="container">
+    <div class="home-grid">
+      <!-- 좌측: 메뉴 블록 -->
+      <div class="menu-blocks">
+        <div class="intro-grid-compact">
+          <div class="intro-card">
+            <div class="card-icon">
+              <i class="fas fa-flask"></i>
+            </div>
+            <h3>Lab. Introduction</h3>
+            <p>MDA Lab을 안내해 드립니다.</p>
+            <a href="#about" class="card-link">자세히 보기 →</a>
+          </div>
+          
+          <div class="intro-card">
+            <div class="card-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <h3>Lab. Address</h3>
+            <p>MDA Lab의 오시는길을 안내합니다.</p>
+            <a href="#contact" class="card-link">자세히 보기 →</a>
+          </div>
+          
+          <div class="intro-card">
+            <div class="card-icon">
+              <i class="fas fa-project-diagram"></i>
+            </div>
+            <h3>Projects</h3>
+            <p>MDA Lab의 프로젝트를 소개합니다.</p>
+            <a href="{{ '/pages/projects.html' | relative_url }}" class="card-link">자세히 보기 →</a>
+          </div>
+          
+          <div class="intro-card">
+            <div class="card-icon">
+              <i class="fas fa-user-tie"></i>
+            </div>
+            <h3>Professor</h3>
+            <p>MDA Lab의 교수님을 소개합니다.</p>
+            <a href="{{ '/pages/professor.html' | relative_url }}" class="card-link">자세히 보기 →</a>
+          </div>
+          
+          <div class="intro-card">
+            <div class="card-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <h3>Members</h3>
+            <p>MDA Lab의 Members를 소개합니다.</p>
+            <a href="{{ '/pages/members.html' | relative_url }}" class="card-link">자세히 보기 →</a>
+          </div>
+          
+          <div class="intro-card">
+            <div class="card-icon">
+              <i class="fas fa-book-open"></i>
+            </div>
+            <h3>Publications</h3>
+            <p>MDA Lab의 Publications를 안내합니다.</p>
+            <a href="{{ '/pages/publications.html' | relative_url }}" class="card-link">자세히 보기 →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 우측: 공지사항 -->
+      <div class="notices-sidebar">
+        <div class="notices-widget">
+          <div class="widget-header">
+            <h3><i class="fas fa-bullhorn"></i> 공지사항</h3>
+            <a href="{{ '/pages/notices.html' | relative_url }}" class="view-all">전체보기 →</a>
+          </div>
+          <div class="notices-list-compact">
+            {% assign recent_notices = site.notices | sort: 'date' | reverse | limit: 5 %}
+            {% if recent_notices.size > 0 %}
+              {% for notice in recent_notices %}
+              <div class="notice-item-compact {% if notice.priority == 'high' %}priority{% endif %}">
+                <a href="{{ notice.url | relative_url }}">
+                  <div class="notice-title-row">
+                    {% if notice.priority == 'high' %}
+                    <span class="priority-badge">중요</span>
+                    {% endif %}
+                    <h4>{{ notice.title }}</h4>
+                  </div>
+                  <span class="notice-date-compact">
+                    <i class="far fa-calendar-alt"></i> {{ notice.date | date: "%Y.%m.%d" }}
+                  </span>
+                </a>
+              </div>
+              {% endfor %}
+            {% else %}
+              <p class="no-notices-msg">등록된 공지사항이 없습니다.</p>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="news-section">
+  <div class="container">
+    <h2 class="section-title">Latest News</h2>
+    <div class="news-grid">
+      {% assign posts = site.posts | limit: 3 %}
+      {% if posts.size > 0 %}
+        {% for post in posts %}
+        <article class="news-card">
+          {% if post.image %}
+          <div class="news-image">
+            <img src="{{ post.image | relative_url }}" alt="{{ post.title }}">
+          </div>
+          {% endif %}
+          <div class="news-content">
+            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y년 %m월 %d일" }}</time>
+            <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+            <p>{{ post.excerpt | strip_html | truncatewords: 20 }}</p>
+            <a href="{{ post.url | relative_url }}" class="read-more">자세히 보기 →</a>
+          </div>
+        </article>
+        {% endfor %}
+      {% else %}
+        <p class="no-posts">There is no the latest postings</p>
+      {% endif %}
+    </div>
+    <div class="news-view-more">
+      <a href="{{ '/pages/news.html' | relative_url }}" class="btn-primary">view more</a>
+    </div>
+  </div>
+</section>
+
+{{ content }}

@@ -1,0 +1,46 @@
+---
+layout: page
+title: News
+description: MDA Lab의 최신 소식을 확인하세요
+---
+
+<div class="news-list">
+  {% for post in site.posts %}
+  <article class="news-item">
+    <div class="news-item-date">
+      <span class="day">{{ post.date | date: "%d" }}</span>
+      <span class="month">{{ post.date | date: "%b" }}</span>
+      <span class="year">{{ post.date | date: "%Y" }}</span>
+    </div>
+    
+    <div class="news-item-content">
+      {% if post.image %}
+      <div class="news-item-image">
+        <a href="{{ post.url | relative_url }}">
+          <img src="{{ post.image | relative_url }}" alt="{{ post.title }}">
+        </a>
+      </div>
+      {% endif %}
+      
+      <div class="news-item-text">
+        <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+        <div class="news-meta">
+          {% if post.author %}
+          <span class="author"><i class="fas fa-user"></i> {{ post.author }}</span>
+          {% endif %}
+        </div>
+        <p>{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+        <a href="{{ post.url | relative_url }}" class="read-more-link">
+          자세히 보기 <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </article>
+  {% endfor %}
+</div>
+
+{% if site.posts.size == 0 %}
+<div class="no-posts-message">
+  <p>아직 등록된 소식이 없습니다.</p>
+</div>
+{% endif %}

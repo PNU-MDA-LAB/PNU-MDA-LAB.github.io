@@ -1,0 +1,41 @@
+---
+layout: default
+---
+
+<article class="post">
+  <header class="post-header">
+    <div class="container">
+      <h1 class="post-title">{{ page.title }}</h1>
+      <div class="post-meta">
+        <time datetime="{{ page.date | date_to_xmlschema }}">
+          <i class="far fa-calendar"></i> {{ page.date | date: "%Y년 %m월 %d일" }}
+        </time>
+        {% if page.author %}
+        <span class="post-author">
+          <i class="far fa-user"></i> {{ page.author }}
+        </span>
+        {% endif %}
+      </div>
+    </div>
+  </header>
+
+  {% if page.image %}
+  <div class="post-featured-image">
+    <img src="{{ page.image | relative_url }}" alt="{{ page.title }}">
+  </div>
+  {% endif %}
+
+  <div class="post-content">
+    <div class="container">
+      {{ content }}
+    </div>
+  </div>
+
+  <footer class="post-footer">
+    <div class="container">
+      <a href="{{ '/pages/news.html' | relative_url }}" class="btn-secondary">
+        <i class="fas fa-arrow-left"></i> 목록으로 돌아가기
+      </a>
+    </div>
+  </footer>
+</article>

@@ -1,0 +1,39 @@
+---
+layout: page
+title: Notices
+description: 연구실 공지사항
+---
+
+<div class="notices-list">
+  {% assign sorted_notices = site.notices | sort: 'date' | reverse %}
+  
+  {% for notice in sorted_notices %}
+  <article class="notice-item {% if notice.priority == 'high' %}priority-high{% endif %}">
+    <div class="notice-header">
+      <h3>
+        <a href="{{ notice.url | relative_url }}">
+          {% if notice.priority == 'high' %}
+          <i class="fas fa-exclamation-circle priority-icon"></i>
+          {% endif %}
+          {{ notice.title }}
+        </a>
+      </h3>
+      <span class="notice-date">{{ notice.date | date: "%Y.%m.%d" }}</span>
+    </div>
+    
+    <div class="notice-excerpt">
+      {{ notice.excerpt | strip_html | truncatewords: 30 }}
+    </div>
+    
+    <a href="{{ notice.url | relative_url }}" class="read-more">
+      자세히 보기 <i class="fas fa-arrow-right"></i>
+    </a>
+  </article>
+  {% endfor %}
+  
+  {% if site.notices.size == 0 %}
+  <div class="no-notices">
+    <p>등록된 공지사항이 없습니다.</p>
+  </div>
+  {% endif %}
+</div>

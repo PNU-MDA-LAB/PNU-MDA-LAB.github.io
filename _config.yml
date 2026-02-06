@@ -1,31 +1,62 @@
-# 1. 테마 설정
-theme: minima
+# 1. 테마 설정 (커스텀 디자인 사용)
+# theme: minima
 
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
 # 2. 사이트 기본 정보
-title: 우리 회사 이름
+title: MDA Lab
 author:
-  name: 관리자 이름
-  email: contact@company.com
+  name: Kwangyeol Ryu
+  email: kyryu@pusan.ac.kr
 description: > # > 표시는 줄바꿈을 의미합니다
-  여기는 회사 소개 문구가 들어가는 곳입니다.
-  Minima 테마를 사용하여 만들었습니다.
+  Manufacturing Data Analytics Lab at Pusan National University.
+  부산대학교 산업공학과 제조 데이터 분석 연구실
 
-# 3. Minima 테마 전용 설정
-minima:
-  skin: auto
-  date_format: "%Y년 %m월 %d일"
-  social_links:
-    - title: GitHub
-      icon: github
-      url: "https://github.com/company-id"
-    - title: X (Twitter)
-      icon: x-twitter
-      url: "https://x.com/company-id"
+# 3. URL 설정
+url: "https://pnu-mda-lab.github.io"
+baseurl: ""
 
-# 4. 상단 메뉴에 표시할 페이지 순서
-header_pages:
-  - index.md
+# 4. 빌드 설정
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  
+# 5. 컬렉션 설정
+collections:
+  posts:
+    output: true
+    permalink: /news/:year/:month/:day/:title/
+  notices:
+    output: true
+    permalink: /notices/:year/:month/:day/:title/
+
+# 6. 기본값
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "notices"
+    values:
+      layout: "notice"
+  - scope:
+      path: "pages"
+    values:
+      layout: "page"
+
+# 7. 연구실 정보
+lab_info:
+  name: "Manufacturing Data Analytics Lab"
+  name_kr: "제조 데이터 분석 연구실"
+  department: "Department of Industrial Engineering"
+  university: "Pusan National University"
+  address: "Room 626, Engineering #10, San30 Jangjeon-dong, Geumjeong-gu, Busan 46241, Korea (South)"
+  phone: "+82-51-510-2473"
+  email: "kyryu@pusan.ac.kr"

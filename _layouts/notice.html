@@ -1,0 +1,43 @@
+---
+layout: default
+---
+
+<div class="page-header">
+  <div class="container">
+    <h1>{{ page.title }}</h1>
+    <p class="page-description">연구실 공지사항</p>
+  </div>
+</div>
+
+<div class="notice-detail">
+  <div class="container">
+    <article class="notice-content-wrapper">
+      <div class="notice-meta">
+        <span class="notice-date">
+          <i class="far fa-calendar"></i> {{ page.date | date: "%Y년 %m월 %d일" }}
+        </span>
+        {% if page.priority %}
+        <span class="notice-priority {{ page.priority }}">
+          {% if page.priority == 'high' %}
+            <i class="fas fa-exclamation-circle"></i> 중요
+          {% elsif page.priority == 'normal' %}
+            <i class="fas fa-info-circle"></i> 일반
+          {% else %}
+            <i class="fas fa-circle"></i> 안내
+          {% endif %}
+        </span>
+        {% endif %}
+      </div>
+
+      <div class="notice-content">
+        {{ content }}
+      </div>
+
+      <div class="notice-footer">
+        <a href="/pages/notices.html" class="btn-secondary">
+          <i class="fas fa-list"></i> 목록으로
+        </a>
+      </div>
+    </article>
+  </div>
+</div>
