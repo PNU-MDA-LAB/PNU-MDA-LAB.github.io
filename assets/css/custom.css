@@ -1,4 +1,8 @@
-/* ===== 기본 리셋 및 변수 ===== */
+/* ===========================================
+   1. GLOBAL STYLES
+   =========================================== */
+
+/* CSS Variables */
 :root {
   --primary-color: #2c3e50;
   --secondary-color: #3498db;
@@ -10,6 +14,7 @@
   --transition: all 0.3s ease;
 }
 
+/* Reset & Base Styles */
 * {
   margin: 0;
   padding: 0;
@@ -29,7 +34,29 @@ body {
   padding: 0 20px;
 }
 
-/* ===== 헤더 및 네비게이션 ===== */
+/* ----- Highlight Text (Global Utility) ----- */
+.highlight-text {
+  color: var(--secondary-color) !important;
+}
+
+.highlight-bg {
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 5px;
+}
+
+.highlight-border {
+  border-left: 4px solid var(--secondary-color);
+  padding-left: 1rem;
+}
+
+
+/* ===========================================
+   2. LAYOUT COMPONENTS (전역 사용)
+   =========================================== */
+
+/* ----- Header & Navigation ----- */
 .site-header {
   background: white;
   box-shadow: var(--shadow);
@@ -68,7 +95,7 @@ body {
 }
 
 .logo {
-  height: 40px;
+  height: 60px;
   width: auto;
 }
 
@@ -222,7 +249,7 @@ body {
   border-radius: 6px;
 }
 
-/* ===== 인트로 섹션 ===== */
+/* ----- Intro Cards (Menu Blocks) ----- */
 .intro-section {
   padding: 4rem 0;
   background: var(--light-gray);
@@ -277,7 +304,7 @@ body {
   color: var(--accent-color);
 }
 
-/* ===== 뉴스 섹션 ===== */
+/* ----- News Section (Homepage) ----- */
 .news-section {
   padding: 4rem 0;
 }
@@ -478,7 +505,7 @@ body {
   border-top: 1px solid var(--border-color);
 }
 
-/* ===== 뉴스 리스트 페이지 ===== */
+/* ----- News List Page ----- */
 .news-list {
   max-width: 900px;
   margin: 0 auto;
@@ -568,31 +595,41 @@ body {
   gap: 0.5rem;
 }
 
-/* ===== 교수 프로필 ===== */
-.professor-profile {
+
+/* ===========================================
+   5. PROFESSOR PAGE
+   =========================================== */
+
+/* ----- Professor Profile ----- */
+.professor-header {
   display: grid;
   grid-template-columns: 300px 1fr;
   gap: 3rem;
   margin-bottom: 3rem;
+  align-items: start;
 }
 
 .profile-image {
   border-radius: 10px;
   overflow: hidden;
   box-shadow: var(--shadow);
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .profile-image img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
 }
 
-.profile-info h2 {
+.profile-basic-info h2 {
   color: var(--primary-color);
   margin-bottom: 0.5rem;
 }
 
-.profile-info h3 {
+.profile-basic-info h3 {
   color: #666;
   font-weight: normal;
   margin-bottom: 2rem;
@@ -602,7 +639,43 @@ body {
   background: var(--light-gray);
   padding: 1.5rem;
   border-radius: 10px;
-  margin-bottom: 2rem;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: white;
+  color: var(--primary-color);
+  text-decoration: none;
+  border-radius: 5px;
+  transition: var(--transition);
+  font-size: 0.95rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.social-link:hover {
+  background: var(--primary-color);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.social-link i {
+  font-size: 1.2rem;
+}
+
+.profile-sections {
+  margin-top: 2rem;
 }
 
 .profile-section {
@@ -643,7 +716,12 @@ body {
   margin-bottom: 1rem;
 }
 
-/* ===== 멤버 그리드 ===== */
+
+/* ===========================================
+   6. MEMBERS PAGE
+   =========================================== */
+
+/* ----- Members Grid ----- */
 .members-section {
   margin-bottom: 4rem;
 }
@@ -655,64 +733,241 @@ body {
   border-bottom: 3px solid var(--secondary-color);
 }
 
-.members-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 2rem;
+/* ----- Horizontal Member Cards ----- */
+.members-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
-.member-card {
+.member-card-horizontal {
   background: white;
-  padding: 1.5rem;
   border-radius: 10px;
   box-shadow: var(--shadow);
-  text-align: center;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
   transition: var(--transition);
 }
 
-.member-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+.member-card-horizontal:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 25px rgba(0,0,0,0.15);
 }
 
-.member-photo {
-  width: 150px;
-  height: 150px;
-  margin: 0 auto 1rem;
-  border-radius: 50%;
+.member-photo-wrapper {
+  width: 180px;
+  height: 180px;
+  flex-shrink: 0;
   overflow: hidden;
   background: var(--light-gray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1.5rem;
+  border-radius: 10px;
 }
 
-.member-photo img {
+.member-photo-wrapper img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.member-card h3 {
+.member-icon {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: white;
+  font-size: 4rem;
+}
+
+.member-content {
+  flex: 1;
+  padding: 1.5rem 1.5rem 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.member-header {
+  margin-bottom: 1rem;
+}
+
+.member-header h3 {
   color: var(--primary-color);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.3rem;
+  font-size: 1.4rem;
 }
 
 .member-role {
   color: var(--secondary-color);
   font-weight: 600;
-  margin-bottom: 0.5rem;
+  font-size: 1rem;
 }
 
-.member-research {
+.member-details {
   color: #666;
   font-size: 0.9rem;
-  margin-bottom: 0.5rem;
+  line-height: 1.7;
+  flex: 1;
 }
 
-.member-email {
-  color: #999;
+.member-details p {
+  margin: 0.4rem 0;
+}
+
+.member-details ul {
+  margin: 0.5rem 0 1rem 1.5rem;
+  list-style-type: disc;
+}
+
+.member-details ul li {
+  margin: 0.25rem 0;
+}
+
+.member-details strong {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.member-social-links {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.member-social-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background: var(--light-gray);
+  color: var(--primary-color);
+  border-radius: 50%;
+  transition: var(--transition);
+  text-decoration: none;
+}
+
+.member-social-links a:hover {
+  background: var(--secondary-color);
+  color: white;
+  transform: translateY(-2px);
+}
+
+.member-social-links i {
+  font-size: 1.1rem;
+}
+
+/* ----- Horizontal Alumni Cards ----- */
+.alumni-list-horizontal {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.alumni-card-horizontal {
+  background: white;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  transition: var(--transition);
+}
+
+.alumni-card-horizontal:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 25px rgba(0,0,0,0.15);
+}
+
+.alumni-photo-wrapper {
+  width: 140px;
+  height: 140px;
+  flex-shrink: 0;
+  overflow: hidden;
+  background: var(--light-gray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1.5rem;
+  border-radius: 10px;
+}
+
+.alumni-photo-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.alumni-icon {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #7f8c8d, #95a5a6);
+  color: white;
+  font-size: 3.5rem;
+}
+
+.alumni-content {
+  flex: 1;
+  padding: 1.5rem 1.5rem 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.alumni-header {
+  margin-bottom: 0.75rem;
+}
+
+.alumni-header h3 {
+  color: var(--primary-color);
+  margin-bottom: 0.25rem;
+  font-size: 1.3rem;
+}
+
+.alumni-position {
+  color: var(--secondary-color);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.alumni-details {
+  color: #666;
   font-size: 0.9rem;
+  line-height: 1.7;
 }
 
-/* 동문 테이블 */
+.alumni-details p {
+  margin: 0.35rem 0;
+}
+
+.alumni-details strong {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+/* ----- Legacy Grid Styles (for backward compatibility) ----- */
+.members-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.alumni-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+/* 동문 테이블 (Legacy) */
 .alumni-list table {
   width: 100%;
   border-collapse: collapse;
@@ -737,7 +992,12 @@ body {
   background: var(--light-gray);
 }
 
-/* ===== 강의 카드 ===== */
+
+/* ===========================================
+   7. COURSES PAGE
+   =========================================== */
+
+/* ----- Course Cards ----- */
 .courses-section {
   margin-bottom: 4rem;
 }
@@ -793,7 +1053,12 @@ body {
   padding: 0.25rem 0;
 }
 
-/* ===== 프로젝트 카드 ===== */
+
+/* ===========================================
+   8. PROJECTS PAGE
+   =========================================== */
+
+/* ----- Project Cards ----- */
 .projects-section {
   margin-bottom: 4rem;
 }
@@ -897,7 +1162,12 @@ body {
   color: #666;
 }
 
-/* ===== 푸터 ===== */
+
+/* ===========================================
+   9. PUBLICATIONS PAGE
+   =========================================== */
+
+/* ----- Publications List & Categories ----- */
 .site-footer {
   background: var(--primary-color);
   color: white;
@@ -954,13 +1224,39 @@ body {
 }
 
 .footer-bottom {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
   padding-top: 2rem;
   border-top: 1px solid rgba(255,255,255,0.1);
   opacity: 0.8;
+  flex-wrap: wrap;
 }
 
-/* ===== 반응형 디자인 ===== */
+.footer-logos {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-logo {
+  height: 40px;
+  width: auto;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.footer-logo:hover {
+  opacity: 1;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+
+/* ----- Publications List & Categories ----- */
 @media (max-width: 768px) {
   .nav-toggle {
     display: flex;
@@ -1009,7 +1305,7 @@ body {
     grid-template-columns: 1fr;
   }
   
-  .professor-profile {
+  .professor-header {
     grid-template-columns: 1fr;
   }
   
@@ -1032,6 +1328,7 @@ body {
   }
 }
 
+/* ----- Small Mobile (≤480px) ----- */
 @media (max-width: 480px) {
   .hero-slider {
     height: 300px;
@@ -1050,7 +1347,7 @@ body {
   }
 }
 
-/* ===== 홈페이지 레이아웃 (좌측 메뉴, 우측 공지사항) ===== */
+/* ----- Home Layout (Menu Blocks) ----- */
 .home-grid {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -1060,7 +1357,6 @@ body {
 
 .menu-blocks {
   flex: 1;
-  max-height: 800px;
   overflow-y: auto;
 }
 
@@ -1070,9 +1366,10 @@ body {
   gap: 1rem;
 }
 
-/* ===== 공지사항 위젯 ===== */
+/* ----- Notices Widget (Compact) ----- */
 .notices-sidebar {
   align-self: start;
+  height: 100%;
 }
 
 .notices-widget {
@@ -1080,6 +1377,9 @@ body {
   border-radius: 10px;
   box-shadow: var(--shadow);
   overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .widget-header {
@@ -1112,14 +1412,20 @@ body {
 }
 
 .notices-list-compact {
-  max-height: 500px;
+  flex: 1;
   overflow-y: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .notice-item-compact {
   padding: 1.25rem 1.5rem;
   border-bottom: 1px solid var(--border-color);
   transition: var(--transition);
+  flex: 1;
+  display: flex;
+  align-items: column;
+  min-height: 0;
 }
 
 .notice-item-compact:last-child {
@@ -1141,7 +1447,9 @@ body {
 .notice-item-compact a {
   text-decoration: none;
   color: inherit;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 .notice-title-row {
@@ -1256,7 +1564,7 @@ body {
   color: #999;
 }
 
-/* ===== 공지사항 상세 페이지 ===== */
+/* ----- Notice Detail Page ----- */
 .notice-detail {
   padding: 2rem 0;
 }
@@ -1339,7 +1647,337 @@ body {
   text-align: center;
 }
 
-/* ===== Publications 페이지 (좌측 카테고리) ===== */
+/* ----- Publications Page with Sticky Navigation ----- */
+.publications-layout {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 3rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.publications-nav {
+  position: sticky;
+  top: 100px;
+  align-self: start;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  height: fit-content;
+  max-height: calc(100vh - 120px);
+  overflow-y: auto;
+}
+
+.publications-nav h3 {
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+  font-size: 1.2rem;
+}
+
+.pub-nav-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.pub-nav-link {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  color: var(--text-color);
+  border-radius: 5px;
+  transition: var(--transition);
+  font-size: 0.95rem;
+  border-left: 3px solid transparent;
+}
+
+.pub-nav-link i {
+  color: var(--secondary-color);
+  width: 20px;
+  flex-shrink: 0;
+}
+
+.pub-nav-link:hover {
+  background: var(--light-gray);
+  color: var(--secondary-color);
+  border-left-color: var(--secondary-color);
+}
+
+.pub-nav-link.active {
+  background: linear-gradient(to right, #e3f2fd, transparent);
+  color: var(--secondary-color);
+  border-left-color: var(--secondary-color);
+  font-weight: 600;
+}
+
+.pub-nav-link.active i {
+  color: var(--secondary-color);
+}
+
+.publications-main {
+  flex: 1;
+}
+
+.pub-category-section {
+  margin-bottom: 4rem;
+  scroll-margin-top: 100px;
+}
+
+.pub-category-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 3px solid var(--secondary-color);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.pub-category-section h2 i {
+  font-size: 1.5rem;
+}
+
+.pub-cards-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* ----- Horizontal Publication Cards ----- */
+.pub-card-horizontal {
+  background: white;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: var(--transition);
+  border-left: 4px solid var(--secondary-color);
+}
+
+.pub-card-horizontal:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 25px rgba(0,0,0,0.15);
+}
+
+.pub-card-badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: var(--secondary-color);
+  color: white;
+  padding: 0.3rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.pub-card-content {
+  padding: 1.5rem;
+  padding-right: 100px;
+}
+
+.pub-card-title {
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.4;
+}
+
+.pub-card-title a {
+  text-decoration: none;
+  color: inherit;
+  transition: var(--transition);
+}
+
+.pub-card-title a:hover {
+  color: var(--secondary-color);
+}
+
+.pub-card-authors {
+  color: #666;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.pub-card-authors strong {
+  color: var(--primary-color);
+}
+
+.pub-card-journal {
+  color: #888;
+  font-style: italic;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.pub-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.pub-card-tags .tag {
+  padding: 0.25rem 0.75rem;
+  background: var(--light-gray);
+  color: var(--primary-color);
+  border-radius: 15px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+/* ----- Legacy Publications Simple Page ----- */
+.publications-simple {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.pub-intro {
+  background: var(--light-gray);
+  padding: 2rem;
+  border-radius: 10px;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.pub-intro p {
+  font-size: 1.1rem;
+  margin: 0.75rem 0;
+  line-height: 1.8;
+}
+
+.pub-intro a {
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.pub-intro a:hover {
+  text-decoration: underline;
+}
+
+.pub-categories {
+  margin-bottom: 4rem;
+}
+
+.pub-categories h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.category-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  text-align: center;
+  transition: var(--transition);
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 25px rgba(0,0,0,0.15);
+}
+
+.category-icon {
+  font-size: 3rem;
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+}
+
+.category-card h3 {
+  color: var(--primary-color);
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+}
+
+.category-card p {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.pub-recent {
+  margin-top: 4rem;
+}
+
+.pub-recent h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.recent-pub-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.recent-pub-item {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  border-left: 4px solid var(--secondary-color);
+  transition: var(--transition);
+}
+
+.recent-pub-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 25px rgba(0,0,0,0.15);
+}
+
+.recent-pub-item time {
+  color: #999;
+  font-size: 0.9rem;
+}
+
+.recent-pub-item h3 {
+  margin: 0.5rem 0 1rem;
+  font-size: 1.3rem;
+}
+
+.recent-pub-item h3 a {
+  text-decoration: none;
+  color: var(--primary-color);
+  transition: var(--transition);
+}
+
+.recent-pub-item h3 a:hover {
+  color: var(--secondary-color);
+}
+
+.recent-pub-item p {
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.recent-pub-item .read-more {
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.view-all-news {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* ----- Legacy Publications List & Categories ----- */
 .publications-container {
   display: grid;
   grid-template-columns: 250px 1fr;
@@ -1525,7 +2163,7 @@ body {
   margin-top: 2rem;
 }
 
-/* ===== 논문 상세 페이지 ===== */
+/* ----- Publication Detail Page ----- */
 .publication-detail {
   background: white;
 }
@@ -1846,7 +2484,12 @@ body {
   text-align: center;
 }
 
-/* ===== 반응형 디자인 수정 ===== */
+
+/* ===========================================
+   11. RESPONSIVE DESIGN
+   =========================================== */
+
+/* ----- Mobile & Tablet (≤768px) ----- */
 @media (max-width: 1024px) {
   .publications-container {
     grid-template-columns: 200px 1fr;

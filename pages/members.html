@@ -1,87 +1,233 @@
 ---
 layout: page
 title: Members
-description: MDA Lab 구성원을 소개합니다
+description: MDA Lab Members
 ---
 
 <div class="members-section">
   <h2>Ph.D. Students</h2>
-  <div class="members-grid">
-    <div class="member-card">
-      <div class="member-photo">
-        <img src="{{ '/assets/images/member-default.jpg' | relative_url }}" alt="Member">
+  <div class="members-list">
+    {% for member in site.data.members.phd_students %}
+    <div class="member-card-horizontal">
+      <div class="member-photo-wrapper">
+        {% if member.photo and member.photo != "" %}
+          <img src="{{ '/assets/images/members/' | append: member.photo | relative_url }}" alt="{{ member.name }}">
+        {% else %}
+          <div class="member-icon">
+            <i class="fas fa-user-graduate"></i>
+          </div>
+        {% endif %}
       </div>
-      <h3>홍길동</h3>
-      <p class="member-role">박사과정</p>
-      <p class="member-research">연구 분야: Human-Robot Collaboration</p>
-      <p class="member-email"><i class="fas fa-envelope"></i> example@pusan.ac.kr</p>
+      <div class="member-content">
+        <div class="member-header">
+          <h3>{{ member.name }}</h3>
+          <p class="member-role">{{ member.role }}</p>
+        </div>
+        <div class="member-details">
+          {% if member.education %}
+          <p><strong>Education:</strong></p>
+          <ul>
+            {% for edu in member.education %}
+            <li>{{ edu }}</li>
+            {% endfor %}
+          </ul>
+          {% endif %}
+          {% if member.research %}
+          <p><strong>Research:</strong> {{ member.research }}</p>
+          {% endif %}
+          {% if member.tel %}
+          <p><strong>TEL:</strong> {{ member.tel }}</p>
+          {% endif %}
+          {% if member.email %}
+          <p><strong>E-mail:</strong> {{ member.email }}</p>
+          {% endif %}
+        </div>
+        {% if member.github or member.linkedin or member.scholar %}
+        <div class="member-social-links">
+          {% if member.github %}
+          <a href="{{ member.github }}" target="_blank" rel="noopener noreferrer" title="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          {% endif %}
+          {% if member.linkedin %}
+          <a href="{{ member.linkedin }}" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          {% endif %}
+          {% if member.scholar %}
+          <a href="{{ member.scholar }}" target="_blank" rel="noopener noreferrer" title="Google Scholar">
+            <i class="fas fa-graduation-cap"></i>
+          </a>
+          {% endif %}
+        </div>
+        {% endif %}
+      </div>
     </div>
-    
-    <!-- 추가 박사과정 학생들 -->
+    {% endfor %}
   </div>
 </div>
 
 <div class="members-section">
   <h2>Master Students</h2>
-  <div class="members-grid">
-    <div class="member-card">
-      <div class="member-photo">
-        <img src="{{ '/assets/images/member-default.jpg' | relative_url }}" alt="Member">
+  <div class="members-list">
+    {% for member in site.data.members.master_students %}
+    <div class="member-card-horizontal">
+      <div class="member-photo-wrapper">
+        {% if member.photo and member.photo != "" %}
+          <img src="{{ '/assets/images/members/' | append: member.photo | relative_url }}" alt="{{ member.name }}">
+        {% else %}
+          <div class="member-icon">
+            <i class="fas fa-user-graduate"></i>
+          </div>
+        {% endif %}
       </div>
-      <h3>김철수</h3>
-      <p class="member-role">석사과정</p>
-      <p class="member-research">연구 분야: Smart Manufacturing</p>
-      <p class="member-email"><i class="fas fa-envelope"></i> example2@pusan.ac.kr</p>
+      <div class="member-content">
+        <div class="member-header">
+          <h3>{{ member.name }}</h3>
+          <p class="member-role">{{ member.role }}</p>
+        </div>
+        <div class="member-details">
+          {% if member.education %}
+          <p><strong>Education:</strong></p>
+          <ul>
+            {% for edu in member.education %}
+            <li>{{ edu }}</li>
+            {% endfor %}
+          </ul>
+          {% endif %}
+          {% if member.research %}
+          <p><strong>Research:</strong> {{ member.research }}</p>
+          {% endif %}
+          {% if member.tel %}
+          <p><strong>TEL:</strong> {{ member.tel }}</p>
+          {% endif %}
+          {% if member.email %}
+          <p><strong>E-mail:</strong> {{ member.email }}</p>
+          {% endif %}
+        </div>
+        {% if member.github or member.linkedin or member.scholar %}
+        <div class="member-social-links">
+          {% if member.github %}
+          <a href="{{ member.github }}" target="_blank" rel="noopener noreferrer" title="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          {% endif %}
+          {% if member.linkedin %}
+          <a href="{{ member.linkedin }}" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          {% endif %}
+          {% if member.scholar %}
+          <a href="{{ member.scholar }}" target="_blank" rel="noopener noreferrer" title="Google Scholar">
+            <i class="fas fa-graduation-cap"></i>
+          </a>
+          {% endif %}
+        </div>
+        {% endif %}
+      </div>
     </div>
-    
-    <!-- 추가 석사과정 학생들 -->
+    {% endfor %}
   </div>
 </div>
 
 <div class="members-section">
   <h2>Undergraduate Students</h2>
-  <div class="members-grid">
-    <div class="member-card">
-      <div class="member-photo">
-        <img src="{{ '/assets/images/member-default.jpg' | relative_url }}" alt="Member">
+  <div class="members-list">
+    {% for member in site.data.members.undergraduate_students %}
+    <div class="member-card-horizontal">
+      <div class="member-photo-wrapper">
+        {% if member.photo and member.photo != "" %}
+          <img src="{{ '/assets/images/members/' | append: member.photo | relative_url }}" alt="{{ member.name }}">
+        {% else %}
+          <div class="member-icon">
+            <i class="fas fa-user-graduate"></i>
+          </div>
+        {% endif %}
       </div>
-      <h3>이영희</h3>
-      <p class="member-role">학부 연구생</p>
-      <p class="member-research">연구 분야: Data Analytics</p>
-      <p class="member-email"><i class="fas fa-envelope"></i> example3@pusan.ac.kr</p>
+      <div class="member-content">
+        <div class="member-header">
+          <h3>{{ member.name }}</h3>
+          <p class="member-role">{{ member.role }}</p>
+        </div>
+        <div class="member-details">
+          {% if member.education %}
+          <p><strong>Education:</strong></p>
+          <ul>
+            {% for edu in member.education %}
+            <li>{{ edu }}</li>
+            {% endfor %}
+          </ul>
+          {% endif %}
+          {% if member.research %}
+          <p><strong>Research:</strong> {{ member.research }}</p>
+          {% endif %}
+          {% if member.tel %}
+          <p><strong>TEL:</strong> {{ member.tel }}</p>
+          {% endif %}
+          {% if member.email %}
+          <p><strong>E-mail:</strong> {{ member.email }}</p>
+          {% endif %}
+        </div>
+        {% if member.github or member.linkedin or member.scholar %}
+        <div class="member-social-links">
+          {% if member.github %}
+          <a href="{{ member.github }}" target="_blank" rel="noopener noreferrer" title="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          {% endif %}
+          {% if member.linkedin %}
+          <a href="{{ member.linkedin }}" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          {% endif %}
+          {% if member.scholar %}
+          <a href="{{ member.scholar }}" target="_blank" rel="noopener noreferrer" title="Google Scholar">
+            <i class="fas fa-graduation-cap"></i>
+          </a>
+          {% endif %}
+        </div>
+        {% endif %}
+      </div>
     </div>
-    
-    <!-- 추가 학부 연구생들 -->
+    {% endfor %}
   </div>
 </div>
 
 <div class="members-section alumni">
   <h2>Alumni</h2>
-  <div class="alumni-list">
-    <table>
-      <thead>
-        <tr>
-          <th>이름</th>
-          <th>학위</th>
-          <th>졸업년도</th>
-          <th>현재 소속</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>박민수</td>
-          <td>Ph.D.</td>
-          <td>2024</td>
-          <td>Samsung Electronics</td>
-        </tr>
-        <tr>
-          <td>정수진</td>
-          <td>M.S.</td>
-          <td>2023</td>
-          <td>Hyundai Motor Company</td>
-        </tr>
-        <!-- 추가 동문 -->
-      </tbody>
-    </table>
+  <div class="alumni-list-horizontal">
+    {% for alumni in site.data.alumni.alumni %}
+    <div class="alumni-card-horizontal">
+      <div class="alumni-photo-wrapper">
+        {% if alumni.photo and alumni.photo != "" %}
+          <img src="{{ '/assets/images/alumni/' | append: alumni.photo | relative_url }}" alt="{{ alumni.name }}">
+        {% else %}
+          <div class="alumni-icon">
+            <i class="fas fa-user-tie"></i>
+          </div>
+        {% endif %}
+      </div>
+      <div class="alumni-content">
+        <div class="alumni-header">
+          <h3>{{ alumni.name }}</h3>
+          <p class="alumni-position">{{ alumni.position }}</p>
+        </div>
+        <div class="alumni-details">
+          {% if alumni.current %}
+          <p><strong>Current:</strong> {{ alumni.current }}</p>
+          {% endif %}
+          {% if alumni.email %}
+          <p><strong>E-mail:</strong> {{ alumni.email }}</p>
+          {% endif %}
+          {% if alumni.research %}
+          <p><strong>Research:</strong> {{ alumni.research }}</p>
+          {% endif %}
+          {% if alumni.thesis %}
+          <p><strong>Thesis:</strong> {{ alumni.thesis }}</p>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+    {% endfor %}
   </div>
 </div>

@@ -1,0 +1,48 @@
+# Ph.D. Students
+phd_students:
+  - name: "*** KIM"
+    photo: ""  # assets/images/members/ 경로에 저장
+    role: "Ph.D. Candidate"
+    education:
+      - "M.S., Dept. of Industrial Engineering (IE), PNU, 2017, Korea"
+      - "B.S., Dept. of Business Administration, Ajou Univ., 2015, Korea"
+    research: "Intelligent Manufacturing / Next Generation Manufacturing System"
+    tel: "+82-51-510-3491"
+    email: "siku.kim@pusan.ac.kr"
+    github: "https://github.com/USERNAME"
+    linkedin: "https://linkedin.com/in/USERNAME"
+    
+  - name: "**** LEI"
+    photo: ""
+    role: "Ph.D. Candidate"
+    education:
+      - "MBA., SolBridge International School of Business, 2020, Korea"
+      - "B.E., Logistic, School of Management and Science Engineering, SXUFE, 2018, China"
+    research: "Intelligent HRC system, Operations Research, Perishable-SCM"
+    tel: "+82-51-510-3491"
+    email: "k.s.ray@pusan.ac.kr"
+    github: "https://github.com/USERNAME"
+    linkedin: "https://linkedin.com/in/USERNAME"
+
+# Master Students
+master_students:
+  - name: "Ko gwon"
+    photo: ""  
+    education:
+      - "Department of Physics, Pusan National University, 2025, Republic of Korea"
+    research: ""
+    tel: "+82-51-510-3491"
+    email: "kr99@pusan.ac.kr"
+
+  - name: "Jung Solbin"
+    photo: "" 
+    education:
+      - "Department of Applied IT and Engineering, Pusan National University, 2026, Republic of Korea"
+    research: "Human Robot Collaboration, Smart Manufacturing"
+    email: "balbalbin@pusan.ac.kr"
+    tel: "+82-51-510-3491"
+    github: "https://github.com/Jungsolbin"
+
+
+# Undergraduate Students
+undergraduate_students:

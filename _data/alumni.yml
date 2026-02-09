@@ -1,0 +1,58 @@
+# Alumni List
+alumni:
+  - name: "*** Feng"
+    photo: ""  # assets/images/alumni/ 경로에 저장
+    position: "Doctoral Dissertation"
+    current: "Assistant Professor, Ocean College, Zhejiang University"
+    email: "fengxuehao@zju.edu.cn"
+    thesis: "Development of exCPM method for modeling collaborative processes (2010.08)"
+    
+  - name: "*** LEE"
+    photo: ""
+    position: "Master Thesis"
+    current: "Center for Education Accreditation, Pusan National University"
+    email: "sh5362@pusan.ac.kr"
+    thesis: "Development of exCPM method for modeling collaborative processes (2010.08)"
+    
+  - name: "*** PARK"
+    photo: ""
+    position: "Master Thesis"
+    current: "TBD"
+    email: "Parkyj@pusan.ac.kr"
+    thesis: "Development of Green-BOM for managing eco-friendly information of product lifecycle (2012.08)"
+    
+  - name: "*** MOON (Ind.)"
+    photo: ""
+    position: "Master Thesis"
+    current: "Defense Agency for Technology and Quality (DATQ)"
+    email: "mts4413@hanmail.net"
+    thesis: "The System Design and Development for Automatic Angular Deviation Measurement of a Canopy in a Fighter Aircraft (2012.02)"
+    
+  - name: "*** Emre Islamoglu"
+    photo: ""
+    position: "Doctoral Dissertation"
+    research: "Modular Production"
+    
+  - name: "*** LIAU"
+    photo: ""
+    position: "Doctoral Dissertation"
+    current: "Institute of Intelligent Logistics Big Data"
+    email: "yeeyeng85@pusan.ac.kr"
+    research: "Human-Robot Collaboration System"
+    
+  - name: "*** Amanda KURNIADI"
+    photo: ""
+    position: "Doctoral Dissertation"
+    current: "TBD"
+    
+  - name: "*** LEE"
+    photo: ""  # 사진 없음 - 아이콘 표시
+    position: "Doctoral Dissertation"
+    current: "TBD"
+    email: "hslee@pusan.ac.kr"
+    
+  - name: "**** SON"
+    photo: ""
+    position: "Master Thesis"
+    current: "TBD"
+    email: "handsj@pusan.ac.kr"

@@ -1,173 +1,294 @@
 ---
 layout: page
 title: Publications
-description: MDA Lab의 연구 성과를 확인하세요
+description: MDA Lab Research Achievements
 ---
 
-<div class="publications-container">
-  <!-- 좌측 카테고리 네비게이션 -->
-  <aside class="publications-sidebar">
+<div class="publications-layout">
+  <!-- 좌측 네비게이션 (Sticky) -->
+  <aside class="publications-nav">
     <h3>Categories</h3>
-    <nav class="category-nav">
-      <a href="#international-sci" class="category-link active">
+    <nav class="pub-nav-menu">
+      <a href="#international-sci" class="pub-nav-link active" data-category="international-sci">
         <i class="fas fa-star"></i> International Journal (SCI/SCIE)
       </a>
-      <a href="#international-non-sci" class="category-link">
+      <a href="#international-non-sci" class="pub-nav-link" data-category="international-non-sci">
         <i class="fas fa-book"></i> International Journal (Non-SCI)
       </a>
-      <a href="#domestic" class="category-link">
+      <a href="#domestic" class="pub-nav-link" data-category="domestic">
         <i class="fas fa-bookmark"></i> Domestic Journal
       </a>
-      <a href="#book-chapter" class="category-link">
-        <i class="fas fa-book-open"></i> Book Chapter
+      <a href="#book-chapters" class="pub-nav-link" data-category="book-chapters">
+        <i class="fas fa-book-open"></i> Book Chapters
       </a>
-      <a href="#international-conf" class="category-link">
-        <i class="fas fa-users"></i> International Conference
+      <a href="#international-conf" class="pub-nav-link" data-category="international-conf">
+        <i class="fas fa-users"></i> International Conferences
       </a>
-      <a href="#domestic-conf" class="category-link">
-        <i class="fas fa-user-friends"></i> Domestic Conference
+      <a href="#domestic-conf" class="pub-nav-link" data-category="domestic-conf">
+        <i class="fas fa-user-friends"></i> Domestic Conferences
       </a>
-      <a href="#patents" class="category-link">
-        <i class="fas fa-certificate"></i> Patents and Programs
+      <a href="#patents" class="pub-nav-link" data-category="patents">
+        <i class="fas fa-certificate"></i> Patents & Programs
       </a>
     </nav>
   </aside>
 
   <!-- 우측 논문 목록 -->
-  <div class="publications-content">
-    
+  <div class="publications-main">
     <!-- International Journal (SCI/SCIE) -->
-    <section id="international-sci" class="publication-section">
-      <h2><i class="fas fa-star"></i> International Journal Papers (SCI/SCIE)</h2>
-      
-      <div class="year-group">
-        <h3 class="year-title">2025</h3>
-        <div class="publication-list">
-          <article class="publication-item featured">
-            <div class="pub-badge">SCIE</div>
-            <h4 class="pub-title">
-              <a href="/pages/publications/2025-ontology-modeling.html">
-                Ontology Modeling Using Fractal and Fuzzy Concepts to Optimize Metadata Management
-              </a>
-            </h4>
-            <p class="pub-authors">Siku Kim, Yee Yeng Liau and <strong>Kwangyeol Ryu*</strong></p>
-            <p class="pub-journal"><em>Applied Sciences</em>, 15(13), 7193, June 2025</p>
-            <div class="pub-tags">
-              <span class="tag">Featured</span>
-              <span class="tag">Ontology</span>
-              <span class="tag">Metadata</span>
+    <section id="international-sci" class="pub-category-section">
+      <h2 class="highlight-text"><i class="fas fa-star"></i> International Journal (SCI/SCIE)</h2>
+      <div class="pub-cards-list">
+        {% for pub in site.data.publications.international_sci %}
+        <article class="pub-card-horizontal">
+          <div class="pub-card-badge">{{ pub.badge }}</div>
+          <div class="pub-card-content">
+            <h3 class="pub-card-title">
+              {% if pub.news_link and pub.news_link != "" %}
+                <a href="{{ pub.news_link | relative_url }}">{{ pub.title }}</a>
+              {% else %}
+                {{ pub.title }}
+              {% endif %}
+            </h3>
+            <p class="pub-card-authors">{{ pub.authors }}</p>
+            <p class="pub-card-journal"><em>{{ pub.journal }}</em>, {{ pub.volume }}, {{ pub.date }}</p>
+            {% if pub.tags and pub.tags.size > 0 %}
+            <div class="pub-card-tags">
+              {% for tag in pub.tags %}
+              <span class="tag">{{ tag }}</span>
+              {% endfor %}
             </div>
-          </article>
-        </div>
-      </div>
-
-      <div class="year-group">
-        <h3 class="year-title">2024</h3>
-        <div class="publication-list">
-          <article class="publication-item">
-            <div class="pub-badge">SCIE</div>
-            <h4 class="pub-title">Monitoring for Adaptability in Human-Robot Collaborative Mold Assembly</h4>
-            <p class="pub-authors">Yee Yeng Liau and <strong>Kwangyeol Ryu*</strong></p>
-            <p class="pub-journal"><em>International Journal of Computer Integrated Manufacturing</em>, 38(7), 977-995, August 2024</p>
-          </article>
-
-          <article class="publication-item">
-            <div class="pub-badge">SCIE</div>
-            <h4 class="pub-title">Framework of Knowledge Management for Human-robot Collaborative Mold Assembly using Heterogeneous Cobots</h4>
-            <p class="pub-authors">Yee Yeng Liau and <strong>Kwangyeol Ryu*</strong></p>
-            <p class="pub-journal"><em>Journal of Intelligent Manufacturing</em>, 35, 3713-3729, June 2024</p>
-          </article>
-        </div>
-      </div>
-
-      <div class="year-group">
-        <h3 class="year-title">2022</h3>
-        <div class="publication-list">
-          <article class="publication-item">
-            <div class="pub-badge">SCIE</div>
-            <h4 class="pub-title">Development of the Architecture and Reconfiguration Methods for the Smart, Self-Reconfigurable Manufacturing System</h4>
-            <p class="pub-authors">Sangil Lee and <strong>Kwangyeol Ryu*</strong></p>
-            <p class="pub-journal"><em>Applied Sciences</em>, 12(10), 5172, May 2022</p>
-          </article>
-
-          <article class="publication-item">
-            <div class="pub-badge">SCIE</div>
-            <h4 class="pub-title">Genetic Algorithm-based Task Allocation in Multiple Modes of Human-Robot Collaboration Systems with Two Cobots</h4>
-            <p class="pub-authors">Yee Yeng Liau and <strong>Kwangyeol Ryu*</strong></p>
-            <p class="pub-journal"><em>The International Journal of Advanced Manufacturing Technology</em>, 119, 7291-7309, January 2022</p>
-          </article>
-        </div>
-      </div>
-
-      <div class="year-group">
-        <h3 class="year-title">2021</h3>
-        <div class="publication-list">
-          <article class="publication-item">
-            <div class="pub-badge">SCIE</div>
-            <h4 class="pub-title">The effect of wearing high-heels and carrying a backpack on trunk biomechanics</h4>
-            <p class="pub-authors">Yee Yeng Liau, Seulgi Kim, <strong>Sangeun Jin*</strong>, Kwangyeol Ryu</p>
-            <p class="pub-journal"><em>International Journal of Industrial Ergonomics</em>, 86, 103229, November 2021</p>
-          </article>
-
-          <article class="publication-item">
-            <div class="pub-badge">SCIE</div>
-            <h4 class="pub-title">Status Recognition using Pre-trained YOLOv5 for Sustainable Human-Robot Collaboration (HRC) System in Mold Assembly</h4>
-            <p class="pub-authors">Yee Yeng Liau and <strong>Kwangyeol Ryu*</strong></p>
-            <p class="pub-journal"><em>Sustainability</em>, 13(21), 12044, October 2021</p>
-          </article>
-
-          <article class="publication-item">
-            <div class="pub-badge">SCIE</div>
-            <h4 class="pub-title">Development of Multi-Disciplinary Green-BOM to Maintain Sustainability in Reconfigurable Manufacturing Systems</h4>
-            <p class="pub-authors">Kezia Amanda Kurniadi and <strong>Kwangyeol Ryu*</strong></p>
-            <p class="pub-journal"><em>Sustainability</em>, 13(17), 9533, August 2021</p>
-          </article>
-        </div>
-      </div>
-
-      <!-- 추가 논문들은 여기에 계속 추가 -->
-      <div class="load-more">
-        <button class="btn-secondary" onclick="alert('추가 논문 목록을 로드합니다.')">
-          Load More Publications
-        </button>
+            {% endif %}
+          </div>
+        </article>
+        {% endfor %}
       </div>
     </section>
 
     <!-- International Journal (Non-SCI) -->
-    <section id="international-non-sci" class="publication-section">
-      <h2><i class="fas fa-book"></i> International Journal Papers (Non-SCI)</h2>
-      <p class="section-placeholder">추후 업데이트 예정입니다.</p>
+    <section id="international-non-sci" class="pub-category-section">
+      <h2 class="highlight-text"><i class="fas fa-book"></i> International Journal (Non-SCI)</h2>
+      <div class="pub-cards-list">
+        {% for pub in site.data.publications.international_non_sci %}
+        <article class="pub-card-horizontal">
+          <div class="pub-card-badge">{{ pub.badge }}</div>
+          <div class="pub-card-content">
+            <h3 class="pub-card-title">
+              {% if pub.news_link and pub.news_link != "" %}
+                <a href="{{ pub.news_link | relative_url }}">{{ pub.title }}</a>
+              {% else %}
+                {{ pub.title }}
+              {% endif %}
+            </h3>
+            <p class="pub-card-authors">{{ pub.authors }}</p>
+            <p class="pub-card-journal"><em>{{ pub.journal }}</em>, {{ pub.volume }}, {{ pub.date }}</p>
+            {% if pub.tags and pub.tags.size > 0 %}
+            <div class="pub-card-tags">
+              {% for tag in pub.tags %}
+              <span class="tag">{{ tag }}</span>
+              {% endfor %}
+            </div>
+            {% endif %}
+          </div>
+        </article>
+        {% endfor %}
+      </div>
     </section>
 
     <!-- Domestic Journal -->
-    <section id="domestic" class="publication-section">
-      <h2><i class="fas fa-bookmark"></i> Domestic Journal Papers</h2>
-      <p class="section-placeholder">추후 업데이트 예정입니다.</p>
+    <section id="domestic" class="pub-category-section">
+      <h2 class="highlight-text"><i class="fas fa-bookmark"></i> Domestic Journal</h2>
+      <div class="pub-cards-list">
+        {% for pub in site.data.publications.domestic %}
+        <article class="pub-card-horizontal">
+          <div class="pub-card-badge">{{ pub.badge }}</div>
+          <div class="pub-card-content">
+            <h3 class="pub-card-title">
+              {% if pub.news_link and pub.news_link != "" %}
+                <a href="{{ pub.news_link | relative_url }}">{{ pub.title }}</a>
+              {% else %}
+                {{ pub.title }}
+              {% endif %}
+            </h3>
+            <p class="pub-card-authors">{{ pub.authors }}</p>
+            <p class="pub-card-journal"><em>{{ pub.journal }}</em>, {{ pub.volume }}, {{ pub.date }}</p>
+            {% if pub.tags and pub.tags.size > 0 %}
+            <div class="pub-card-tags">
+              {% for tag in pub.tags %}
+              <span class="tag">{{ tag }}</span>
+              {% endfor %}
+            </div>
+            {% endif %}
+          </div>
+        </article>
+        {% endfor %}
+      </div>
     </section>
 
-    <!-- Book Chapter -->
-    <section id="book-chapter" class="publication-section">
-      <h2><i class="fas fa-book-open"></i> Book Chapters</h2>
-      <p class="section-placeholder">추후 업데이트 예정입니다.</p>
+    <!-- Book Chapters -->
+    <section id="book-chapters" class="pub-category-section">
+      <h2 class="highlight-text"><i class="fas fa-book-open"></i> Book Chapters</h2>
+      <div class="pub-cards-list">
+        {% for pub in site.data.publications.book_chapters %}
+        <article class="pub-card-horizontal">
+          <div class="pub-card-badge">{{ pub.badge }}</div>
+          <div class="pub-card-content">
+            <h3 class="pub-card-title">
+              {% if pub.news_link and pub.news_link != "" %}
+                <a href="{{ pub.news_link | relative_url }}">{{ pub.title }}</a>
+              {% else %}
+                {{ pub.title }}
+              {% endif %}
+            </h3>
+            <p class="pub-card-authors">{{ pub.authors }}</p>
+            <p class="pub-card-journal"><em>{{ pub.journal }}</em>, {{ pub.volume }}, {{ pub.date }}</p>
+            {% if pub.tags and pub.tags.size > 0 %}
+            <div class="pub-card-tags">
+              {% for tag in pub.tags %}
+              <span class="tag">{{ tag }}</span>
+              {% endfor %}
+            </div>
+            {% endif %}
+          </div>
+        </article>
+        {% endfor %}
+      </div>
     </section>
 
-    <!-- International Conference -->
-    <section id="international-conf" class="publication-section">
-      <h2><i class="fas fa-users"></i> International Conference Papers</h2>
-      <p class="section-placeholder">추후 업데이트 예정입니다.</p>
+    <!-- International Conferences -->
+    <section id="international-conf" class="pub-category-section">
+      <h2 class="highlight-text"><i class="fas fa-users"></i> International Conferences</h2>
+      <div class="pub-cards-list">
+        {% for pub in site.data.publications.international_conferences %}
+        <article class="pub-card-horizontal">
+          <div class="pub-card-badge">{{ pub.badge }}</div>
+          <div class="pub-card-content">
+            <h3 class="pub-card-title">
+              {% if pub.news_link and pub.news_link != "" %}
+                <a href="{{ pub.news_link | relative_url }}">{{ pub.title }}</a>
+              {% else %}
+                {{ pub.title }}
+              {% endif %}
+            </h3>
+            <p class="pub-card-authors">{{ pub.authors }}</p>
+            <p class="pub-card-journal"><em>{{ pub.journal }}</em>, {{ pub.volume }}, {{ pub.date }}</p>
+            {% if pub.tags and pub.tags.size > 0 %}
+            <div class="pub-card-tags">
+              {% for tag in pub.tags %}
+              <span class="tag">{{ tag }}</span>
+              {% endfor %}
+            </div>
+            {% endif %}
+          </div>
+        </article>
+        {% endfor %}
+      </div>
     </section>
 
-    <!-- Domestic Conference -->
-    <section id="domestic-conf" class="publication-section">
-      <h2><i class="fas fa-user-friends"></i> Domestic Conference Papers</h2>
-      <p class="section-placeholder">추후 업데이트 예정입니다.</p>
+    <!-- Domestic Conferences -->
+    <section id="domestic-conf" class="pub-category-section">
+      <h2 class="highlight-text"><i class="fas fa-user-friends"></i> Domestic Conferences</h2>
+      <div class="pub-cards-list">
+        {% for pub in site.data.publications.domestic_conferences %}
+        <article class="pub-card-horizontal">
+          <div class="pub-card-badge">{{ pub.badge }}</div>
+          <div class="pub-card-content">
+            <h3 class="pub-card-title">
+              {% if pub.news_link and pub.news_link != "" %}
+                <a href="{{ pub.news_link | relative_url }}">{{ pub.title }}</a>
+              {% else %}
+                {{ pub.title }}
+              {% endif %}
+            </h3>
+            <p class="pub-card-authors">{{ pub.authors }}</p>
+            <p class="pub-card-journal"><em>{{ pub.journal }}</em>, {{ pub.volume }}, {{ pub.date }}</p>
+            {% if pub.tags and pub.tags.size > 0 %}
+            <div class="pub-card-tags">
+              {% for tag in pub.tags %}
+              <span class="tag">{{ tag }}</span>
+              {% endfor %}
+            </div>
+            {% endif %}
+          </div>
+        </article>
+        {% endfor %}
+      </div>
     </section>
 
-    <!-- Patents and Programs -->
-    <section id="patents" class="publication-section">
-      <h2><i class="fas fa-certificate"></i> Patents and Programs Registered</h2>
-      <p class="section-placeholder">추후 업데이트 예정입니다.</p>
+    <!-- Patents & Programs -->
+    <section id="patents" class="pub-category-section">
+      <h2 class="highlight-text"><i class="fas fa-certificate"></i> Patents & Programs</h2>
+      <div class="pub-cards-list">
+        {% for pub in site.data.publications.patents %}
+        <article class="pub-card-horizontal">
+          <div class="pub-card-badge">{{ pub.badge }}</div>
+          <div class="pub-card-content">
+            <h3 class="pub-card-title">
+              {% if pub.news_link and pub.news_link != "" %}
+                <a href="{{ pub.news_link | relative_url }}">{{ pub.title }}</a>
+              {% else %}
+                {{ pub.title }}
+              {% endif %}
+            </h3>
+            <p class="pub-card-authors">{{ pub.authors }}</p>
+            <p class="pub-card-journal"><em>{{ pub.journal }}</em>, {{ pub.volume }}, {{ pub.date }}</p>
+            {% if pub.tags and pub.tags.size > 0 %}
+            <div class="pub-card-tags">
+              {% for tag in pub.tags %}
+              <span class="tag">{{ tag }}</span>
+              {% endfor %}
+            </div>
+            {% endif %}
+          </div>
+        </article>
+        {% endfor %}
+      </div>
     </section>
-
   </div>
 </div>
+
+<script>
+// 스크롤에 따라 active 카테고리 변경
+document.addEventListener('DOMContentLoaded', function() {
+  const navLinks = document.querySelectorAll('.pub-nav-link');
+  const sections = document.querySelectorAll('.pub-category-section');
+  
+  function updateActiveNav() {
+    let currentSection = '';
+    
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.clientHeight;
+      
+      if (window.pageYOffset >= sectionTop - 150) {
+        currentSection = section.getAttribute('id');
+      }
+    });
+    
+    navLinks.forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('data-category') === currentSection) {
+        link.classList.add('active');
+      }
+    });
+  }
+  
+  window.addEventListener('scroll', updateActiveNav);
+  
+  // 네비게이션 클릭 시 부드러운 스크롤
+  navLinks.forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      const targetId = this.getAttribute('href').substring(1);
+      const targetSection = document.getElementById(targetId);
+      
+      if (targetSection) {
+        window.scrollTo({
+          top: targetSection.offsetTop - 100,
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+});
+</script>
