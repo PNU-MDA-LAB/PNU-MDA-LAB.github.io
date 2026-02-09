@@ -1,5 +1,5 @@
 # Publications Data
-# 각 논문은 뉴스 게시글과 연결됩니다 (news_link)
+# 홈페이지 이관용 백업 데이터
 
 international_sci:
   - title: "Ontology Modeling Using Fractal and Fuzzy Concepts to Optimize Metadata Management"
@@ -1352,3 +1352,151 @@ international_conferences:
 
 domestic_conferences:
 
+
+# =============================================================
+# BOOK CHAPTERS (백업용 - 홈페이지 미표시)
+# =============================================================
+
+book_chapters:
+  - title: "Integrating Ontology with Cobot Execution for Human-robot Collaborative Assembly using Heterogenous Cobots"
+    authors: "Yee Yeng Liau and Kwangyeol Ryu"
+    journal: "Advances in Production Management Systems. Production Management Systems for Volatile, Uncertain, Complex, and Ambiguous Environments. APMS 2024. IFIP Advances in Information and Communication Technology, Springer, Cham."
+    volume: "Vol 729, 251-265"
+    date: "September 2024"
+    badge: "Book Chapter"
+    isbn: "978-3-031-65893-8"
+    editors: "Thürer, M., Riedel, R., von Cieminski, G., Romero, D. (eds)"
+    tags: ["Ontology", "Cobot", "Human-robot Collaboration", "Assembly"]
+    news_link: ""
+    award: ""
+
+  - title: "Development of Deep Reinforcement Learning Methodology for Co-bot Motion Learning"
+    authors: "Siku Kim and Kwangyeol Ryu"
+    journal: "Flexible Automation and Intelligent Manufacturing: Establishing Bridges for More Sustainable Manufacturing Systems. FAIM 2023. Lecture Notes in Mechanical Engineering. Springer, Cham."
+    volume: "495-502"
+    date: "August 2023"
+    badge: "Book Chapter"
+    isbn: "978-3-031-38164-5"
+    editors: "Silva, F.J.G., Ferreira, L.P., Sá, J.C., Pereira, M.T., Pinto, C.M.A. (eds)"
+    tags: ["Deep Reinforcement Learning", "Cobot", "Motion Learning"]
+    news_link: ""
+    award: ""
+
+  - title: "Conceptual Ontology-based Context Representation for Human and Two Heterogeneous Cobots Collaborative Mold Assembly"
+    authors: "Yee Yeng Liau and Kwangyeol Ryu"
+    journal: "Flexible Automation and Intelligent Manufacturing: Establishing Bridges for More Sustainable Manufacturing Systems. FAIM 2023. Lecture Notes in Mechanical Engineering. Springer, Cham."
+    volume: "527-535"
+    date: "August 2023"
+    badge: "Book Chapter"
+    isbn: "978-3-031-38164-5"
+    editors: "Silva, F.J.G., Ferreira, L.P., Sá, J.C., Pereira, M.T., Pinto, C.M.A. (eds)"
+    tags: ["Ontology", "Context Representation", "Cobot", "Mold Assembly"]
+    news_link: ""
+    award: ""
+
+  - title: "Agent-based Manufacturing System Innovation: Fractal Approaches"
+    authors: "Jungtae Mun, Moonsoo Shin, Kwangyeol Ryu, and Mooyoung Jung"
+    journal: "Agent-based Computing, Nova Science Publishers, Inc."
+    volume: "Chapter 7, 155-193"
+    date: "July 2010"
+    badge: "Book Chapter"
+    isbn: "978-1-60876-684-0"
+    editors: "Duarte Bouça and Amaro Gafagnão (eds)"
+    tags: ["Agent-based", "Fractal Manufacturing", "Innovation"]
+    news_link: ""
+    award: ""
+
+  - title: "Fractal Approach to Managing Intelligent Enterprises"
+    authors: "Kwangyeol Ryu and Mooyoung Jung"
+    journal: "Creating Knowledge Based Organizations, Idea Group Publishing, Hershey, Pennsylvania"
+    volume: "Chapter XV, 312-348"
+    date: "2004"
+    badge: "Book Chapter"
+    isbn: "1591401623"
+    editors: "Gupta, Jatinder N. D. and Sharma, Sushil K. (eds)"
+    tags: ["Fractal", "Intelligent Enterprise", "Knowledge Management"]
+    news_link: ""
+    award: ""
+
+
+# =============================================================
+# PATENTS AND PROGRAMS REGISTERED (백업용 - 홈페이지 미표시)
+# =============================================================
+
+patents_and_programs:
+  - title: "Fuel Additive Auto Injection Control System for Shipping Engine and Controlling Method Thereof"
+    authors: "Kwangyeol Ryu, Sangyong Choi, Jungsoo Oh, Sangil Lee, and Hwaseop Lee"
+    date: "Feb. 19, 2014"
+    registration_no: "Korea Patent No. 10-1533238"
+    type: "Patent"
+    tags: ["Fuel Additive", "Shipping Engine", "Control System"]
+
+  - title: "System for Scouting Supplier and Method Thereof"
+    authors: "Hyunbo Cho, Kwangyeol Ryu, Bohyun Kim, Youngjae Choi, Kwanyoung Im, Kyungdoc Kim, Jaehun Lee, Inyoung Koh, Boram Jo, Kiwook Jung, Sanghyeon Koh, and Taehun Kim"
+    date: "Jul. 01, 2014"
+    registration_no: "Korea Patent No. 10-1417395"
+    type: "Patent"
+    tags: ["Supplier Scouting", "Supply Chain"]
+
+  - title: "System and Method for On-line Design Cooperation"
+    authors: "Seokwoo Lee, Wonpyo Hong, Sungho Nam, Kwangyeol Ryu, and Honzong Choi"
+    date: "Nov. 06, 2008"
+    registration_no: "Korea Patent No. 10-0868478-0000"
+    type: "Patent"
+    tags: ["Design Cooperation", "Online System"]
+
+  - title: "Arranging Device and Method for Bonding"
+    authors: "Honzong Choi, Wonpyo Hong, Sungho Nam, Youngjae Choi, Kwangyeol Ryu, and Seokwoo Lee"
+    date: "Dec. 12, 2007"
+    registration_no: "Korea Patent No. 10-0787095-0000"
+    type: "Patent"
+    tags: ["Bonding", "Arranging Device"]
+
+  - title: "Grinding Device and Arranging Method for Chucking Pins of the same"
+    authors: "Seokwoo Lee, Honzong Choi, Youngjae Choi, Kwangyeol Ryu, and Eungoo Kang"
+    date: "Dec. 11, 2007"
+    registration_no: "Korea Patent No. 10-0786634-0000"
+    type: "Patent"
+    tags: ["Grinding", "Chucking Pins"]
+
+  - title: "Clamping Device for Machining Lens and Centering Method of Lens"
+    authors: "Seokwoo Lee, Honzong Choi, Youngjae Choi, Kwangyeol Ryu, and Namhwan Huh"
+    date: "Sep. 28, 2007"
+    registration_no: "Korea Patent No. 10-0763840-0000"
+    type: "Patent"
+    tags: ["Lens Machining", "Clamping", "Centering"]
+
+  - title: "External Design Evaluation System (Computer Aided Styling Conference)"
+    authors: "Seokwoo Lee, Wonpyo Hong, Kwangyeol Ryu, Youngjae Choi, and Kihyung Song"
+    date: "Mar. 6, 2007"
+    registration_no: "Korea Program No. 2007-01-155-001142"
+    type: "Program"
+    tags: ["Design Evaluation", "CAD"]
+
+  - title: "Change Management System of Production Processes"
+    authors: "Seokwoo Lee, Honzong Choi, Kwangyeol Ryu, Kyubong Lee, and Bohyun Kim"
+    date: "Mar. 6, 2007"
+    registration_no: "Korea Program No. 2007-01-155-001138"
+    type: "Program"
+    tags: ["Change Management", "Production Process"]
+
+  - title: "Estimation System of Production Delivery and Costs"
+    authors: "Seokwoo Lee, Wonpyo Hong, Kwangyeol Ryu, Dongyoon Lee, and Kihyung Song"
+    date: "Mar. 6, 2007"
+    registration_no: "Korea Program No. 2007-01-155-001137"
+    type: "Program"
+    tags: ["Production Estimation", "Cost", "Delivery"]
+
+  - title: "Distribution and Management System of CAD Drawings"
+    authors: "Seokwoo Lee, Honzong Choi, Kwangyeol Ryu, Sungho Nam, and Eungoo Kang"
+    date: "Mar. 6, 2007"
+    registration_no: "Korea Program No. 2007-01-155-001135"
+    type: "Program"
+    tags: ["CAD", "Drawing Management", "Distribution"]
+
+  - title: "Program for Selecting Optimal Condition in High-speed Machining Database"
+    authors: "Seokwoo Lee, Sungho Nam, Youngjae Choi, Kwangyeol Ryu, and Haewoon Kang"
+    date: "Aug. 31, 2006"
+    registration_no: "Korea Program No. 2006-01-155-004456"
+    type: "Program"
+    tags: ["High-speed Machining", "Optimal Condition", "Database"]

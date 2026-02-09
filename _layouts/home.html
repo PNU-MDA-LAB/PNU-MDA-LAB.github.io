@@ -5,21 +5,30 @@ layout: default
 <div class="hero-slider">
   <div class="slider-container">
     <div class="slide active">
-      <img src="{{ '/assets/images/slider1.jpg' | relative_url }}" alt="MDA Lab Visual 1">
+      <picture>
+        <source srcset="{{ '/assets/images/slider1.webp' | relative_url }}" type="image/webp">
+        <img src="{{ '/assets/images/slider1.jpg' | relative_url }}" alt="MDA Lab Visual 1" width="1920" height="1280" decoding="async">
+      </picture>
       <div class="slide-content">
         <h2>Manufacturing Data Analytics Lab</h2>
         <p>Leading Smart Manufacturing Innovation through Data</p>
       </div>
     </div>
     <div class="slide">
-      <img src="{{ '/assets/images/slider2.jpg' | relative_url }}" alt="MDA Lab Visual 2">
+      <picture>
+        <source srcset="{{ '/assets/images/slider2.webp' | relative_url }}" type="image/webp">
+        <img src="{{ '/assets/images/slider2.jpg' | relative_url }}" alt="MDA Lab Visual 2" width="1920" height="1076" loading="lazy" decoding="async">
+      </picture>
       <div class="slide-content">
         <h2>AI & Manufacturing System Integration</h2>
         <p>Next-Generation Manufacturing Technology R&D</p>
       </div>
     </div>
     <div class="slide">
-      <img src="{{ '/assets/images/slider3.jpg' | relative_url }}" alt="MDA Lab Visual 3">
+      <picture>
+        <source srcset="{{ '/assets/images/slider3.webp' | relative_url }}" type="image/webp">
+        <img src="{{ '/assets/images/slider3.jpg' | relative_url }}" alt="MDA Lab Visual 3" width="1920" height="1067" loading="lazy" decoding="async">
+      </picture>
       <div class="slide-content">
         <h2>Global Research Collaboration</h2>
         <p>Creating World-Class Research Outcomes</p>

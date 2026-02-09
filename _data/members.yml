@@ -9,6 +9,9 @@ phd_students:
     research: "Intelligent Manufacturing / Next Generation Manufacturing System"
     tel: "+82-51-510-3491"
     email: "siku.kim@pusan.ac.kr"
+    github: ""
+    linkedin: ""
+    scholar: ""
     
   - name: "LEI Jianming"
     photo: ""
@@ -40,6 +43,7 @@ master_students:
     email: "balbalbin@pusan.ac.kr"
     tel: "+82-51-510-3491"
     github: "https://github.com/Jungsolbin"
+
 
 
 # Undergraduate Students
