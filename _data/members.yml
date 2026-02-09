@@ -1,6 +1,6 @@
 # Ph.D. Students
 phd_students:
-  - name: "*** KIM"
+  - name: "KIM Siku"
     photo: ""  # assets/images/members/ 경로에 저장
     role: "Ph.D. Candidate"
     education:
@@ -9,10 +9,8 @@ phd_students:
     research: "Intelligent Manufacturing / Next Generation Manufacturing System"
     tel: "+82-51-510-3491"
     email: "siku.kim@pusan.ac.kr"
-    github: "https://github.com/USERNAME"
-    linkedin: "https://linkedin.com/in/USERNAME"
     
-  - name: "**** LEI"
+  - name: "LEI Jianming"
     photo: ""
     role: "Ph.D. Candidate"
     education:
@@ -21,13 +19,12 @@ phd_students:
     research: "Intelligent HRC system, Operations Research, Perishable-SCM"
     tel: "+82-51-510-3491"
     email: "k.s.ray@pusan.ac.kr"
-    github: "https://github.com/USERNAME"
-    linkedin: "https://linkedin.com/in/USERNAME"
 
 # Master Students
 master_students:
-  - name: "Ko gwon"
-    photo: ""  
+  - name: "Ko Gwonryul"
+    photo: ""
+    role: "Master Student, *Graduate School of Data Science"
     education:
       - "Department of Physics, Pusan National University, 2025, Republic of Korea"
     research: ""
@@ -36,6 +33,7 @@ master_students:
 
   - name: "Jung Solbin"
     photo: "" 
+    role: "Master Student"
     education:
       - "Department of Applied IT and Engineering, Pusan National University, 2026, Republic of Korea"
     research: "Human Robot Collaboration, Smart Manufacturing"

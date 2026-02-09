@@ -1,0 +1,377 @@
+- title: "Ontology Modeling Using Fractal and Fuzzy Concepts to Optimize Metadata Management"
+  authors: "Siku Kim, Yee Yeng Liau and Kwangyeol Ryu*"
+  journal: "Applied Sciences"
+  volume: "15(13), 7193"
+  date: "June 2025"
+  badge: "SCIE"
+  tags: ["Ontology", "Metadata", "Fractal"]
+  news_link: "/news/2025/12/10/publication/"
+  
+- title: "Monitoring for Adaptability in Human-Robot Collaborative Mold Assembly"
+  authors: "Yee Yeng Liau and Kwangyeol Ryu*"
+  journal: "International Journal of Computer Integrated Manufacturing"
+  volume: "38(7), 977-995"
+  date: "August 2024"
+  badge: "SCIE"
+  tags: ["HRC", "Manufacturing"]
+  news_link: ""
+  
+- title: "Framework of Knowledge Management for Human-robot Collaborative Mold Assembly using Heterogeneous Cobots"
+  authors: "Yee Yeng Liau and Kwangyeol Ryu*"
+  journal: "Journal of Intelligent Manufacturing"
+  volume: "35, 3713-3729"
+  date: "June 2024"
+  badge: "SCIE"
+  tags: ["HRC", "Knowledge Management"]
+  news_link: ""
+  
+- title: "Development of the Architecture and Reconfiguration Methods for the Smart, Self-Reconfigurable Manufacturing System"
+  authors: "Sangil Lee and Kwangyeol Ryu*"
+  journal: "Applied Sciences"
+  volume: "12(10), 5172"
+  date: "May 2022"
+  badge: "SCIE"
+  tags: ["Smart Manufacturing", "Reconfiguration"]
+  news_link: ""
+  
+- title: "Genetic Algorithm-based Task Allocation in Multiple Modes of Human-Robot Collaboration Systems with Two Cobots"
+  authors: "Yee Yeng Liau and Kwangyeol Ryu*"
+  journal: "The International Journal of Advanced Manufacturing Technology"
+  volume: "119, 7291-7309"
+  date: "January 2022"
+  badge: "SCIE"
+  tags: ["HRC", "Genetic Algorithm"]
+  news_link: ""
+  
+- title: "The effect of wearing high-heels and carrying a backpack on trunk biomechanics"
+  authors: "Yee Yeng Liau, Seulgi Kim, Sangeun Jin*, Kwangyeol Ryu"
+  journal: "International Journal of Industrial Ergonomics"
+  volume: "86, 103229"
+  date: "November 2021"
+  badge: "SCIE"
+  tags: ["Ergonomics", "Biomechanics"]
+  news_link: ""
+  
+- title: "Status Recognition using Pre-trained YOLOv5 for Sustainable Human-Robot Collaboration (HRC) System in Mold Assembly"
+  authors: "Yee Yeng Liau and Kwangyeol Ryu*"
+  journal: "Sustainability"
+  volume: "13(21), 12044"
+  date: "October 2021"
+  badge: "SCIE"
+  tags: ["HRC", "YOLO", "Sustainability"]
+  news_link: ""
+  
+- title: "Development of Multi-Disciplinary Green-BOM to Maintain Sustainability in Reconfigurable Manufacturing Systems"
+  authors: "Kezia Amanda Kurniadi and Kwangyeol Ryu*"
+  journal: "Sustainability"
+  volume: "13(17), 9533"
+  date: "August 2021"
+  badge: "SCIE"
+  tags: ["Green Manufacturing", "BOM"]
+  news_link: ""
+  
+- title: "Product and design feature-based similar process retrieval and modeling for mold manufacturing"
+  authors: "Hwaseop Lee and Kwangyeol Ryu*"
+  journal: "The International Journal of Advanced Manufacturing Technology"
+  volume: "119, 7291-7309"
+  date: "January 2021"
+  badge: "SCIE"
+  tags: ["Manufacturing", "Process Modeling"]
+  news_link: ""
+  
+- title: "Dual-Kernel-Based Aggregated Residual Network for Surface Defect Inspection in Injection Molding Processes"
+  authors: "Hwaseop Lee and Kwangyeol Ryu*"
+  journal: "Applied Sciences"
+  volume: "10(22), 8171"
+  date: "November 2020"
+  badge: "SCIE"
+  tags: ["Deep Learning", "Defect Inspection"]
+  news_link: ""
+  
+- title: "Maintaining Sustainability in Reconfigurable Manufacturing Systems Featuring Green-BOM"
+  authors: "Kezia Amanda Kurniadi, Kwangyeol Ryu*"
+  journal: "International Journal of Precision Engineering and Manufacturing-Green Technology"
+  volume: "7(3), 755-767"
+  date: "May 2020"
+  badge: "SCIE"
+  tags: ["Green Manufacturing", "Sustainability"]
+  news_link: ""
+  
+- title: "Model-based Human Robot Collaboration System for Small Batch Assembly with a Virtual Fence"
+  authors: "Hwaseop Lee, Yeeyeng Liau, Siku Kim, and Kwangyeol Ryu*"
+  journal: "International Journal of Precision Engineering and Manufacturing-Green Technology"
+  volume: "7(3), 609-623"
+  date: "May 2020"
+  badge: "SCIE"
+  tags: ["HRC", "Virtual Fence"]
+  news_link: ""
+  
+- title: "A two-phased perishable inventory model for production planning in the food industry"
+  authors: "Moonsoo Shin, Hwaseop Lee, Kwangyeol Ryu*, Yongju Cho, and Young-Jun Son"
+  journal: "Computers & Industrial Engineering"
+  volume: "133, 175-185"
+  date: "July 2019"
+  badge: "SCIE"
+  tags: ["Inventory", "Production Planning"]
+  news_link: ""
+  
+- title: "Warehouse capacity sharing via transshipment for an integrated two-echelon supply chain"
+  authors: "Xuehao Feng, Ilkyeong Moon, and Kwangyeol Ryu*"
+  journal: "Transportation Research Part E: Logistics and Transportation Review"
+  volume: "104, 17-35"
+  date: "August 2017"
+  badge: "SSCI"
+  tags: ["Supply Chain", "Warehouse"]
+  news_link: ""
+  
+- title: "Evolutionary Resource Assignment for Workload-based Production Scheduling"
+  authors: "Ilkyeong Moon, Sanghyup Lee, Moonsoo Shin, and Kwangyeol Ryu*"
+  journal: "Journal of Intelligent Manufacturing"
+  volume: "27(2), 375-388"
+  date: "April 2016"
+  badge: "SCIE"
+  tags: ["Production Scheduling", "Resource Assignment"]
+  news_link: ""
+  
+- title: "Supply chain coordination under budget constraints"
+  authors: "Xuehao Feng, Ilkyeong Moon*, and Kwangyeol Ryu"
+  journal: "Computers and Industrial Engineering"
+  volume: "88, 487-500"
+  date: "October 2015"
+  badge: "SCIE"
+  tags: ["Supply Chain", "Coordination"]
+  news_link: ""
+  
+- title: "Channel Coordination for Multi-stage Supply Chains with Revenue-sharing Contracts under Budget Constraints"
+  authors: "Ilkyeong Moon*, Xuehao Feng, and Kwangyeol Ryu"
+  journal: "International Journal of Production Research"
+  volume: "53(16), 4819-4836"
+  date: "August 2015"
+  badge: "SCI"
+  tags: ["Supply Chain", "Revenue Sharing"]
+  news_link: ""
+  
+- title: "Labour productivity in modular assembly: a study of automotive module suppliers"
+  authors: "Nazim Emre Islamoglu, Kwangyeol Ryu*, and Ilkyeong Moon"
+  journal: "International Journal of Production Research"
+  volume: "52(23), 6954-6970"
+  date: "December 2014"
+  badge: "SCI"
+  tags: ["Productivity", "Automotive"]
+  news_link: ""
+  
+- title: "Agent-based Production Simulation of TFT-LCD Fab Driven By Material Handling Requests"
+  authors: "Moonsoo Shin, Taebeum Ryu, and Kwangyeol Ryu*"
+  journal: "International Journal of Industrial Engineering: Theory, Applications and Practice"
+  volume: "21(6), 396-407"
+  date: "November 2014"
+  badge: "SCIE"
+  tags: ["Simulation", "TFT-LCD"]
+  news_link: ""
+  
+- title: "Operator Allocation in Cellular Manufacturing Systems by Integrated Genetic Algorithm and Fuzzy Data Envelopment Analysis"
+  authors: "Jaehun Park, Hyerim Bae, Thanh-Cong Dinh, and Kwangyeol Ryu*"
+  journal: "International Journal of Advanced Manufacturing Technology"
+  volume: "75(1-4), 465-477"
+  date: "October 2014"
+  badge: "SCIE"
+  tags: ["Cellular Manufacturing", "Genetic Algorithm"]
+  news_link: ""
+  
+- title: "Capturing Green Information and Mapping with MES Functions for Increasing Manufacturing Sustainability"
+  authors: "Hwaseop Lee, Kwangyeol Ryu*, Young-Jun Son, and Yongju Cho"
+  journal: "International Journal of Precision Engineering and Manufacturing"
+  volume: "15(8), 1709-1716"
+  date: "August 2014"
+  badge: "SCIE"
+  tags: ["Green Manufacturing", "MES"]
+  news_link: ""
+  
+- title: "Real-time Adjustment and Fault Detection of Remote Laser Welding Parameters by using ANN"
+  authors: "Kezia Amanda Kurniadi, Kwangyeol Ryu*, and Duckyoung Kim"
+  journal: "International Journal of Precision Engineering and Manufacturing"
+  volume: "15(6), 979-987"
+  date: "June 2014"
+  badge: "SCIE"
+  tags: ["Laser Welding", "ANN"]
+  news_link: ""
+  
+- title: "Revenue-Sharing Contracts in an N-stage Supply Chain with Reliability Considerations"
+  authors: "Xuehao Feng, Ilkyeong Moon*, and Kwangyeol Ryu"
+  journal: "International Journal of Production Economics"
+  volume: "147, Part A, 20-29"
+  date: "January 2014"
+  badge: "SCIE"
+  tags: ["Supply Chain", "Revenue Sharing"]
+  news_link: ""
+  
+- title: "Ontology-based process model for business architecture of a virtual enterprise"
+  authors: "Cheolhan Kim, Kwangsoo Kim, Jeongsoo Lee, and Kwangyeol Ryu*"
+  journal: "International Journal of Computer Integrated Manufacturing"
+  volume: "26(7), 583-595"
+  date: "July 2013"
+  badge: "SCIE"
+  tags: ["Ontology", "Virtual Enterprise"]
+  news_link: ""
+  
+- title: "A fractal echelon approach for inventory management in supply chain networks"
+  authors: "Kwangyeol Ryu*, Ilkyeong Moon, Seungjin Oh, and Mooyoung Jung"
+  journal: "International Journal of Production Economics"
+  volume: "143(2), 316-326"
+  date: "June 2013"
+  badge: "SCIE"
+  tags: ["Fractal", "Supply Chain"]
+  news_link: ""
+  
+- title: "Reconfiguration Framework of a Supply Network based on Flexibility Strategies"
+  authors: "Seungjin Oh, Kwangyeol Ryu, and Mooyoung Jung*"
+  journal: "Computers & Industrial Engineering"
+  volume: "65(1), 156-165"
+  date: "May 2013"
+  badge: "SCIE"
+  tags: ["Supply Network", "Flexibility"]
+  news_link: ""
+  
+- title: "A collaborative design framework for the Korean automotive parts industry"
+  authors: "Cheolhan Kim, Jeongsoo Lee, Kwangsoo Kim, Jaeyeol Lee, and Kwangyeol Ryu*"
+  journal: "International Journal of Computer Integrated Manufacturing"
+  volume: "25(1-2), 3-18"
+  date: "January-February 2013"
+  badge: "SCIE"
+  tags: ["Collaborative Design", "Automotive"]
+  news_link: ""
+  
+- title: "Reinforcement Learning Approach to Goal-regulation in a Self-evolutionary Manufacturing System"
+  authors: "Moonsoo Shin, Kwangyeol Ryu, and Mooyoung Jung*"
+  journal: "Expert Systems with Applications"
+  volume: "39(10), 8736-8743"
+  date: "August 2012"
+  badge: "SCIE"
+  tags: ["Reinforcement Learning", "Manufacturing"]
+  news_link: ""
+  
+- title: "A Novel Modeling Methodology for Collaborative Enterprise Processes"
+  authors: "Kwangyeol Ryu*, Sunhwa Lee, Duckyoung Kim, and Young-jun Son"
+  journal: "International Journal of Innovative Computing, Information and Control"
+  volume: "8(7B), 5369-5380"
+  date: "July 2012"
+  badge: "SCIE"
+  tags: ["Process Modeling", "Collaboration"]
+  news_link: ""
+  
+- title: "Function and Service Pattern Analysis for Facilitating The Reconfiguration of Collaboration Systems"
+  authors: "Sangil Lee, Kwangyeol Ryu*, Moonsoo Shin, and Gyu-Sung Cho"
+  journal: "Computers & Industrial Engineering"
+  volume: "62(3), 794-800"
+  date: "April 2012"
+  badge: "SCIE"
+  tags: ["Collaboration Systems", "Reconfiguration"]
+  news_link: ""
+  
+- title: "Precise Measurement Device for Angular Deviation of Canopy Transparency in Fighter Aircraft"
+  authors: "Tae-Sang Moon and Kwangyeol Ryu*"
+  journal: "International Journal of Precision Engineering and Manufacturing"
+  volume: "13(3), 347-356"
+  date: "March 2012"
+  badge: "SCIE"
+  tags: ["Measurement", "Aerospace"]
+  news_link: ""
+  
+- title: "Collaborative Fractal-based Supply Chain Management based on a Trust Model for the Automotive Industry"
+  authors: "Seungjin Oh, Kwangyeol Ryu*, Ilkyeong Moon, Hyunbo Cho, and Mooyoung Jung*"
+  journal: "Flexible Services and Manufacturing Journal"
+  volume: "22(3), 183-213"
+  date: "December 2010"
+  badge: "SCIE"
+  tags: ["Supply Chain", "Trust Model", "Automotive"]
+  news_link: ""
+  
+- title: "A fuzzy newsvendor approach to supply chain coordination"
+  authors: "Kwangyeol Ryu and Enver Yücesan*"
+  journal: "European Journal of Operational Research"
+  volume: "200(2), 421-438"
+  date: "January 2010"
+  badge: "SCIE"
+  tags: ["Fuzzy Logic", "Supply Chain"]
+  news_link: ""
+  
+- title: "Goal-balancing Process for Goal Formation in the Fractal Manufacturing System"
+  authors: "Youngpil Cha, Moonsoo Shin, Kwangyeol Ryu, and Mooyoung Jung*"
+  journal: "International Journal of Production Research"
+  volume: "45(20), 4771-4791"
+  date: "October 2007"
+  badge: "SCI"
+  tags: ["Fractal Manufacturing", "Goal Formation"]
+  news_link: ""
+  
+- title: "CPM: A collaborative process modeling for cooperative manufacturers"
+  authors: "Kwangyeol Ryu and Enver Yücesan*"
+  journal: "Advanced Engineering Informatics"
+  volume: "21(2), 231-239"
+  date: "April 2007"
+  badge: "SCIE"
+  tags: ["Process Modeling", "Collaboration"]
+  news_link: ""
+  
+- title: "Self-reconfigurable Software Architecture: Design and Implementation"
+  authors: "Jungtae Mun, Kwangyeol Ryu, and Mooyoung Jung*"
+  journal: "International Journal of Computers & Industrial Engineering"
+  volume: "51(1), 163-173"
+  date: "September 2006"
+  badge: "SCIE"
+  tags: ["Software Architecture", "Reconfiguration"]
+  news_link: ""
+  
+- title: "Dynamic Restructuring Process for Self-reconfiguration in the Fractal Manufacturing System"
+  authors: "Kwangyeol Ryu, Enver Yücesan, and Mooyoung Jung*"
+  journal: "International Journal of Production Research"
+  volume: "44(15), 3105-3129"
+  date: "August 2006"
+  badge: "SCI"
+  tags: ["Fractal Manufacturing", "Restructuring"]
+  news_link: ""
+  
+- title: "Conflict Detection and Resolution for Goal Formation in the Fractal Manufacturing System"
+  authors: "Moonsoo Shin, Youngpil Cha, Kwangyeol Ryu, and Mooyoung Jung*"
+  journal: "International Journal of Production Research"
+  volume: "44(3), 447-465"
+  date: "February 2006"
+  badge: "SCI"
+  tags: ["Fractal Manufacturing", "Conflict Resolution"]
+  news_link: ""
+  
+- title: "Goal-orientation Mechanism in the Fractal Manufacturing System"
+  authors: "Kwangyeol Ryu and Mooyoung Jung*"
+  journal: "International Journal of Production Research"
+  volume: "42(11), 2207-2225"
+  date: "June 2004"
+  badge: "SCI"
+  tags: ["Fractal Manufacturing", "Goal Orientation"]
+  news_link: ""
+  
+- title: "Framework for Fractal-based Supply Chain Management of e-Biz Companies"
+  authors: "Kwangyeol Ryu, Youngjun Son, and Mooyoung Jung*"
+  journal: "Production Planning & Control"
+  volume: "14(8), 720-733"
+  date: "December 2003"
+  badge: "SCIE"
+  tags: ["Supply Chain", "e-Business"]
+  news_link: ""
+  
+- title: "Agent-based fractal architecture and modelling for developing distributed manufacturing systems"
+  authors: "Kwangyeol Ryu and Mooyoung Jung*"
+  journal: "International Journal of Production Research"
+  volume: "41(17), 4233-4255"
+  date: "November 2003"
+  badge: "SCI"
+  tags: ["Agent-based", "Fractal", "Manufacturing"]
+  news_link: ""
+  
+- title: "Modeling and Specifications of Dynamic Agents in Fractal Manufacturing Systems"
+  authors: "Kwangyeol Ryu, Youngjun Son, and Mooyoung Jung*"
+  journal: "Computers in Industry"
+  volume: "52(2), 161-182"
+  date: "October 2003"
+  badge: "SCIE"
+  tags: ["Agent Modeling", "Fractal Manufacturing"]
+  news_link: ""

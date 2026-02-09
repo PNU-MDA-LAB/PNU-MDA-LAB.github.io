@@ -54,6 +54,25 @@ if (navToggle) {
   });
 }
 
+// 모바일 드롭다운 메뉴 토글
+const dropdowns = document.querySelectorAll('.nav-dropdown');
+dropdowns.forEach(dropdown => {
+  const toggle = dropdown.querySelector('.dropdown-toggle');
+  if (toggle) {
+    toggle.addEventListener('click', function(e) {
+      // 모바일에서만 토글 동작 (768px 이하)
+      if (window.innerWidth <= 768) {
+        e.preventDefault();
+        dropdown.classList.toggle('open');
+        // 다른 드롭다운 닫기
+        dropdowns.forEach(other => {
+          if (other !== dropdown) other.classList.remove('open');
+        });
+      }
+    });
+  }
+});
+
 // 스크롤 시 헤더 스타일 변경
 window.addEventListener('scroll', () => {
   const header = document.querySelector('.site-header');

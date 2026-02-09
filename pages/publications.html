@@ -18,17 +18,11 @@ description: MDA Lab Research Achievements
       <a href="#domestic" class="pub-nav-link" data-category="domestic">
         <i class="fas fa-bookmark"></i> Domestic Journal
       </a>
-      <a href="#book-chapters" class="pub-nav-link" data-category="book-chapters">
-        <i class="fas fa-book-open"></i> Book Chapters
-      </a>
       <a href="#international-conf" class="pub-nav-link" data-category="international-conf">
         <i class="fas fa-users"></i> International Conferences
       </a>
       <a href="#domestic-conf" class="pub-nav-link" data-category="domestic-conf">
         <i class="fas fa-user-friends"></i> Domestic Conferences
-      </a>
-      <a href="#patents" class="pub-nav-link" data-category="patents">
-        <i class="fas fa-certificate"></i> Patents & Programs
       </a>
     </nav>
   </aside>
@@ -42,6 +36,9 @@ description: MDA Lab Research Achievements
         {% for pub in site.data.publications.international_sci %}
         <article class="pub-card-horizontal">
           <div class="pub-card-badge">{{ pub.badge }}</div>
+          {% if pub.award and pub.award != "" %}
+          <div class="pub-card-award">{{ pub.award }}</div>
+          {% endif %}
           <div class="pub-card-content">
             <h3 class="pub-card-title">
               {% if pub.news_link and pub.news_link != "" %}
@@ -72,6 +69,9 @@ description: MDA Lab Research Achievements
         {% for pub in site.data.publications.international_non_sci %}
         <article class="pub-card-horizontal">
           <div class="pub-card-badge">{{ pub.badge }}</div>
+          {% if pub.award and pub.award != "" %}
+          <div class="pub-card-award">{{ pub.award }}</div>
+          {% endif %}
           <div class="pub-card-content">
             <h3 class="pub-card-title">
               {% if pub.news_link and pub.news_link != "" %}
@@ -102,36 +102,9 @@ description: MDA Lab Research Achievements
         {% for pub in site.data.publications.domestic %}
         <article class="pub-card-horizontal">
           <div class="pub-card-badge">{{ pub.badge }}</div>
-          <div class="pub-card-content">
-            <h3 class="pub-card-title">
-              {% if pub.news_link and pub.news_link != "" %}
-                <a href="{{ pub.news_link | relative_url }}">{{ pub.title }}</a>
-              {% else %}
-                {{ pub.title }}
-              {% endif %}
-            </h3>
-            <p class="pub-card-authors">{{ pub.authors }}</p>
-            <p class="pub-card-journal"><em>{{ pub.journal }}</em>, {{ pub.volume }}, {{ pub.date }}</p>
-            {% if pub.tags and pub.tags.size > 0 %}
-            <div class="pub-card-tags">
-              {% for tag in pub.tags %}
-              <span class="tag">{{ tag }}</span>
-              {% endfor %}
-            </div>
-            {% endif %}
-          </div>
-        </article>
-        {% endfor %}
-      </div>
-    </section>
-
-    <!-- Book Chapters -->
-    <section id="book-chapters" class="pub-category-section">
-      <h2 class="highlight-text"><i class="fas fa-book-open"></i> Book Chapters</h2>
-      <div class="pub-cards-list">
-        {% for pub in site.data.publications.book_chapters %}
-        <article class="pub-card-horizontal">
-          <div class="pub-card-badge">{{ pub.badge }}</div>
+          {% if pub.award and pub.award != "" %}
+          <div class="pub-card-award">{{ pub.award }}</div>
+          {% endif %}
           <div class="pub-card-content">
             <h3 class="pub-card-title">
               {% if pub.news_link and pub.news_link != "" %}
@@ -162,6 +135,9 @@ description: MDA Lab Research Achievements
         {% for pub in site.data.publications.international_conferences %}
         <article class="pub-card-horizontal">
           <div class="pub-card-badge">{{ pub.badge }}</div>
+          {% if pub.award and pub.award != "" %}
+          <div class="pub-card-award">{{ pub.award }}</div>
+          {% endif %}
           <div class="pub-card-content">
             <h3 class="pub-card-title">
               {% if pub.news_link and pub.news_link != "" %}
@@ -192,36 +168,9 @@ description: MDA Lab Research Achievements
         {% for pub in site.data.publications.domestic_conferences %}
         <article class="pub-card-horizontal">
           <div class="pub-card-badge">{{ pub.badge }}</div>
-          <div class="pub-card-content">
-            <h3 class="pub-card-title">
-              {% if pub.news_link and pub.news_link != "" %}
-                <a href="{{ pub.news_link | relative_url }}">{{ pub.title }}</a>
-              {% else %}
-                {{ pub.title }}
-              {% endif %}
-            </h3>
-            <p class="pub-card-authors">{{ pub.authors }}</p>
-            <p class="pub-card-journal"><em>{{ pub.journal }}</em>, {{ pub.volume }}, {{ pub.date }}</p>
-            {% if pub.tags and pub.tags.size > 0 %}
-            <div class="pub-card-tags">
-              {% for tag in pub.tags %}
-              <span class="tag">{{ tag }}</span>
-              {% endfor %}
-            </div>
-            {% endif %}
-          </div>
-        </article>
-        {% endfor %}
-      </div>
-    </section>
-
-    <!-- Patents & Programs -->
-    <section id="patents" class="pub-category-section">
-      <h2 class="highlight-text"><i class="fas fa-certificate"></i> Patents & Programs</h2>
-      <div class="pub-cards-list">
-        {% for pub in site.data.publications.patents %}
-        <article class="pub-card-horizontal">
-          <div class="pub-card-badge">{{ pub.badge }}</div>
+          {% if pub.award and pub.award != "" %}
+          <div class="pub-card-award">{{ pub.award }}</div>
+          {% endif %}
           <div class="pub-card-content">
             <h3 class="pub-card-title">
               {% if pub.news_link and pub.news_link != "" %}

@@ -1,0 +1,186 @@
+---
+layout: page
+title: Introduction
+description: Manufacturing Data Analytics (MDA) Lab
+---
+
+<div class="intro-layout">
+  <!-- 좌측 네비게이션 (Sticky) -->
+  <aside class="intro-nav">
+    <h3>Categories</h3>
+    <nav class="intro-nav-menu">
+      <a href="#overview" class="intro-nav-link active" data-section="overview">
+        <i class="fas fa-flask"></i> Overview
+      </a>
+      <a href="#research-areas" class="intro-nav-link" data-section="research-areas">
+        <i class="fas fa-microscope"></i> Research Areas
+      </a>
+      <a href="{{ '/pages/location.html' | relative_url }}" class="intro-nav-link" data-section="location">
+        <i class="fas fa-map-marker-alt"></i> Location
+      </a>
+    </nav>
+  </aside>
+
+  <!-- 우측 본문 -->
+  <div class="intro-main">
+
+    <!-- Overview -->
+    <section id="overview" class="intro-section-block">
+      <h2 class="highlight-text">Overview</h2>
+      <div class="intro-content-card">
+        <p>
+          The <strong>Manufacturing Data Analytics (MDA) Lab</strong> is a research group in the 
+          Department of Industrial Engineering at Pusan National University, led by 
+          <strong>Prof. Kwangyeol Ryu</strong>. Our lab conducts cutting-edge research in 
+          <strong>Smart Manufacturing Systems</strong> and <strong>Data-Driven Manufacturing Innovation</strong>.
+        </p>
+        <br>
+        <p>
+          We focus on collecting, analyzing, and leveraging diverse manufacturing data 
+          to achieve intelligent and optimized production systems. By integrating key 
+          Industry 4.0 technologies — including Digital Twin, AI/ML, IoT, and AR/VR — 
+          into manufacturing environments, we actively pursue research toward realizing 
+          next-generation Smart Factories.
+        </p>
+        <br>
+        <div class="intro-highlights">
+          <div class="intro-highlight-item">
+            <div class="highlight-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <div class="highlight-info">
+              <h4>Advisor</h4>
+              <p>Prof. Kwangyeol Ryu (류광열 교수)</p>
+            </div>
+          </div>
+          <div class="intro-highlight-item">
+            <div class="highlight-icon">
+              <i class="fas fa-university"></i>
+            </div>
+            <div class="highlight-info">
+              <h4>Affiliation</h4>
+              <p>Department of Industrial Engineering, Pusan National University</p>
+            </div>
+          </div>
+          <div class="intro-highlight-item">
+            <div class="highlight-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="highlight-info">
+              <h4>Contact</h4>
+              <p>kyryu@pusan.ac.kr &nbsp;|&nbsp; TEL: +82-51-510-2473</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Research Areas -->
+    <section id="research-areas" class="intro-section-block">
+      <h2 class="highlight-text">Research Areas</h2>
+      
+      <div class="research-area-grid">
+        <div class="research-area-card">
+          <div class="research-area-icon">
+            <i class="fas fa-industry"></i>
+          </div>
+          <h3>Smart Manufacturing Systems</h3>
+          <ul>
+            <li>Smart Factory & Digital Transformation</li>
+            <li>Cyber-Physical Production Systems (CPPS)</li>
+            <li>Digital Twin</li>
+            <li>AR/VR for Manufacturing</li>
+            <li>AI & IoT Integration</li>
+          </ul>
+        </div>
+
+        <div class="research-area-card">
+          <div class="research-area-icon">
+            <i class="fas fa-brain"></i>
+          </div>
+          <h3>Manufacturing Intelligence</h3>
+          <ul>
+            <li>Data Analytics & Knowledge Service</li>
+            <li>e-Manufacturing / i-Manufacturing</li>
+            <li>Manufacturing Data Mining</li>
+            <li>Process Optimization</li>
+          </ul>
+        </div>
+
+        <div class="research-area-card">
+          <div class="research-area-icon">
+            <i class="fas fa-cogs"></i>
+          </div>
+          <h3>Advanced Manufacturing Systems</h3>
+          <ul>
+            <li>Fractal Manufacturing System (FrMS)</li>
+            <li>Fractal-based Supply Chain Management</li>
+            <li>Reconfigurable Manufacturing Systems</li>
+            <li>Self-Adaptive Production Systems</li>
+          </ul>
+        </div>
+
+        <div class="research-area-card">
+          <div class="research-area-icon">
+            <i class="fas fa-project-diagram"></i>
+          </div>
+          <h3>Ontology & Knowledge Engineering</h3>
+          <ul>
+            <li>Manufacturing Ontology Modeling</li>
+            <li>Semantic Web Technologies</li>
+            <li>Knowledge-Based Systems</li>
+            <li>Interoperability & Standards</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</div>
+
+<script>
+// Introduction 사이드바 네비게이션 스크롤 활성화
+document.addEventListener('DOMContentLoaded', function() {
+  const navLinks = document.querySelectorAll('.intro-nav-link[data-section]');
+  const sections = document.querySelectorAll('.intro-section-block');
+  
+  // Location 링크는 외부 링크이므로 제외
+  const sectionLinks = Array.from(navLinks).filter(link => {
+    return link.getAttribute('href').startsWith('#');
+  });
+
+  function activateNav() {
+    let currentSection = '';
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop - 150;
+      if (window.scrollY >= sectionTop) {
+        currentSection = section.getAttribute('id');
+      }
+    });
+
+    sectionLinks.forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('data-section') === currentSection) {
+        link.classList.add('active');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', activateNav);
+  
+  // Smooth scroll
+  sectionLinks.forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      const targetId = this.getAttribute('href').substring(1);
+      const target = document.getElementById(targetId);
+      if (target) {
+        window.scrollTo({
+          top: target.offsetTop - 100,
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+});
+</script>

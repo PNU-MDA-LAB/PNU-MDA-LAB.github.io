@@ -1,5 +1,5 @@
 # Alumni List
-alumni:
+alumni: 
   - name: "*** Feng"
     photo: ""  # assets/images/alumni/ 경로에 저장
     position: "Doctoral Dissertation"
