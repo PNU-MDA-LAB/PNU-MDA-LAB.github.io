@@ -30,7 +30,7 @@ master_students:
     role: "Master Student, *Graduate School of Data Science"
     education:
       - "Department of Physics, Pusan National University, 2025, Republic of Korea"
-    research: ""
+    research: "Manufacturing Data Analytics"
     tel: "+82-51-510-3491"
     email: "kr99@pusan.ac.kr"
 
