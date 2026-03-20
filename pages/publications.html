@@ -31,7 +31,7 @@ description: MDA Lab Research Achievements
   <div class="publications-main">
     <!-- International Journal (SCI/SCIE) -->
     <section id="international-sci" class="pub-category-section">
-      <h2 class="highlight-text"><i class="fas fa-star"></i> International Journal (SCI/SCIE)</h2>
+      <h2 class="highlight-text">International Journal (SCI/SCIE)</h2>
       <div class="pub-cards-list">
         {% for pub in site.data.publications.international_sci %}
         <article class="pub-card-horizontal">
@@ -41,19 +41,34 @@ description: MDA Lab Research Achievements
           {% endif %}
           <div class="pub-card-content">
             <h3 class="pub-card-title">
-              {% if pub.news_link and pub.news_link != "" %}
-                <a href="{{ pub.news_link | relative_url }}">{{ pub.title }}</a>
+              {% if pub.project and pub.project != "" %}
+                <a href="{{ '/projects/' | append: pub.project | append: '/' | relative_url }}?from=publications&cat=international-sci">{{ pub.title }}</a>
+              {% elsif pub.project_link and pub.project_link != "" %}
+                {% assign pub_project_href = pub.project_link | relative_url %}
+                {% if pub_project_href contains '?' %}
+                  {% assign pub_project_sep = '&' %}
+                {% else %}
+                  {% assign pub_project_sep = '?' %}
+                {% endif %}
+                <a href="{{ pub_project_href }}{{ pub_project_sep }}from=publications&cat=international-sci">{{ pub.title }}</a>
               {% else %}
                 {{ pub.title }}
               {% endif %}
             </h3>
             <p class="pub-card-authors">{{ pub.authors }}</p>
             <p class="pub-card-journal"><em>{{ pub.journal }}</em>, {{ pub.volume }}, {{ pub.date }}</p>
-            {% if pub.tags and pub.tags.size > 0 %}
+            {% if pub.tags and pub.tags.size > 0 or pub.paper_link and pub.paper_link != "" %}
             <div class="pub-card-tags">
-              {% for tag in pub.tags %}
-              <span class="tag">{{ tag }}</span>
-              {% endfor %}
+              {% if pub.paper_link and pub.paper_link != "" %}
+              <a class="tag tag-paper-link" href="{{ pub.paper_link }}" target="_blank" rel="noopener noreferrer" title="논문 링크 열기" aria-label="논문 링크 열기">
+                <i class="fas fa-link" aria-hidden="true"></i>
+              </a>
+              {% endif %}
+              {% if pub.tags and pub.tags.size > 0 %}
+                {% for tag in pub.tags %}
+                <span class="tag">{{ tag }}</span>
+                {% endfor %}
+              {% endif %}
             </div>
             {% endif %}
           </div>
@@ -64,7 +79,7 @@ description: MDA Lab Research Achievements
 
     <!-- International Journal (Non-SCI) -->
     <section id="international-non-sci" class="pub-category-section">
-      <h2 class="highlight-text"><i class="fas fa-book"></i> International Journal (Non-SCI)</h2>
+      <h2 class="highlight-text">International Journal (Non-SCI)</h2>
       <div class="pub-cards-list">
         {% for pub in site.data.publications.international_non_sci %}
         <article class="pub-card-horizontal">
@@ -74,19 +89,34 @@ description: MDA Lab Research Achievements
           {% endif %}
           <div class="pub-card-content">
             <h3 class="pub-card-title">
-              {% if pub.news_link and pub.news_link != "" %}
-                <a href="{{ pub.news_link | relative_url }}">{{ pub.title }}</a>
+              {% if pub.project and pub.project != "" %}
+                <a href="{{ '/projects/' | append: pub.project | append: '/' | relative_url }}?from=publications&cat=international-non-sci">{{ pub.title }}</a>
+              {% elsif pub.project_link and pub.project_link != "" %}
+                {% assign pub_project_href = pub.project_link | relative_url %}
+                {% if pub_project_href contains '?' %}
+                  {% assign pub_project_sep = '&' %}
+                {% else %}
+                  {% assign pub_project_sep = '?' %}
+                {% endif %}
+                <a href="{{ pub_project_href }}{{ pub_project_sep }}from=publications&cat=international-non-sci">{{ pub.title }}</a>
               {% else %}
                 {{ pub.title }}
               {% endif %}
             </h3>
             <p class="pub-card-authors">{{ pub.authors }}</p>
             <p class="pub-card-journal"><em>{{ pub.journal }}</em>, {{ pub.volume }}, {{ pub.date }}</p>
-            {% if pub.tags and pub.tags.size > 0 %}
+            {% if pub.tags and pub.tags.size > 0 or pub.paper_link and pub.paper_link != "" %}
             <div class="pub-card-tags">
-              {% for tag in pub.tags %}
-              <span class="tag">{{ tag }}</span>
-              {% endfor %}
+              {% if pub.paper_link and pub.paper_link != "" %}
+              <a class="tag tag-paper-link" href="{{ pub.paper_link }}" target="_blank" rel="noopener noreferrer" title="논문 링크 열기" aria-label="논문 링크 열기">
+                <i class="fas fa-link" aria-hidden="true"></i>
+              </a>
+              {% endif %}
+              {% if pub.tags and pub.tags.size > 0 %}
+                {% for tag in pub.tags %}
+                <span class="tag">{{ tag }}</span>
+                {% endfor %}
+              {% endif %}
             </div>
             {% endif %}
           </div>
@@ -97,7 +127,7 @@ description: MDA Lab Research Achievements
 
     <!-- Domestic Journal -->
     <section id="domestic" class="pub-category-section">
-      <h2 class="highlight-text"><i class="fas fa-bookmark"></i> Domestic Journal</h2>
+      <h2 class="highlight-text">Domestic Journal</h2>
       <div class="pub-cards-list">
         {% for pub in site.data.publications.domestic %}
         <article class="pub-card-horizontal">
@@ -107,19 +137,34 @@ description: MDA Lab Research Achievements
           {% endif %}
           <div class="pub-card-content">
             <h3 class="pub-card-title">
-              {% if pub.news_link and pub.news_link != "" %}
-                <a href="{{ pub.news_link | relative_url }}">{{ pub.title }}</a>
+              {% if pub.project and pub.project != "" %}
+                <a href="{{ '/projects/' | append: pub.project | append: '/' | relative_url }}?from=publications&cat=domestic">{{ pub.title }}</a>
+              {% elsif pub.project_link and pub.project_link != "" %}
+                {% assign pub_project_href = pub.project_link | relative_url %}
+                {% if pub_project_href contains '?' %}
+                  {% assign pub_project_sep = '&' %}
+                {% else %}
+                  {% assign pub_project_sep = '?' %}
+                {% endif %}
+                <a href="{{ pub_project_href }}{{ pub_project_sep }}from=publications&cat=domestic">{{ pub.title }}</a>
               {% else %}
                 {{ pub.title }}
               {% endif %}
             </h3>
             <p class="pub-card-authors">{{ pub.authors }}</p>
             <p class="pub-card-journal"><em>{{ pub.journal }}</em>, {{ pub.volume }}, {{ pub.date }}</p>
-            {% if pub.tags and pub.tags.size > 0 %}
+            {% if pub.tags and pub.tags.size > 0 or pub.paper_link and pub.paper_link != "" %}
             <div class="pub-card-tags">
-              {% for tag in pub.tags %}
-              <span class="tag">{{ tag }}</span>
-              {% endfor %}
+              {% if pub.paper_link and pub.paper_link != "" %}
+              <a class="tag tag-paper-link" href="{{ pub.paper_link }}" target="_blank" rel="noopener noreferrer" title="논문 링크 열기" aria-label="논문 링크 열기">
+                <i class="fas fa-link" aria-hidden="true"></i>
+              </a>
+              {% endif %}
+              {% if pub.tags and pub.tags.size > 0 %}
+                {% for tag in pub.tags %}
+                <span class="tag">{{ tag }}</span>
+                {% endfor %}
+              {% endif %}
             </div>
             {% endif %}
           </div>
@@ -130,7 +175,7 @@ description: MDA Lab Research Achievements
 
     <!-- International Conferences -->
     <section id="international-conf" class="pub-category-section">
-      <h2 class="highlight-text"><i class="fas fa-users"></i> International Conferences</h2>
+      <h2 class="highlight-text">International Conferences</h2>
       <div class="pub-cards-list">
         {% for pub in site.data.publications.international_conferences %}
         <article class="pub-card-horizontal">
@@ -140,19 +185,34 @@ description: MDA Lab Research Achievements
           {% endif %}
           <div class="pub-card-content">
             <h3 class="pub-card-title">
-              {% if pub.news_link and pub.news_link != "" %}
-                <a href="{{ pub.news_link | relative_url }}">{{ pub.title }}</a>
+              {% if pub.project and pub.project != "" %}
+                <a href="{{ '/projects/' | append: pub.project | append: '/' | relative_url }}?from=publications&cat=international-conf">{{ pub.title }}</a>
+              {% elsif pub.project_link and pub.project_link != "" %}
+                {% assign pub_project_href = pub.project_link | relative_url %}
+                {% if pub_project_href contains '?' %}
+                  {% assign pub_project_sep = '&' %}
+                {% else %}
+                  {% assign pub_project_sep = '?' %}
+                {% endif %}
+                <a href="{{ pub_project_href }}{{ pub_project_sep }}from=publications&cat=international-conf">{{ pub.title }}</a>
               {% else %}
                 {{ pub.title }}
               {% endif %}
             </h3>
             <p class="pub-card-authors">{{ pub.authors }}</p>
             <p class="pub-card-journal"><em>{{ pub.journal }}</em>, {{ pub.volume }}, {{ pub.date }}</p>
-            {% if pub.tags and pub.tags.size > 0 %}
+            {% if pub.tags and pub.tags.size > 0 or pub.paper_link and pub.paper_link != "" %}
             <div class="pub-card-tags">
-              {% for tag in pub.tags %}
-              <span class="tag">{{ tag }}</span>
-              {% endfor %}
+              {% if pub.paper_link and pub.paper_link != "" %}
+              <a class="tag tag-paper-link" href="{{ pub.paper_link }}" target="_blank" rel="noopener noreferrer" title="논문 링크 열기" aria-label="논문 링크 열기">
+                <i class="fas fa-link" aria-hidden="true"></i>
+              </a>
+              {% endif %}
+              {% if pub.tags and pub.tags.size > 0 %}
+                {% for tag in pub.tags %}
+                <span class="tag">{{ tag }}</span>
+                {% endfor %}
+              {% endif %}
             </div>
             {% endif %}
           </div>
@@ -163,7 +223,7 @@ description: MDA Lab Research Achievements
 
     <!-- Domestic Conferences -->
     <section id="domestic-conf" class="pub-category-section">
-      <h2 class="highlight-text"><i class="fas fa-user-friends"></i> Domestic Conferences</h2>
+      <h2 class="highlight-text">Domestic Conferences</h2>
       <div class="pub-cards-list">
         {% for pub in site.data.publications.domestic_conferences %}
         <article class="pub-card-horizontal">
@@ -173,19 +233,34 @@ description: MDA Lab Research Achievements
           {% endif %}
           <div class="pub-card-content">
             <h3 class="pub-card-title">
-              {% if pub.news_link and pub.news_link != "" %}
-                <a href="{{ pub.news_link | relative_url }}">{{ pub.title }}</a>
+              {% if pub.project and pub.project != "" %}
+                <a href="{{ '/projects/' | append: pub.project | append: '/' | relative_url }}?from=publications&cat=domestic-conf">{{ pub.title }}</a>
+              {% elsif pub.project_link and pub.project_link != "" %}
+                {% assign pub_project_href = pub.project_link | relative_url %}
+                {% if pub_project_href contains '?' %}
+                  {% assign pub_project_sep = '&' %}
+                {% else %}
+                  {% assign pub_project_sep = '?' %}
+                {% endif %}
+                <a href="{{ pub_project_href }}{{ pub_project_sep }}from=publications&cat=domestic-conf">{{ pub.title }}</a>
               {% else %}
                 {{ pub.title }}
               {% endif %}
             </h3>
             <p class="pub-card-authors">{{ pub.authors }}</p>
             <p class="pub-card-journal"><em>{{ pub.journal }}</em>, {{ pub.volume }}, {{ pub.date }}</p>
-            {% if pub.tags and pub.tags.size > 0 %}
+            {% if pub.tags and pub.tags.size > 0 or pub.paper_link and pub.paper_link != "" %}
             <div class="pub-card-tags">
-              {% for tag in pub.tags %}
-              <span class="tag">{{ tag }}</span>
-              {% endfor %}
+              {% if pub.paper_link and pub.paper_link != "" %}
+              <a class="tag tag-paper-link" href="{{ pub.paper_link }}" target="_blank" rel="noopener noreferrer" title="논문 링크 열기" aria-label="논문 링크 열기">
+                <i class="fas fa-link" aria-hidden="true"></i>
+              </a>
+              {% endif %}
+              {% if pub.tags and pub.tags.size > 0 %}
+                {% for tag in pub.tags %}
+                <span class="tag">{{ tag }}</span>
+                {% endfor %}
+              {% endif %}
             </div>
             {% endif %}
           </div>

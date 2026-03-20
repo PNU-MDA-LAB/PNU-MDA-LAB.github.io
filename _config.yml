@@ -33,6 +33,9 @@ collections:
   notices:
     output: true
     permalink: /notices/:year/:month/:day/:title/
+  projects:
+    output: true
+    permalink: /projects/:name/
 
 # 6. 기본값
 defaults:
@@ -46,6 +49,11 @@ defaults:
       type: "notices"
     values:
       layout: "notice"
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
   - scope:
       path: "pages"
     values:

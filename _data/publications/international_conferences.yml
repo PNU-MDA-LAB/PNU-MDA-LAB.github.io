@@ -8,7 +8,7 @@
   - HRC
   - Ontology
   - Fuzzy
-  news_link: ''
+  project_link: ''
   award: ''
 - title: Depth -Vision Based Monitioring for Collision Aovidance in Multi-Cobot Collaboration Systems
   authors: Jianming Lei, kwangyeol Ryu
@@ -17,7 +17,7 @@
   date: November 2025
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: Excellent Paper Award
 - title: Introducing Smart Human-Robot Collaboration with Heterogeneous Cobots for Assembly Operations
   authors: Yee Yeng Liau, Kwangyeol Ryu
@@ -29,7 +29,7 @@
   - HRC
   - Assembly
   - Cobots
-  news_link: ''
+  project_link: ''
   award: ''
 - title: A Framework For Integrating Mixed Reality And Artifitial Intelligence Technologies To Enhance Human-Robot Interaction
   authors: Siku Kim, Kwangyeol Ryu
@@ -38,7 +38,7 @@
   date: December 2024
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: Framework of Implementing Sensor Fusion for Enabling Human Cognitive Abilities in Collaborative Robot
   authors: Jianming Lei, Kwangyeol Ryu
@@ -50,7 +50,7 @@
   - Sensor Fusion
   - HRC
   - Cognitive
-  news_link: ''
+  project_link: ''
   award: ''
 - title: How to Use Ontology for Monitoring and Execution of Human-Robot Collaborative Assembly Operations
   authors: Yee Yeng Liau, Kwangyeol Ryu
@@ -62,7 +62,7 @@
   - Ontology
   - HRC
   - Assembly
-  news_link: ''
+  project_link: ''
   award: Best Paper Award
 - title: Ontology-Based Human-Robot Collaboration Framework with integrated HMD Approach for Smart Manufacturing
   authors: Siku Kim, Kwangyeol Ryu
@@ -74,7 +74,7 @@
   - Ontology
   - HRC
   - HMD
-  news_link: ''
+  project_link: ''
   award: Best Paper Award
 - title: A Hybrid Visual Servoing-Based Proactive Collision Prediction Framework for Industrial Collaborative Robots
   authors: Jianming Lei, Yee Yeng Liau, Siku Kim, Kwangyeol Ryu
@@ -86,7 +86,7 @@
   - HRC
   - Visual Servoing
   - Collision
-  news_link: ''
+  project_link: ''
   award: ''
 - title: Modeling the Resilienee Strategies in Perishable Supply Chains Considering Uncertainty
   authors: Jianming Lei, Kwangyeol Ryu, Siku Kim, Youngtae Park
@@ -95,7 +95,7 @@
   date: October 2024
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: Integrating Ontology with Cobot Execution for Human-robot Collaborative Assembly using Heterogenous Cobots
   authors: Yee Yeng Liau, Kwangyeol Ryu
@@ -107,7 +107,7 @@
   - Ontology
   - HRC
   - Assembly
-  news_link: ''
+  project_link: ''
   award: ''
 - title: Enabling Shared Subtask Execution in Human-robot Collaboration System with Two Heterogenous Cobots
   authors: Yee Yeng Liau, Kwangyeol Ryu
@@ -118,7 +118,7 @@
   tags:
   - HRC
   - Task Execution
-  news_link: ''
+  project_link: ''
   award: ''
 - title: Ontology-based Human-Robot Collaboration System Task Planning
   authors: Siku Kim, Kwangyeol Ryu
@@ -130,7 +130,7 @@
   - Ontology
   - HRC
   - Planning
-  news_link: ''
+  project_link: ''
   award: ''
 - title: Data Conversion and Quality Classification of Rubber Product Mixing Process Using Deep Learning
   authors: Soojeong Son, Kwangyeol Ryu
@@ -141,7 +141,7 @@
   tags:
   - Deep Learning
   - Quality
-  news_link: ''
+  project_link: ''
   award: ''
 - title: Vision-based Monitoring Framework for Human-robot Collaborative Assembly using Heterogenous Cobot
   authors: Yee Yeng Liau, Kwangyeol Ryu
@@ -153,7 +153,7 @@
   - HRC
   - Vision
   - Monitoring
-  news_link: ''
+  project_link: ''
   award: ''
 - title: Development of Mixed-reality based Monitoring and Control Methodologies for Human Robot Collaboration Systems
   authors: Siku Kim, Kwangyeol Ryu
@@ -164,7 +164,7 @@
   tags:
   - Mixed Reality
   - HRC
-  news_link: ''
+  project_link: ''
   award: ''
 - title: Development of Deep Reinforcement Learning Methodology for Co-bot Motion Learning
   authors: Siku Kim, Kwangyeol Ryu
@@ -176,7 +176,7 @@
   - Deep RL
   - Cobot
   - Learning
-  news_link: ''
+  project_link: ''
   award: ''
 - title: Conceptual Ontology-based Context Representation for Human and Two Heterogeneous Cobots Collaborative Mold Assembly
   authors: Yee Yeng Liau, Kwangyeol Ryu
@@ -188,7 +188,7 @@
   - Ontology
   - HRC
   - Assembly
-  news_link: ''
+  project_link: ''
   award: ''
 - title: Development of CNN-based Analysis Model of Flow Production Process and Injection Process with Imaging Data
   authors: Soojeong Son, and Kwangyeol Ryu
@@ -199,7 +199,7 @@
   tags:
   - CNN
   - Process Analysis
-  news_link: ''
+  project_link: ''
   award: ''
 - title: CNN-based Prediction of a Quality Indicator in Mixing Processes of Rubber Products
   authors: Soojeong Son, and Kwangyeol Ryu
@@ -210,7 +210,7 @@
   tags:
   - CNN
   - Quality Prediction
-  news_link: ''
+  project_link: ''
   award: ''
 - title: Prediction of Refrigeration Vehicle Environment for Optimization of Cold-chain Logistics
   authors: Siku Kim, and Kwangyeol Ryu
@@ -221,7 +221,7 @@
   tags:
   - Cold-chain
   - Prediction
-  news_link: ''
+  project_link: ''
   award: ''
 - title: Conceptual Semantic Network Knowledge Representation for Human-Robot Task Assignment and Execution in Mold Assembly
   authors: Yee Yeng Liau, and Kwangyeol Ryu
@@ -232,7 +232,7 @@
   tags:
   - Semantic Network
   - HRC
-  news_link: ''
+  project_link: ''
   award: ''
 - title: Product design feature based similar process retrieval and modelling for mold manufacturing
   authors: Hwaseop Lee, and Kwangyeol Ryu*
@@ -243,7 +243,7 @@
   tags:
   - Process Modeling
   - Mold
-  news_link: ''
+  project_link: ''
   award: ''
 - title: Development of A Framework for Selecting the Best Collaboration Path Between Machines for Reconfigurable Manufacturing Systems
   authors: Kezia Amanda Kurniadi, and Kwangyeol Ryu*
@@ -254,7 +254,7 @@
   tags:
   - Reconfigurable
   - Collaboration
-  news_link: ''
+  project_link: ''
   award: ''
 - title: Development of Goal Model Mechanism for Self-reconfigurable Manufacturing Systems in the Mould Industry
   authors: Sangil Lee, Kezia Amanda Kurniadi, Moonsoo Shin, and Kwangyeol Ryu*
@@ -265,7 +265,7 @@
   tags:
   - Goal Model
   - Reconfigurable
-  news_link: ''
+  project_link: ''
   award: ''
 - title: Task Allocation in Human-Robot Collaboration (HRC) based on Task Characteristics and Agent Capability for Mold Assembly
   authors: Yee Yeng Liau, and Kwangyeol Ryu*
@@ -276,7 +276,7 @@
   tags:
   - HRC
   - Task Allocation
-  news_link: ''
+  project_link: ''
   award: ''
 - title: Intelligent Process Quality Management for Supporting the Collaboration of Mold Manufacturing SMEs
   authors: Siku Kim, and Kwangyeol Ryu*
@@ -287,7 +287,7 @@
   tags:
   - Quality Management
   - SME
-  news_link: ''
+  project_link: ''
   award: ''
 - title: Defects Image Classification and Object Detection Model
   authors: Hwaseop Lee, and Kwangyeol Ryu*
@@ -298,7 +298,7 @@
   tags:
   - Deep Learning
   - Defect Detection
-  news_link: ''
+  project_link: ''
   award: ''
 - title: Framework of C-RMS for Solving Reconfiguration Planning Problem in Reconfigurable Manufacturing System
   authors: Kezia Amanda Kurniadi, and Kwangyeol Ryu*
@@ -309,7 +309,7 @@
   tags:
   - C-RMS
   - Reconfiguration
-  news_link: ''
+  project_link: ''
   award: ''
 - title: Adaptability of Human-Robot Collaboration (HRC) System in Mold Assembly
   authors: Yee Yeng Liau, Kezia Amanda Kurniadi, Kwangyeol Ryu
@@ -320,7 +320,7 @@
   tags:
   - HRC
   - Adaptability
-  news_link: ''
+  project_link: ''
   award: ''
 - title: Multiple Defects Detection Model Using a Convolutional Network for Injection Molding Products
   authors: Hwaseop Lee, Siku Kim, Yee Yeng Liau, and Kwangyeol Ryu*
@@ -331,7 +331,7 @@
   tags:
   - CNN
   - Defect Detection
-  news_link: ''
+  project_link: ''
   award: ''
 - title: Goal Model for Developing Goal-orientation Mechanism in Self-reconfigurable Manufacturing Systems
   authors: Sangil Lee, Kezia Amanda Kurniadi, Moonsoo Shin, and Kwangyeol Ryu*
@@ -340,7 +340,7 @@
   date: July 2019
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: An Integrated Decision Making Model for Configuration Selection in Reconfigurable M
   authors: Kezia Amanda Kurniadi, Sangil Lee, and Kwangyeol Ryu*
@@ -349,7 +349,7 @@
   date: July 2019
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: A Framework of IoT based Collaboration
   authors: Siku Kim, Sangil Lee, Kezia Amanda Kurniadi, and Kwangyeol Ryu*
@@ -358,7 +358,7 @@
   date: July 2019
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: A Framework of Task Execution for Human-Robot Collaboration Systems
   authors: Yee Yeng Liau, Hwaseop Lee, and Kwangyeol Ryu*
@@ -367,7 +367,7 @@
   date: July 2019
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: Feature-based Collaborative Process Modeling for Mold Manufacturing
   authors: Hwaseop Lee, Sangil Lee and Kwangyeol Ryu*
@@ -376,7 +376,7 @@
   date: July 2019
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: Digital Twin Approach for Solving Reconfiguration Planning Problems in RMS,IFIP International Conference on Advances in Production Management Systems (APMS2018)
   authors: Kezia Amanda Kurniadi, Sangil Lee, and Kwangyeol Ryu*
@@ -385,7 +385,7 @@
   date: August 2018
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: A Framework for Process Model Based Human-robot Collaboration System Using Augmented Reality
   authors: Hwaseop Lee, Yeeyeng Liau, Siku Kim, and Kwangyeol Ryu*
@@ -397,7 +397,7 @@
   - AR
   - HRC
   - Process Model
-  news_link: ''
+  project_link: ''
   award: ''
 - title: Development of Hyper-Infrastructure for Collaboration and Convergence to Support Value Chain of Mold SMEs
   authors: Sangil Lee, Kwangyeol Ryu*, Yongju Cho and Moonsoo Shin
@@ -406,7 +406,7 @@
   date: July 2018
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: Conversion of Part-flow Based Manufacturing Process Models to Petri Nets,International Conference on Innovation Convergence Technology (ICICT2018)
   authors: Hwaseop Lee, Kwangyeol Ryu*, and Yongju Cho
@@ -415,7 +415,7 @@
   date: July 2018
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: Development of C-RMS for Design and Real-Time Reconfigurable Planning Process,International Conference on Innovation Convergence Technology (ICICT2018)
   authors: Kezia Amanda Kurniadi, and, Kwangyeol Ryu*
@@ -424,7 +424,7 @@
   date: July 2018
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: A Framework for Use of Computer Vision in Developing Human-Robot Collaboration System,International Conference on Innovation Convergence Technology (ICICT2018)
   authors: YeeYeng Liau, and Kwangyeol Ryu*
@@ -433,7 +433,7 @@
   date: July 2018
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: Best Paper Award
 - title: An Augmented Reality Based Monitoring System for Cold Chain Management,International Conference on Innovation Convergence Technology (ICICT2018)
   authors: Siku Kim, Kwangyeol Ryu*, and Gyusung Cho
@@ -442,7 +442,7 @@
   date: July 2018
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: Process parameter optimization using knowledge based control and a classification model for smart injection molding
   authors: Hwaseop Lee, and Kwangyeol Ryu*
@@ -451,7 +451,7 @@
   date: April 2018
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: Visual Inspection based on Machine Vision for smart Injection Molding
   authors: Yee Yeng Liau, and Kwangyeol Ryu*
@@ -460,7 +460,7 @@
   date: April 2018
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: Real-time Parameter Optimization Based on Neural Network for Smart Injection Molding,5th International Conference on Machine Design and Manufacturing Engineering (ICMDME 2018)
   authors: Hwaseop Lee, Yeeyeng Liau, and Kwangyeol Ryu*
@@ -469,7 +469,7 @@
   date: January 2018
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: Digital Twin Concept for Smart Injection Molding
   authors: Yeeyeng Liau, Hwaseop Lee, and Kwangyeol Ryu*
@@ -478,7 +478,7 @@
   date: January 2018
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: The Development of Simulation Model for Self-reconfigurable Manufacturing System considering Sustainability Factors. 27th International Conference on Flexible Automation and Intelligent ManufacturingProcedia Manufacturing (FAIM 2017)
   authors: Sangil Lee, Kwangyeol Ryu*, and Moonsoo Shin
@@ -487,7 +487,7 @@
   date: '2017'
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: A Framework of a Smart Injection Molding System based on Real-time Data. Procedia Manufacturing,27th International Conference on Flexible Automation and Intelligent ManufacturingProcedia Manufacturing (FAIM 2017)
   authors: Hwaseop Lee, Kwangyeol Ryu*, and Yongju Cho
@@ -496,7 +496,7 @@
   date: '2017'
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: Development of IOT-based Reconfigurable Manufacturing System to Solve Reconfiguration Planning Problem. 27th International Conference on Flexible Automation and Intelligent ManufacturingProcedia Manufacturing (FAIM 2017)
   authors: Kezia Amanda Kurniadi and Kwangyeol Ryu*
@@ -505,7 +505,7 @@
   date: '2017'
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: Product and Production Data Management by Green e‐BOM and Green m‐BOM. International Symposium on Green Manufacturing and Applications (ISGMA 2016)
   authors: Kezia Amanda Kurniadi, Sangil Lee, and Kwangyeol Ryu
@@ -514,7 +514,7 @@
   date: June 2016
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: Data Analytics and Decision‐making in MES for Smart Factory Management. International Symposium on Green Manufacturing and Applications (ISGMA 2016)
   authors: Hwaseop Lee, Siku Kim, and Kwangyeol Ryu
@@ -523,7 +523,7 @@
   date: June 2016
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: Semantic Negotiation for Process Reconfiguration in Manufacturing Systems. The 16th Asia Pacific Industrial Engineering and Management Systems Conference (APIEMS 2015)
   authors: Sangil Lee, Hwaseop Lee, Kwangyeol Ryu, and Moonsoo Shin
@@ -532,7 +532,7 @@
   date: December 2015
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: Models for Solving Recofigurable Planning Problem for Reconfigurable Manufacturing Systems. The 16th Asia Pacific Industrial Engineering and Management Systems Conference (APIEMS 2015)
   authors: Kezia Amanda Kurniadi, Siku Kim, Kwangyeol Ryu, and Mooyoung Jung
@@ -541,7 +541,7 @@
   date: December 2015
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: Pick-and-Place Optimization in Die Attach Process. International Symposium on Semiconductor Manufacturing Intelligence (ISMI 2015)
   authors: You-Jin Park and Kwangyeol Ryu
@@ -550,7 +550,7 @@
   date: October 2015
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: Development of a Multi Agent-based Negotiation Methodology for Reconfiguration of Manufacturing Processes. International Symposium on Green Manufacturing and Applications (ISGMA 2015)
   authors: Sangil Lee, Moonsoo Shin, and Kwangyeol Ryu
@@ -559,7 +559,7 @@
   date: June 2015
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: Reconfiguration Planning Problem For Reconfigurable Manufacturing Systems Featuring Green-BOM. International Symposium on Green Manufacturing and Applications (ISGMA 2015)
   authors: Kezia Amanda Kurniadi, and Kwangyeol Ryu
@@ -568,7 +568,7 @@
   date: June 2015
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: A Modularization Method of MES Functions for Gradual Implementation. International Symposium on Green Manufacturing and Applications (ISGMA 2015)
   authors: Hwaseop Lee, Kwangyeol Ryu, and Youngju Cho
@@ -577,7 +577,7 @@
   date: June 2015
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: Outstanding Presentation Award
 - title: Model Design for Scheduling Multiple Factory Cranes in Manufacturing Floor. The 2014 International Conference on Modeling
   authors: Heejin Lee, Kwangyeol Ryu, Sangil Lee, Ho-yeun Ryu, and Huichul Lee
@@ -586,7 +586,7 @@
   date: July 2014
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: Development of Fault Confirmation Module of Input Parameters in RLW Process by Using BPNN. The 2014 International Conference on Scientific Computing (CSC'14)
   authors: Kezia Amanda Kurniadi, Kwangyeol Ryu, Duckyoung Kim, and Ho-yeun Ryu
@@ -595,7 +595,7 @@
   date: July 2014
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: Supplier Discovery and Assessment Based on Ontology Models for Mold Manufacturers in Korea
   authors: Sangil Lee, Kwangyeol Ryu, Moonsoo Shin, and Hyunbo Cho
@@ -604,7 +604,7 @@
   date: May 2014
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: MES Functionality Extraction through Ontology Mapping. 24th International Conference on Flexible Automation and Intelligent Manufacturing (FAIM2014)
   authors: Hwaseop Lee, Kwangyeol Ryu*, Yongju Cho, and Hyunjei Jo
@@ -613,7 +613,7 @@
   date: May 2014
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: Functionality Extraction from Manufacturing Process Models for Configurable MES. 2014 Decision Analysis Symposium (DAS 2014)
   authors: Hwaseop Lee, Kwangyeol Ryu
@@ -622,7 +622,7 @@
   date: January 2014
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: Best Paper Award
 - title: A Study of a Production Engineering Service Framework based on the Manufacturing Execution System
   authors: Hyunjei Jo, Sang Do Noh, Kwangyeol Ryu, Minseok Song, and Youngju Cho
@@ -631,7 +631,7 @@
   date: October 2013
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: Agent-Based Production Management System for TFT-LCD Fab
   authors: Moonsoo Shin, and Kwangyeol Ryu
@@ -640,7 +640,7 @@
   date: October 2013
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: A hybrid Estimation Model of Design Specification of Ship Units
   authors: Hwaseop Lee, Suwon Lee, and Kwangyeol Ryu
@@ -649,7 +649,7 @@
   date: October 2013
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: Development of a Self-Learnable Function Module for Fractal Manufacturing systems
   authors: Sangil Lee, and Kwangyeol Ryu
@@ -658,7 +658,7 @@
   date: October 2013
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: Modeling and Simulation of Fuzzy Hybrid Petri Net for Mold Manufacturing Process
   authors: Heejin Lee, Kwangyeol Ryu, Hoyeun Ryu, and Huichul Lee
@@ -667,7 +667,7 @@
   date: October 2013
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: Excellent Manufacturer Scouting System (EMSS) for Korean Mold Industry
   authors: Moonsoo Shin, Sangil Lee, Kwangyeol Ryu, and Hyunbo Cho
@@ -676,7 +676,7 @@
   date: September 2013
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: Real-time Adjustment and Optimization of Remote Laser Welding Parameters by using ANN in Eco-automotive Factories
   authors: Kezia Amanda Kurniadi, Kwangyeol Ryu, Minseok Song
@@ -685,7 +685,7 @@
   date: June 2013
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: Capturing Green Information and Mapping with MES Functions for Increasing Manufacturing Sustainability
   authors: Hwaseop Lee, Kwangyeol Ryu, Moonsoo Shin, and Yongju Cho
@@ -694,7 +694,7 @@
   date: June 2013
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: Eco-friendly Process Generation and Restructuring for Self-reconfigurable Manufacturing Systems
   authors: Sangil Lee, Kwangyeol Ryu, and Sundho Nam
@@ -703,7 +703,7 @@
   date: June 2013
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: Development of Production Scheduler Specialized for Small and Medium Sized Sustainable Manufacturing Company
   authors: Moonsoo Shin, Sung‐Min Bae, Taebeum Ryu, Saeyeob Jang, Jeanho Kim, Seogou Choi, and Kwangyeol Ryu
@@ -712,7 +712,7 @@
   date: June 2013
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: Analysis of Manufacturing Processes with Process Mining in Configurable Manufacturing Execution Systems
   authors: Minseok Song, Bernardo Nugroho Yahya, Hyun‐Je Jo, Yong Ju Cho, and Kwangyeol Ryu
@@ -721,7 +721,7 @@
   date: June 2013
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: Functionality Extraction from Manufacturing Process Models for Configurable MES. The 9th International Conference on Intelligent Manufacturing & Logistics Systems (IML2013)
   authors: Hwaseop Lee and Kwangyeol Ryu
@@ -730,7 +730,7 @@
   date: February 2013
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: A Vendor Managed Inventory Model with Transshipment for a Two-echelon Supply Chain. The 9th International Conference on Intelligent Manufacturing & Logistics Systems (IML2013)
   authors: Xuehao Feng, Kwangyeol Ryu, and I. Moon
@@ -739,7 +739,7 @@
   date: February 2013
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: Comparing Cycle Times of Advanced Quay Cranes in Container Terminals. The 13th Asia Pacific Industrial Engineering and Managment Systems (APIEMS 2012) Conference
   authors: Mai-Ha Phan Thi, Kwangyeol Ryu, and Kap Hwan Kim
@@ -748,7 +748,7 @@
   date: December 2012
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: Best Student Paper Award
 - title: Agent-based Resource Model for Relation-driven Fractal Organization. The 7th International Conference on Innovative Computing
   authors: Moonsoo Shin and Kwangyeol Ryu
@@ -757,7 +757,7 @@
   date: November 2012
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: Simulation Design for Heat-Shrink-Tube Manufacturing System Using Aspect-Oriented Approach Modeling. The 7th International Conference on Innovative Computing
   authors: Gyusung Cho and Kwangyeol Ryu
@@ -766,7 +766,7 @@
   date: November 2012
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: Coordination of Supply Chains Under Budget Constraints. The 17th International Symposium on Inventories(ISIR)
   authors: Xuehao Feng, Ilkyeong Moon, Kwangyeol Ryu, and Sungchan Kim
@@ -775,7 +775,7 @@
   date: August 2012
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: Green Product Development for Sustainable Manufacturing using Green-BOM. The 22nd International Conference on Flexible Automation and Intelligent Manufacturing (FAIM2012)
   authors: Kezia Amanda Kurniadi, Kwangyeol Ryu, Yongju Park, and Shi W. Lee
@@ -784,7 +784,7 @@
   date: June 2012
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: Manufacturability Evaluation of Mold Manufacturers for Supplier Discovery. The 22nd International Conference on Flexible Automation and Intelligent Manufacturing (FAIM2012)
   authors: Sangil Lee, Kwangyeol Ryu, Moonsoo Shin, Shi W. Lee, and Kezia Amanda Kurniadi
@@ -793,7 +793,7 @@
   date: June 2012
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: Framework and System for Supplier Scouting Enabling Web-based Collaboration. International Conference on Manufacturing Engineering (ICME2012)
   authors: Sangil Lee, Kwangyeol Ryu, Kezia Amanda Kurniadi, and Yongju Park
@@ -802,7 +802,7 @@
   date: February 2012
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: 'Performance Comparison of Two Assembly Line Concepts: Conveyor Line and Box Assembly Line. International Conference on Manufacturing Engineering (ICME2012)'
   authors: Kezia Amanda Kurniadi, Emre Islamoglu, and Kwangyeol Ryu
@@ -811,7 +811,7 @@
   date: February 2012
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: An Integrated Aspect-oriented Modeling Approach for Business Process. The 6th International Conference on Innovative Computing
   authors: Gyusung Cho and Kwangyeol Ryu
@@ -820,7 +820,7 @@
   date: December 2011
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: 'A Management Framework for Autonomous and Intelligent Resources in Distributed Manufacturing Systems: A Fractal-based Approach. The 2nd International Symposium on Mechanical Science and Technology(ISMST)'
   authors: Moonsoo Shin, Kwangyeol Ryu, Taebeum Ryu, and Sungmin Bae
@@ -829,7 +829,7 @@
   date: December 2011
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: An Integrated Collaboration Model for the Business Process Innovation of Small and Medium Sized Manufacturing Firms. International Conference on Advances in Supply Chain and Manufacturing Management(ASCMM2011)
   authors: Kwangyeol Ryu, Duckyoung Kim, Manoj K. Tiwari, and Moonsoo Shin
@@ -838,7 +838,7 @@
   date: December 2011
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: Green Product and Production Information Management in the Fractal Manufacturing System. The 21st International Conference on Production Research(ICPR21)
   authors: Kwangyeol Ryu
@@ -847,7 +847,7 @@
   date: July 2011
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: Reconfigurable Manufacturing Services for Web-based Collaboration Systems. The 21st International Conference on Production Research(ICPR21)
   authors: Sangil Lee and Kwangyeol Ryu
@@ -856,7 +856,7 @@
   date: July 2011
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: DEA-based Decision Model for Optimization of Operator Allocation in CMS. The 21st International Conference on Production Research(ICPR21)
   authors: Jaehun Park, Dinh Thanh Cong, Hyerim Bae, Kwangyeol Ryu, and Sangil Lee
@@ -865,7 +865,7 @@
   date: July 2011
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: Revenue Sharing Contracts in a Fractal-based Supply Chain Considering Reliabilities. The 21st International Conference on Production Research(ICPR21)
   authors: Xuehao Feng, Ilkyeong Moon, and Kwangyeol Ryu
@@ -874,7 +874,7 @@
   date: July 2011
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: Framework for vehicle routing planning system based on the multi-pass simulation for inbound logistics in LCD manufacturing. The 21st International Conference on Flexible Automation and Intelligent Manufacturing (FAIM2011)
   authors: Kiyoul Lee, Kyoungdoc Kim, Jaehun Lee, Hyunbo Cho, Kwangyeol Ryu, and Mooyoung Jung
@@ -883,7 +883,7 @@
   date: June 2011
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: Task scheduling with dynamic sequence-dependent setup time using Asymmetric TSP. The 21st International Conference on Flexible Automation and Intelligent Manufacturing (FAIM2011)
   authors: Dinh Thanh Cong, Zhenguo Wang, Hyerim Bae, and Kwangyeol Ryu
@@ -892,7 +892,7 @@
   date: June 2011
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: Manufacturing process extraction and analysis by using process mining. The 21st International Conference on Flexible Automation and Intelligent Manufacturing (FAIM2011)
   authors: Sangil Lee, Jason Ree, Kwangyeol Ryu, Minseok Song, and Hyerim Bae
@@ -901,7 +901,7 @@
   date: June 2011
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: The joint effect of VMI and transhipment for a three-echelon system. The 21st International Conference on Flexible Automation and Intelligent Manufacturing (FAIM2011)
   authors: Seungjin Oh, Kwangyeol Ryu, Kiyoul Lee, and Mooyoung Jung
@@ -910,7 +910,7 @@
   date: June 2011
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: Improved aspect-oriented modeling approach for business and manufacturing process simulation. The 4th International Symposium on Intelligent Informatics (ISII2011)
   authors: Gyusung Cho and Kwangyeol Ryu
@@ -919,7 +919,7 @@
   date: May 2011
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: Bayesian Network for Finding Best Combination of Performers in BPM Environment. The 5th International Conference on Innovative Computing
   authors: Bernardo Nugroho Yahya, Arif Wibisono, Hyerim Bae, and Kwangyeol Ryu
@@ -928,7 +928,7 @@
   date: December 2010
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: Application of Mixed-Effect Model for Determining Optimal Input Variables in Simulation Analysis. The 5th International Conference on Innovative Computing
   authors: Youjin Park, Kwangyeol Ryu, Hyerim Bae, Sangdo Noh, Yongju Cho, Sangsu Choi, and Hyunjei Jo
@@ -937,7 +937,7 @@
   date: December 2010
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: A Framework for Evaluating Reconfigurability of Collaboration System using DEA. The 5th International Conference on Innovative Computing
   authors: Sangil Lee, Kwangyeol Ryu, Hyerim Bae, and Youjin Park
@@ -946,7 +946,7 @@
   date: December 2010
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: Production and Procurement Plans for the Diversification of Supply Network Risks. Proceedings of the 1st International Conference on Logistics and Maritime Systems(LOGMS)
   authors: Seungjin Oh, Kwangyeol Ryu, Hyunbo Cho, and Mooyoung Jung
@@ -955,7 +955,7 @@
   date: September 2010
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: A Fractal Echelon Approach for Inventory Management in Supply Chain Networks. The 16th International Symposium on Inventories(ISIR)
   authors: Kwangyeol Ryu, Ilkyeong Moon, Seungjin Oh, and Mooyoung Jung
@@ -964,7 +964,7 @@
   date: August 2010
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: Extended Collaboration Process Modeling Method Enabling Model Verification. Proceedings of the 40th International Conference on Computers & Industrial Engineering(CIE40)
   authors: Sunhwa Lee, Kwangyeol Ryu, Sangil Lee, Jeonghoon Shin, and Bohyun Kim
@@ -973,7 +973,7 @@
   date: July 2010
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: Function and Service Pattern Analysis for Reconfiguring Collaboration System. Proceedings of the 40th International Conference on Computers & Industrial Engineering(CIE40)
   authors: Sangil Lee, Kwangyeol Ryu, Sunhwa Lee, Sungho Nam, and Yongju Cho
@@ -982,7 +982,7 @@
   date: July 2010
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: Framework for Evaluating Robustness of a Supply Network on the Supply Network Risks. Proceedings of the 40th International Conference on Computers & Industrial Engineering(CIE40)
   authors: Seungjin Oh, Kwangyeol Ryu, and Mooyoung Jung
@@ -991,7 +991,7 @@
   date: July 2010
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: Web-based Collaborative Innovation Systems for Korean Small and Medium Sized Manufacturers. Proceedings of the 16th International Conference on Concurrent Enterprising(ICE2010)
   authors: Kwangyeol Ryu, Jeonghoon Shin, Yongju Cho, Bohyun Kim, and Honzong Choi
@@ -1000,7 +1000,7 @@
   date: June 2010
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: A Methodology to Capture and to Verify Collaborative Processes (exCPM). Proceedings of the 10th Asia Pacific Industrial Engineering Managements Conference(APIEMS2009)
   authors: Sunhwa Lee, Sangil Lee, Youngjae Choi, and Kwangyeol Ryu
@@ -1009,7 +1009,7 @@
   date: December 2009
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: Process Interfacing Methods for Facilitating Collaboration. Proceedings of the 10th Asia Pacific Industrial Engineering Managements Conference (APIEMS2009)
   authors: Sangil Lee, Sunhwa Lee, Jeonghoon Shin, and Kwangyeol Ryu
@@ -1018,7 +1018,7 @@
   date: December 2009
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: i-Manufacturing based Collaboration Strategy in Mould & Die Industry. Proceedings of the 10th Asia Pacific Industrial Engineering Managements Conference (APIEMS2009)
   authors: Jeonghoon Shin, Youngjae Choi, Kwangyeol Ryu, Seokwoo Lee, and Honzong Choi
@@ -1027,7 +1027,7 @@
   date: December 2009
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: Evolvong e-Manufacturing into i-Manufacturing for Manufacturing Innovation in Korea. Proceedings of the 1st International Conference on Product Enhancing Resource Effectiveness in the Work Place(ICEREW09)
   authors: Kwangyeol Ryu, Seokwoo Lee, and Honzong Choi
@@ -1036,7 +1036,7 @@
   date: '2009'
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: Web-based Collaboration Systems and Strategy for Managing Product
   authors: Kwangyeol Ryu, Haksoo Mok, Jeonghoon Shin, Seokwoo Lee, and Honzong Choi
@@ -1045,7 +1045,7 @@
   date: July 2009
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: Web-based Collaborative Engineering for Injection Mold Development. Proceedings of the 11th International Conference on Enterprise Information Systems
   authors: Dongyoon Lee, Kihyeong Song, Seokwoo Lee, Honzong Choi, and Kwangyeol Ryu
@@ -1054,7 +1054,7 @@
   date: May 2009
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: Networking System for Remanufacturing Technology
   authors: Haksoo Mok, Kyungkeun Lee, Kwangyeol Ryu, Changsu Jeon, Changhyo Han, and Hyunsoo Kwak
@@ -1065,7 +1065,7 @@
   tags:
   - Remanufacturing
   - Networking
-  news_link: ''
+  project_link: ''
   award: Best Paper Award
 - title: Collaboration Systems facilitating Remanufacturing Processes for Injection Mold Industry. Proceedings of the Global Conference on Sustainability Product Development and Life Cycle Engineering
   authors: Kwangyeol Ryu, Haksoo Mok, Seokwoo Lee, and Honzong Choi
@@ -1074,7 +1074,7 @@
   date: September 2008
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: i-Manufacturing Project for Collaboration-based Korean Manufacturing Innovation. Proceedings of the PICMET(Portland International Center for Management of Engineering and Technology) Conference
   authors: Kwangyeol Ryu, Jeonghoon Shin, Seokwoo Lee, and Honzong Choi
@@ -1083,7 +1083,7 @@
   date: July 2008
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: Modularization of Web-based Collaboration Systems for Manufacturing Innovation. Proceedings of the 10th International Conference on Enterprise Information Systems
   authors: Kwangyeol Ryu, Seokwoo Lee, and Honzong Choi
@@ -1092,7 +1092,7 @@
   date: June 2008
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: 'i-Manufacturing : Korean-style Manufacturing Innovation Strategy promoting Balanced Regional Growth based on Collaboration. Proceedings of the International Conference on Smart Manufacturing Application'
   authors: Seokwoo Lee, Kwangyeol Ryu, Sungho Nam, Youngjae Choi, and Honzong Choi
@@ -1101,7 +1101,7 @@
   date: April 2008
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: A Study on BSC-based Evaluation System for Collaborative Information System in Manufacturing Industy. Proceedings of the International Conference on Smart Manufacturing Application
   authors: Yongju Cho, Kwangyeol Ryu, Dongyoon Lee, Youngjae Choi, and Honzong Choi
@@ -1110,7 +1110,7 @@
   date: April 2008
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: Architecture of Flexible and Reliable Control & Monitoring System for Distributed Machining Systems. Proceedings of the International Conference on Smart Manufacturing Application
   authors: Sungho Nam, Kwangyeol Ryu, Seokwoo Lee, Honzong Choi, and Kieak Kwon
@@ -1119,7 +1119,7 @@
   date: April 2008
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: Strategies based on Collaboration for Manufacturing Innovation in Korea. Proceedings of the 37th International Conference on Computers and Industrial Engineering
   authors: Kwangyeol Ryu, Seokwoo Lee, and Honzong Choi
@@ -1128,7 +1128,7 @@
   date: October 2007
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: A study on automated design system for a blow mould. Proceedings of the International Conference on Computational Science and Its Applications(ICCSA2007)
   authors: Yongju Cho, Kwangyeol Ryu, and Seokwoo Lee
@@ -1137,7 +1137,7 @@
   date: August 2007
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: Manufacturing Innovation Strategy via On-line Collaboration. Proceedings of the International Symposium between China and Korea
   authors: Seokwoo Lee, Kwangyeol Ryu, Youngjae Choi, Kihyeong Song, and Honzong Choi
@@ -1146,7 +1146,7 @@
   date: July 2007
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: 'Business Innovation via Collaboration (e-Manufacturing: Web-based Collaboration Systems for SMEs)'
   authors: Kwangyeol Ryu, Seokwoo Lee, Wonpyo Hong, Dongyoon Lee, and Honzong Choi
@@ -1155,7 +1155,7 @@
   date: June 2007
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: Development of a Collaboration Portal Facilitating e-Manufacturing for SMEs in Korea. Proceedings of the 5th CIRP International Seminar on Intelligent Computation in Manufacturing Engineering(ICME)
   authors: Kwangyeol Ryu, Honzong Choi, and Seokwoo Lee
@@ -1164,7 +1164,7 @@
   date: July 2006
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: e-Manufacturing Collaboration Portal supporting PLM of Mold SMEs in Korea. Proceedings of the International Conference on Product Lifecycle Management(PLM06)
   authors: Honzong Choi, Kwangyeol Ryu, Seokwoo Lee, Wonpyo Hong, and Sungho Nam
@@ -1173,7 +1173,7 @@
   date: July 2006
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: Toward e-Manufacturing by Integrating On-line and Off-line Collaboration. Proceedings of the 36th International Conference on Computers and Industrial Engineering
   authors: Kwangyeol Ryu, Seokwoo Lee, and Honzong Choi
@@ -1182,7 +1182,7 @@
   date: June 2006
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: Developing the framework of agent-based e-Engineering service system for an application to Korea mould industry. Proceedings of the 8th Pacific Rim International Workshop on Multi-Agents (PRIMA 2005)
   authors: Yongju Cho, Kwangyeol Ryu, and Seokwoo Lee
@@ -1191,7 +1191,7 @@
   date: September 2005
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: A Novel Method of Modeling Collaborative Processes in Manufacturing. Proceedings of the 9th International Conference on Computer Supported Cooperative Work in Design (CSCWD 2005)
   authors: Kwangyeol Ryu and Enver Yücesan
@@ -1200,7 +1200,7 @@
   date: May 2005
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: Business Template Generation for Supporting Collaborative Design Works in Mould Companies. Proceedings of the 9th International Conference on Computer Supported Cooperative Work in Design (CSCWD 2005)
   authors: Yongju Cho, Kwangyeol Ryu, Jongduk Kim, Sunghee Lee, and Choonseong Leem
@@ -1209,7 +1209,7 @@
   date: May 2005
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: Framework of e-Collaborative Engineering Services for Mold Companies in Korea. Proceedings of the IMS International Forum 2004
   authors: Kwangyeol Ryu, Honzong Choi, and Seokwoo Lee
@@ -1218,7 +1218,7 @@
   date: May 2004
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: Real-time Simulator for Facilitating Dynamic Restructuring Process in FrMS. Proceedings of the 33rd International Conference on Computers and Industrial Engineering
   authors: Kwangyeol Ryu, Honzong Choi, and Mooyoung Jung
@@ -1227,7 +1227,7 @@
   date: March 2004
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: 'Self-reconfigurable Software Architecture: Design and Implementation. Proceedings of the 33rd International Conference on Computers and Industrial Engineering'
   authors: Jungtae Mun, Kwangyeol Ryu, and Mooyoung Jung
@@ -1236,7 +1236,7 @@
   date: March 2004
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: 'Conflict resolution via negotiation among agents for goal formation in the fractal manufacturing system. Proceedings of the 8th Annual International Conference on Industrial Engineering: Theory'
   authors: Moonsoo Shin, Youngpil Cha, Kwangyeol Ryu, and Mooyoung Jung
@@ -1245,7 +1245,7 @@
   date: November 2003
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: Negotiation mechanism for Scheduling in the Agent-based Fractal Manufacturing System. Proceedings of the 4th Asian Pacific Conference on Industrial Engineering and Management Systems (APIEMS 2002)
   authors: Kwangyeol Ryu and Mooyoung Jung
@@ -1254,7 +1254,7 @@
   date: December 2002
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: 'Fractal-based supply chain management of e-biz companies. Proceedings of the 7th Annual International Conference on Industrial Engineering: Theory'
   authors: Kwangyeol Ryu, Youngjun Son, and Mooyoung Jung
@@ -1263,7 +1263,7 @@
   date: October 2002
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: Dynamic modeling of fractal-specific characteristics in fractal manufacturing system. Proceedings of the 35th CIRP International Seminar on Manufacturing Systems
   authors: Kwangyeol Ryu and Mooyoung Jung
@@ -1272,7 +1272,7 @@
   date: May 2002
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: A Methodology for Implementing Agent-based Controllers in the Fractal Manufacturing System. Proceedings of the 5th International Conference on Engineering Design and Automation (EDA 2001)
   authors: Kwangyeol Ryu, Moonsoo Shin, and Mooyoung Jung
@@ -1281,7 +1281,7 @@
   date: August 2001
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: A Novel Negotiation Protocol for Agent-based Control Architecture. Proceedings of the 5th International Conference on Engineering Design and Automation (EDA 2001)
   authors: Moonsoo Shin, Kwangyeol Ryu, and Mooyoung Jung
@@ -1290,7 +1290,7 @@
   date: August 2001
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''
 - title: Intelligent Control Architecture for Fractal Manufacturing System. Proceedings of the 3rd Asia-Pacific Conference on Industrial Engineering and Management Systems
   authors: Kwangyeol Ryu, Moonsoo Shin, Kwangsoo Kim, and Mooyoung Jung
@@ -1299,5 +1299,5 @@
   date: December 2000
   badge: Intl. Conf.
   tags: []
-  news_link: ''
+  project_link: ''
   award: ''

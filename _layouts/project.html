@@ -1,0 +1,138 @@
+---
+layout: default
+---
+
+<div class="page-header">
+  <div class="container">
+    <h1>{{ page.title }}</h1>
+    {% if page.description %}
+    <p class="page-description">{{ page.description }}</p>
+    {% endif %}
+  </div>
+</div>
+
+<div class="page-content">
+  <div class="container">
+    <div class="projects-section project-detail">
+      <article class="project-card {{ page.status | default: 'ongoing' }}">
+        {% if page.image and page.image != "" %}
+          <div class="project-image">
+            <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" loading="lazy" decoding="async">
+          </div>
+        {% endif %}
+
+        <div class="project-detail-header">
+          <section class="project-facts" aria-label="Project facts">
+            <div class="project-fact">
+              <div class="project-fact-label">Period</div>
+              <div class="project-fact-value">{{ page.period | default: '추가 예정' }}</div>
+            </div>
+
+            <div class="project-fact">
+              <div class="project-fact-label">Affiliation</div>
+              {% assign raw_affiliations = page.partners | default: '' %}
+              {% assign affiliations = raw_affiliations | split: '·' %}
+              <div class="project-fact-value project-affiliation-value">
+                {% if raw_affiliations == '' %}
+                  추가 예정
+                {% else %}
+                  {% for affiliation in affiliations %}
+                    {% assign aff = affiliation | strip %}
+                    {% if aff != '' %}
+                      <div class="project-affiliation-item">{{ aff }}</div>
+                    {% endif %}
+                  {% endfor %}
+                {% endif %}
+              </div>
+            </div>
+
+            <div class="project-fact">
+              <div class="project-fact-label">Funding Agency</div>
+              <div class="project-fact-value">{{ page.funding_agency | default: '추가 예정' }}</div>
+            </div>
+
+            {% if page.principal_investigator and page.principal_investigator != '' %}
+            <div class="project-fact">
+              <div class="project-fact-label">PI</div>
+              <div class="project-fact-value">{{ page.principal_investigator }}</div>
+            </div>
+            {% endif %}
+          </section>
+
+          <section class="project-keywords-box" aria-label="Project keywords">
+            <div class="project-meta-line project-keywords-line">
+              <strong>Keywords</strong>
+              {% assign raw_keywords = page.summary | default: '' | replace: '·', ',' %}
+              {% assign keywords = raw_keywords | split: ',' %}
+              <div class="project-tags">
+                {% if raw_keywords == '' %}
+                  <span class="tag">추가 예정</span>
+                {% else %}
+                  {% for keyword in keywords %}
+                    {% assign kw = keyword | strip %}
+                    {% if kw != '' %}
+                      <span class="tag">{{ kw }}</span>
+                    {% endif %}
+                  {% endfor %}
+                {% endif %}
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div class="project-body">
+          {{ content }}
+        </div>
+
+        <div class="post-footer">
+          <div class="container">
+            <a href="{{ '/pages/projects.html' | relative_url }}" class="btn-secondary project-back-link" data-projects-href="{{ '/pages/projects.html' | relative_url }}" data-publications-href="{{ '/pages/publications.html' | relative_url }}">
+              <i class="fas fa-arrow-left"></i> 목록으로 돌아가기
+            </a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const backLink = document.querySelector('.project-back-link');
+  if (!backLink) return;
+
+  const params = new URLSearchParams(window.location.search);
+  const from = params.get('from');
+
+  let referrerUrl = null;
+  try {
+    referrerUrl = document.referrer ? new URL(document.referrer) : null;
+  } catch (e) {
+    referrerUrl = null;
+  }
+
+  const referrerLooksLikePublications = !!(referrerUrl && referrerUrl.pathname && referrerUrl.pathname.includes('publications'));
+  const cameFromPublications = from === 'publications' || referrerLooksLikePublications;
+
+  if (cameFromPublications) {
+    const baseHref = backLink.getAttribute('data-publications-href') || backLink.getAttribute('href');
+    const cat = params.get('cat');
+    const refHash = referrerUrl && referrerUrl.hash ? referrerUrl.hash : '';
+    const targetHref = cat ? `${baseHref}#${encodeURIComponent(cat)}` : (refHash ? `${baseHref}${refHash}` : baseHref);
+    backLink.setAttribute('href', targetHref);
+
+    backLink.addEventListener('click', function (e) {
+      e.preventDefault();
+      if (window.history && window.history.length > 1) {
+        window.history.back();
+        return;
+      }
+      window.location.href = targetHref;
+    });
+    return;
+  }
+
+  const projectsHref = backLink.getAttribute('data-projects-href');
+  if (projectsHref) backLink.setAttribute('href', projectsHref);
+});
+</script>

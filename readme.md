@@ -48,13 +48,18 @@ PNU-MDA-LAB.github.io/
 │   ├── 2026-01-20-publication.md
 │   └── [파일명 형식: YYYY-MM-DD-title.md]
 │
+├── _projects/                   # 프로젝트 상세 (마크다운, 컬렉션)
+│   ├── s-hrc.md
+│   ├── smart-injection-molding.md
+│   └── [프로젝트별 1개 파일]
+│
 ├── pages/                       # 주요 페이지 (8개)
 │   ├── introduction.html       # 연구실 소개 (Overview, Research Areas)
 │   ├── location.html           # 위치 및 지도 (네이버 맵)
-│   ├── professor.html          # 교수 소개
-│   ├── members.html            # 구성원 페이지 (_data/members.yml 참조)
+│   ├── professor.html          # (이동 안내) Members 내 Professor 섹션으로 이동
+│   ├── members.html            # 구성원 페이지 (Professor/Students, _data/members.yml 참조)
 │   ├── publications.html       # 논문 목록 (카테고리별, _data/publications/ 참조)
-│   ├── projects.html           # 프로젝트
+│   ├── projects.html           # 프로젝트 목록 (진행/종료)
 │   ├── news.html               # 뉴스 목록
 │   └── notices.html            # 공지사항 목록
 │
@@ -70,6 +75,7 @@ PNU-MDA-LAB.github.io/
 │       ├── slider2.jpg/.webp
 │       ├── slider3.jpg/.webp
 │       ├── members/            # 구성원 사진
+│       ├── projects/           # 프로젝트 이미지
 │       └── posts/              # 뉴스 게시물 이미지 (WebP 최적화)
 │
 └── _site/                       # Jekyll 빌드 결과물 (자동 생성, Git 무시)
@@ -79,7 +85,7 @@ PNU-MDA-LAB.github.io/
 
 ### 1. 홈페이지 레이아웃
 - **히어로 슬라이더**: 3개의 비주얼 이미지 (WebP + JPG 폴백), 5초 자동 전환
-- **메뉴 카드 그리드**: 6개 바로가기 (Introduction, Location, Projects, Professor, Members, Publications)
+- **메뉴 카드 그리드**: 6개 바로가기 (Introduction, Location, Projects, Professor(→Members 내 섹션), Students(→Members 내 섹션), Publications)
 - **공지사항 위젯**: 최신 5개 공지, 우선순위별 뱃지 (중요/일반/안내)
 - **최신 뉴스**: 최근 3개 게시물 자동 표시
 

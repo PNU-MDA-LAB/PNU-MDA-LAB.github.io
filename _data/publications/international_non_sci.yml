@@ -5,7 +5,7 @@
   date: "July 2025"
   badge: "Scopus"
   tags: ["Logistics", "Optimization", "Uncertainty"]
-  news_link: ""
+  project_link: ""
   
 - title: "Introducing Smart Human-Robot Collaboration with Heterogeneous Cobots for Assembly Operations"
   authors: "Yee Yeng Liau and Kwangyeol Ryu*"
@@ -14,7 +14,8 @@
   date: "August 2024"
   badge: "Scopus"
   tags: ["HRC", "Assembly"]
-  news_link: ""
+  project_link: "/projects/s-hrc/"
+  paper_link: "https://www.proceedings.com/content/079/079578webtoc.pdf"
   
 - title: "A Framework for Integrating Mixed Reality and Artificial Intelligence Technologies to Enhance Human-Robot Interaction"
   authors: "Siku Kim and Kwangyeol Ryu*"
@@ -23,7 +24,8 @@
   date: "August 2024"
   badge: "Scopus"
   tags: ["Mixed Reality", "AI", "HRI"]
-  news_link: ""
+  project_link: "/projects/s-hrc/"
+  paper_link: ""
   
 - title: "Framework of Implementing Sensor Fusion for Enabling Human Cognitive Abilities in Collaborative Robot"
   authors: "Jianming Lei and Kwangyeol Ryu*"
@@ -32,7 +34,7 @@
   date: "August 2024"
   badge: "Scopus"
   tags: ["Sensor Fusion", "HRC"]
-  news_link: ""
+  project_link: "/projects/s-hrc/"
   
 - title: "Development of Context-based Monitoring Interface for Human-robot Collaborative Assembly using Heterogeneous Cobots"
   authors: "Yee Yeng Liau and Kwangyeol Ryu*"
@@ -41,7 +43,8 @@
   date: "March 2025"
   badge: "Scopus"
   tags: ["HRC", "Monitoring"]
-  news_link: ""
+  project_link: "/projects/s-hrc/"
+  paper_link: "https://doi.org/10.7232/iems.2025.24.1.104"
   
 - title: "Prediction of Refrigerated Vehicle Environment for Optimization of Cold-chain Logistics"
   authors: "Youngtae Park, Siku Kim, and Kwangyeol Ryu*"
@@ -50,7 +53,7 @@
   date: "January 2023"
   badge: "Scopus"
   tags: ["Cold-chain", "Logistics"]
-  news_link: ""
+  project_link: ""
   
 - title: "Conceptual Semantic Network Knowledge Representation for Human-Robot Task Assignment and Execution in Mold Assembly"
   authors: "Yee Yeng Liau and Kwangyeol Ryu*"
@@ -59,7 +62,7 @@
   date: "January 2023"
   badge: "Scopus"
   tags: ["Semantic Network", "HRC"]
-  news_link: ""
+  project_link: "/projects/s-hrc/"
   
 - title: "Convolution Neural Network based Prediction of a Quality Indicator in Mixing Processes of Rubber Products"
   authors: "Soojeong Son and Kwangyeol Ryu*"
@@ -68,7 +71,7 @@
   date: "January 2023"
   badge: "Scopus"
   tags: ["CNN", "Quality Prediction"]
-  news_link: ""
+  project_link: ""
   
 - title: "Application Framework of Collaborative Robot to Mold Assembly Processes"
   authors: "Yee Yeng Liau and Kwangyeol Ryu*"
@@ -77,7 +80,8 @@
   date: "December 2022"
   badge: "Scopus"
   tags: ["HRC", "Mold Assembly"]
-  news_link: ""
+  project_link: "/projects/s-hrc/"
+  paper_link: "https://doi.org/10.7232/iems.2022.21.4.658"
   
 - title: "Development of Goal Model Mechanism for Self-reconfigurable Manufacturing Systems in the Mould Industry"
   authors: "Sangil Lee, Kezia Amanda Kurniadi, Moonsoo Shin, and Kwangyeol Ryu*"
@@ -86,7 +90,8 @@
   date: "November 2020"
   badge: "Scopus"
   tags: ["Reconfigurable Manufacturing", "Goal Model"]
-  news_link: ""
+  project_link: ""
+  paper_link: "https://doi.org/10.1016/j.promfg.2020.10.178"
   
 - title: "Development of A Framework for Selecting the Best Collaboration Path Between Machines for Reconfigurable Manufacturing Systems"
   authors: "Kezia Amanda Kurniadi and Kwangyeol Ryu*"
@@ -95,7 +100,8 @@
   date: "November 2020"
   badge: "Scopus"
   tags: ["Reconfigurable Manufacturing", "Collaboration"]
-  news_link: ""
+  project_link: ""
+  paper_link: "https://doi.org/10.1016/j.promfg.2020.10.177"
   
 - title: "Intelligent Process Quality Management for Supporting Collaboration of Mold Manufacturing SMEs"
   authors: "Siku Kim and Kwangyeol Ryu*"
@@ -104,7 +110,8 @@
   date: "November 2020"
   badge: "Scopus"
   tags: ["Quality Management", "SME"]
-  news_link: ""
+  project_link: ""
+  paper_link: "https://doi.org/10.1016/j.promfg.2020.10.054"
   
 - title: "Task Allocation in Human-Robot Collaboration (HRC) based on Task Characteristics and Agent Capability for Mold Assembly"
   authors: "Yee Yeng Liau and Kwangyeol Ryu*"
@@ -113,7 +120,8 @@
   date: "November 2020"
   badge: "Scopus"
   tags: ["HRC", "Task Allocation"]
-  news_link: ""
+  project_link: "/projects/s-hrc/"
+  paper_link: "https://doi.org/10.1016/j.promfg.2020.10.026"
   
 - title: "An Augmented Reality based Monitoring System for Cold Chain Management"
   authors: "Siku Kim, Kwangyeol Ryu*, and Gyusung Cho"
@@ -122,7 +130,7 @@
   date: "November 2018"
   badge: "Scopus"
   tags: ["AR", "Cold Chain"]
-  news_link: ""
+  project_link: ""
   
 - title: "Visual Inspection based on Machine Vision for smart Injection Molding"
   authors: "Yee Yeng Liau and Kwangyeol Ryu*"
@@ -131,7 +139,7 @@
   date: "November 2018"
   badge: "Scopus"
   tags: ["Machine Vision", "Injection Molding"]
-  news_link: ""
+  project_link: "/projects/smart-injection-molding/"
   
 - title: "Process Parameters Optimization Using Knowledge Based Control and a Classification Model for Smart Injection Molding"
   authors: "Hwaseop Lee and Kwangyeol Ryu*"
@@ -140,7 +148,7 @@
   date: "October 2018"
   badge: "Scopus"
   tags: ["Optimization", "Injection Molding"]
-  news_link: ""
+  project_link: "/projects/smart-injection-molding/"
   
 - title: "Real-time parameter optimization based on neural network for smart injection molding"
   authors: "Hwaseop Lee, Yeeyeng Liau, and Kwangyeol Ryu*"
@@ -149,7 +157,8 @@
   date: "March 2018"
   badge: "Scopus"
   tags: ["Neural Network", "Injection Molding"]
-  news_link: ""
+  project_link: "/projects/smart-injection-molding/"
+  paper_link: "https://doi.org/10.1088/1757-899x/324/1/012076"
   
 - title: "Digital Twin concept for smart injection molding"
   authors: "Yeeyeng Liau, Hwaseop Lee, and Kwangyeol Ryu*"
@@ -158,7 +167,8 @@
   date: "March 2018"
   badge: "Scopus"
   tags: ["Digital Twin", "Injection Molding"]
-  news_link: ""
+  project_link: "/projects/smart-injection-molding/"
+  paper_link: "https://doi.org/10.1088/1757-899x/324/1/012077"
   
 - title: "Development of Augmented Reality Applications for Refrigerated Warehouse"
   authors: "Siku Kim, Sangil Lee, Kwangyeol Ryu*, Gyusung Cho, and Jaesung Kim"
@@ -167,7 +177,7 @@
   date: "May 2018"
   badge: "Scopus"
   tags: ["AR", "Warehouse"]
-  news_link: ""
+  project_link: ""
   
 - title: "The Development of Simulation Model for Self-reconfigurable Manufacturing System considering Sustainability Factors"
   authors: "Sangil Lee, Kwangyeol Ryu*, and Moonsoo Shin"
@@ -176,7 +186,8 @@
   date: "September 2017"
   badge: "Scopus"
   tags: ["Simulation", "Sustainability"]
-  news_link: ""
+  project_link: ""
+  paper_link: "https://doi.org/10.1016/j.promfg.2017.07.226"
   
 - title: "A Framework of a Smart Injection Molding System based on Real-time Data"
   authors: "Hwaseop Lee, Kwangyeol Ryu*, and Yongju Cho"
@@ -185,7 +196,8 @@
   date: "September 2017"
   badge: "Scopus"
   tags: ["Smart Manufacturing", "Real-time"]
-  news_link: ""
+  project_link: "/projects/smart-injection-molding/"
+  paper_link: "https://doi.org/10.1016/j.promfg.2017.07.206"
   
 - title: "Development of IOT-based Reconfigurable Manufacturing System to Solve Reconfiguration Planning Problem"
   authors: "Kezia Amanda Kurniadi and Kwangyeol Ryu*"
@@ -194,7 +206,8 @@
   date: "September 2017"
   badge: "Scopus"
   tags: ["IoT", "Reconfigurable Manufacturing"]
-  news_link: ""
+  project_link: ""
+  paper_link: "https://doi.org/10.1016/j.promfg.2017.07.201"
   
 - title: "Comparing Cycle Times of Advanced Quay Cranes in Container Terminals"
   authors: "Mai-Ha Phan-Thi, Kwangyeol Ryu, and Kap Hwan Kim*"
@@ -203,7 +216,8 @@
   date: "December 2013"
   badge: "Scopus"
   tags: ["Container Terminal", "Optimization"]
-  news_link: ""
+  project_link: ""
+  paper_link: "https://doi.org/10.7232/iems.2013.12.4.359"
   
 - title: "Simulation Design for Heat-Shrink-Tubing Manufacturing System Using I-AOMA"
   authors: "Gyusung Cho* and Kwangyeol Ryu"
@@ -212,7 +226,7 @@
   date: "June 2013"
   badge: "Scopus"
   tags: ["Simulation", "Manufacturing"]
-  news_link: ""
+  project_link: ""
   
 - title: "Agent-based Resource Model for Relation-driven Fractal Organization"
   authors: "Moonsoo Shin and Kwangyeol Ryu*"
@@ -221,7 +235,7 @@
   date: "May 2013"
   badge: "Scopus"
   tags: ["Agent-based", "Fractal"]
-  news_link: ""
+  project_link: ""
   
 - title: "A Management Framework for Autonomous and Intelligent Resources in Distributed Manufacturing Systems: A Fractal-based Approach"
   authors: "Moonsoo Shin, Kwangyeol Ryu, Taebeum Ryu, and Sungmin Bae*"
@@ -230,7 +244,8 @@
   date: "July 2012"
   badge: "Scopus"
   tags: ["Distributed Manufacturing", "Fractal"]
-  news_link: ""
+  project_link: ""
+  paper_link: "https://doi.org/10.1166/asl.2012.4105"
   
 - title: "Framework and System for Supplier Scouting Enabling Web-based Collaboration"
   authors: "Sangil Lee, Kwangyeol Ryu*, Kezia Amanda Kurniadi, and Yongju Park"
@@ -239,7 +254,7 @@
   date: "2012"
   badge: "Scopus"
   tags: ["Supplier Management", "Collaboration"]
-  news_link: ""
+  project_link: ""
   
 - title: "Performance Comparison of Two Assembly Line Concepts: Conveyor Line and Box Assembly Line"
   authors: "Kezia Amanda Kurniadi, Emre Islamoglu, and Kwangyeol Ryu*"
@@ -248,7 +263,7 @@
   date: "2012"
   badge: "Scopus"
   tags: ["Assembly Line", "Performance"]
-  news_link: ""
+  project_link: ""
   
 - title: "A Study on the Business Process Management and Modeling Using I-AOMA"
   authors: "Gyusung Cho and Kwangyeol Ryu*"
@@ -257,7 +272,7 @@
   date: "March 2012"
   badge: "Scopus"
   tags: ["BPM", "Modeling"]
-  news_link: ""
+  project_link: ""
   
 - title: "Improved Aspect-oriented Modeling Approach for Business and Manufacturing Process Simulation"
   authors: "Gyusung Cho and Kwangyeol Ryu*"
@@ -266,7 +281,7 @@
   date: "October 2011"
   badge: "Scopus"
   tags: ["Process Simulation", "Modeling"]
-  news_link: ""
+  project_link: ""
   
 - title: "Application of Mixed-Effect Model for Determining Optimal Input Variables in Simulation Analysis"
   authors: "Youjin Park, Kwangyeol Ryu, Hyerim Bae*, Sangdo Noh, Yongju Cho, Sangsu Choi, and Hyunjei Jo"
@@ -275,7 +290,7 @@
   date: "May 2011"
   badge: "Scopus"
   tags: ["Simulation", "Optimization"]
-  news_link: ""
+  project_link: ""
   
 - title: "A Framework for Evaluating Reconfigurability of Collaboration System using DEA"
   authors: "Sangil Lee, Kwangyeol Ryu*, Hyerim Bae, and Youjin Park"
@@ -284,7 +299,7 @@
   date: "May 2011"
   badge: "Scopus"
   tags: ["DEA", "Collaboration"]
-  news_link: ""
+  project_link: ""
   
 - title: "Bayesian Network for Finding Best Combination of Performers in BPM Environment"
   authors: "Bernardo Nugroho Yahya, Arif Wibisono*, Hyerim Bae, and Kwangyeol Ryu"
@@ -293,7 +308,7 @@
   date: "April 2011"
   badge: "Scopus"
   tags: ["Bayesian Network", "BPM"]
-  news_link: ""
+  project_link: ""
   
 - title: "Optimized Machining Condition Selection for High-Quality Surface in High-Speed Finish Milling of Molds"
   authors: "Seokwoo Lee*, Sungho Nam, Honzong Choi, Eungoo Kang, and Kwangyeol Ryu"
@@ -302,7 +317,8 @@
   date: "March 2007"
   badge: "Scopus"
   tags: ["Machining", "Molds"]
-  news_link: ""
+  project_link: ""
+  paper_link: "https://doi.org/10.4028/www.scientific.net/kem.329.711"
   
 - title: "A study on automated design system for a blow mould"
   authors: "Yongju Cho, Kwangyeol Ryu, and Seokwoo Lee"
@@ -311,4 +327,5 @@
   date: "August 2007"
   badge: "Scopus"
   tags: ["CAD", "Mold Design"]
-  news_link: ""
+  project_link: ""
+  paper_link: "https://doi.org/10.1007/978-3-540-74484-9_2"

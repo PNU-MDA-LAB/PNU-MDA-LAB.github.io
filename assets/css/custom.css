@@ -1123,6 +1123,35 @@ body {
   margin-bottom: 2rem;
 }
 
+/* Make project cards clickable (anchor wrapper) */
+.project-card-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.project-card-link:hover {
+  transform: translateY(-2px);
+}
+
+.project-card-link:hover .project-header h3 {
+  color: var(--secondary-color);
+}
+
+/* Project detail image */
+.project-image {
+  margin: 1rem 0;
+}
+
+.project-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+}
+
 .project-card.ongoing {
   border-left: 4px solid #27ae60;
 }
@@ -1142,6 +1171,12 @@ body {
   color: var(--primary-color);
   font-size: 1.5rem;
   flex: 1;
+  margin: 0;
+  line-height: 1.25;
+  white-space: normal;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 
 .project-status {
@@ -1170,6 +1205,202 @@ body {
 .project-info p {
   margin: 0.25rem 0;
   font-size: 0.95rem;
+}
+
+/* Project meta line (used in Projects list cards) */
+.project-meta-line {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin: 0 0 0.75rem 0;
+  color: var(--text-color);
+  font-size: 0.95rem;
+}
+
+.project-meta-line i {
+  color: var(--secondary-color);
+  width: 18px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.project-meta-line strong {
+  color: var(--primary-color);
+}
+
+.project-keywords-line {
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.project-keywords-line .project-tags {
+  margin-top: 0;
+}
+
+/* Project detail: header + keywords box */
+.project-detail-header {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+/* Project detail: facts grid */
+.project-facts {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+.project-fact {
+  background: var(--light-gray);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 0.9rem 1rem;
+}
+
+.project-fact-label {
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  margin-bottom: 0.25rem;
+}
+
+.project-fact-value {
+  color: var(--text-color);
+  font-size: 1rem;
+  line-height: 1.55;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
+.project-affiliation-value {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.project-affiliation-item {
+  margin: 0;
+}
+
+.project-keywords-box {
+  background: var(--light-gray);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 0.9rem 1rem;
+}
+
+.project-keywords-box .project-meta-line {
+  margin-bottom: 0;
+}
+
+.project-keywords-box .project-meta-line strong {
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  font-size: 0.85rem;
+}
+
+/* Project detail: reuse Introduction highlight cards but tighten spacing */
+.project-highlights {
+  margin-top: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.project-body {
+  line-height: 1.85;
+}
+
+/* Project detail content polish (Markdown) */
+.project-detail .project-body {
+  max-width: 900px;
+  margin: 0 auto;
+  padding-top: 0.25rem;
+  font-size: 1.05rem;
+}
+
+.project-detail .project-body p {
+  margin: 0 0 1.15rem;
+}
+
+.project-detail .project-body h2 {
+  font-size: 1.5rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 2px solid var(--border-color);
+}
+
+.project-detail .project-body h3 {
+  margin-top: 1.25rem;
+  margin-bottom: 0.6rem;
+  color: var(--primary-color);
+}
+
+.project-detail .project-body ul,
+.project-detail .project-body ol {
+  margin: 0.75rem 0 1.25rem 1.25rem;
+}
+
+.project-detail .project-body li {
+  margin: 0.35rem 0;
+}
+
+.project-detail .project-body blockquote {
+  border-left: 4px solid var(--secondary-color);
+  padding: 0.5rem 1rem;
+  margin: 1.25rem 0;
+  background: var(--light-gray);
+  border-radius: 8px;
+}
+
+.project-detail .project-body code {
+  background: var(--light-gray);
+  border: 1px solid var(--border-color);
+  padding: 0.15rem 0.35rem;
+  border-radius: 6px;
+  font-size: 0.95em;
+}
+
+.project-detail .project-body pre code {
+  display: block;
+  padding: 1rem;
+  overflow-x: auto;
+}
+
+.project-detail .project-body table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.25rem 0;
+  font-size: 0.98rem;
+}
+
+.project-detail .project-body th,
+.project-detail .project-body td {
+  border: 1px solid var(--border-color);
+  padding: 0.75rem 0.85rem;
+  vertical-align: top;
+}
+
+.project-detail .project-body th {
+  background: var(--light-gray);
+  color: var(--primary-color);
+  text-align: left;
+  font-weight: 700;
+}
+
+.project-detail .project-body tr:nth-child(even) td {
+  background: white;
+}
+
+.project-body h2 {
+  margin-top: 1.75rem;
+}
+
+.project-body h2:first-child {
+  margin-top: 0;
 }
 
 .project-description {
@@ -1398,6 +1629,10 @@ body {
   .project-header {
     flex-direction: column;
     gap: 1rem;
+  }
+
+  .project-facts {
+    grid-template-columns: 1fr;
   }
 
   .pub-card-content {
@@ -1948,6 +2183,21 @@ body {
   border-radius: 15px;
   font-size: 0.85rem;
   font-weight: 500;
+}
+
+.pub-card-tags .tag-paper-link {
+  text-decoration: none;
+  border: 1px solid var(--border-color);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2rem;
+  padding: 0.25rem 0.6rem;
+  line-height: 1;
+}
+
+.pub-card-tags .tag-paper-link:hover {
+  background: var(--border-color);
 }
 
 /* ----- Legacy Publications Simple Page ----- */
@@ -2761,6 +3011,12 @@ body {
   color: var(--secondary-color);
   border-left-color: var(--secondary-color);
   font-weight: 600;
+}
+
+/* --- Members: nested categories under Students --- */
+.intro-nav-link.intro-nav-sublink {
+  padding-left: 2.25rem;
+  font-size: 0.92rem;
 }
 
 .intro-nav-link.active i {

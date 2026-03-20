@@ -4,128 +4,159 @@ title: Projects
 description: Research Projects of MDA Lab
 ---
 
-<div class="projects-section">
-  <h2>진행 중인 프로젝트</h2>
-  
-  <div class="project-card ongoing">
-    <div class="project-header">
-      <h3>AI 기반 스마트 제조 시스템 개발</h3>
-      <span class="project-status ongoing">진행중</span>
-    </div>
-    <div class="project-info">
-      <p><strong>기간:</strong> 2024.03 - 2027.02</p>
-      <p><strong>지원기관:</strong> 한국연구재단</p>
-      <p><strong>연구책임자:</strong> 류광열 교수</p>
-    </div>
-    <p class="project-description">
-      인공지능 기술을 활용하여 제조 공정의 효율성과 품질을 향상시키는 스마트 제조 시스템을 개발합니다.
-      실시간 데이터 분석, 예지 보전, 자동 최적화 기능을 포함합니다.
-    </p>
-    <div class="project-tags">
-      <span class="tag">AI</span>
-      <span class="tag">Smart Manufacturing</span>
-      <span class="tag">Predictive Maintenance</span>
-    </div>
-  </div>
-  
-  <div class="project-card ongoing">
-    <div class="project-header">
-      <h3>협동로봇 기반 조립 시스템 최적화</h3>
-      <span class="project-status ongoing">진행중</span>
-    </div>
-    <div class="project-info">
-      <p><strong>기간:</strong> 2025.01 - 2026.12</p>
-      <p><strong>지원기관:</strong> 산업통상자원부</p>
-      <p><strong>연구책임자:</strong> 류광열 교수</p>
-    </div>
-    <p class="project-description">
-      인간과 로봇의 협업을 통한 효율적인 조립 작업 시스템을 설계하고 구현합니다.
-      작업 할당 최적화 알고리즘과 안전 모니터링 시스템을 개발합니다.
-    </p>
-    <div class="project-tags">
-      <span class="tag">Human-Robot Collaboration</span>
-      <span class="tag">Optimization</span>
-      <span class="tag">Safety</span>
-    </div>
-  </div>
-  
-  <div class="project-card ongoing">
-    <div class="project-header">
-      <h3">디지털 트윈 기반 생산 시뮬레이션</h3>
-      <span class="project-status ongoing">진행중</span>
-    </div>
-    <div class="project-info">
-      <p><strong>기간:</strong> 2025.06 - 2027.05</p>
-      <p><strong>지원기관:</strong> 중소벤처기업부</p>
-      <p><strong>연구책임자:</strong> 류광열 교수</p>
-    </div>
-    <p class="project-description">
-      실제 제조 시스템의 디지털 트윈을 구축하여 생산 계획 및 의사결정을 지원하는 시뮬레이션 플랫폼을 개발합니다.
-    </p>
-    <div class="project-tags">
-      <span class="tag">Digital Twin</span>
-      <span class="tag">Simulation</span>
-      <span class="tag">Production Planning</span>
-    </div>
+{% assign ongoing_projects = site.projects | where_exp: 'p', "p.status == 'ongoing' or p.status == nil or p.status == ''" %}
+{% assign completed_projects = site.projects | where: 'status', 'completed' %}
+
+<div class="intro-layout">
+  <!-- 좌측 네비게이션 (Sticky) -->
+  <aside class="intro-nav">
+    <h3>Categories</h3>
+    <nav class="intro-nav-menu">
+      <a href="#ongoing" class="intro-nav-link active" data-section="ongoing">
+        On-going
+      </a>
+      <a href="#completed" class="intro-nav-link" data-section="completed">
+        Finished
+      </a>
+    </nav>
+  </aside>
+
+  <!-- 우측 본문 -->
+  <div class="intro-main">
+
+    <section id="ongoing" class="projects-section intro-section-block">
+      <h2>On-going</h2>
+
+      {% if ongoing_projects and ongoing_projects.size > 0 %}
+        {% for project in ongoing_projects reversed %}
+          <a class="project-card project-card-link {{ project.status | default: 'ongoing' }}" href="{{ project.url | relative_url }}">
+            <div class="project-header">
+              <h3>{{ project.title }}</h3>
+            </div>
+
+            <p class="project-meta-line">
+              <strong>Period:</strong> {{ project.period | default: '추가 예정' }}
+            </p>
+
+            <p class="project-meta-line">
+              <strong>Affiliation:</strong> {{ project.partners | default: '추가 예정' }}
+            </p>
+
+            <p class="project-meta-line">
+              <strong>Funding Agency:</strong> {{ project.funding_agency | default: '추가 예정' }}
+            </p>
+
+            <div class="project-meta-line project-keywords-line">
+              <strong>Research Keyword:</strong>
+              {% assign raw_keywords = project.summary | default: '' | replace: '·', ',' %}
+              {% assign keywords = raw_keywords | split: ',' %}
+              <div class="project-tags" aria-label="Project keywords">
+                {% if raw_keywords == '' %}
+                  <span class="tag">추가 예정</span>
+                {% else %}
+                  {% for keyword in keywords %}
+                    {% assign kw = keyword | strip %}
+                    {% if kw != '' %}
+                      <span class="tag">{{ kw }}</span>
+                    {% endif %}
+                  {% endfor %}
+                {% endif %}
+              </div>
+            </div>
+          </a>
+        {% endfor %}
+      {% else %}
+        <p>No on-going projects are currently registered.</p>
+      {% endif %}
+    </section>
+
+    <section id="completed" class="projects-section intro-section-block">
+      <h2>Finished</h2>
+
+      {% if completed_projects and completed_projects.size > 0 %}
+        {% for project in completed_projects reversed %}
+          <a class="project-card project-card-link {{ project.status | default: 'completed' }}" href="{{ project.url | relative_url }}">
+            <div class="project-header">
+              <h3>{{ project.title }}</h3>
+            </div>
+
+            <p class="project-meta-line">
+              <strong>Period:</strong> {{ project.period | default: '추가 예정' }}
+            </p>
+
+            <p class="project-meta-line">
+              <strong>Affiliation:</strong> {{ project.partners | default: '추가 예정' }}
+            </p>
+
+            <p class="project-meta-line">
+              <strong>Funding Agency:</strong> {{ project.funding_agency | default: '추가 예정' }}
+            </p>
+
+            <div class="project-meta-line project-keywords-line">
+              <strong>Research Keyword:</strong>
+              {% assign raw_keywords = project.summary | default: '' | replace: '·', ',' %}
+              {% assign keywords = raw_keywords | split: ',' %}
+              <div class="project-tags" aria-label="Project keywords">
+                {% if raw_keywords == '' %}
+                  <span class="tag">추가 예정</span>
+                {% else %}
+                  {% for keyword in keywords %}
+                    {% assign kw = keyword | strip %}
+                    {% if kw != '' %}
+                      <span class="tag">{{ kw }}</span>
+                    {% endif %}
+                  {% endfor %}
+                {% endif %}
+              </div>
+            </div>
+          </a>
+        {% endfor %}
+      {% else %}
+        <p>No finished projects are currently registered.</p>
+      {% endif %}
+    </section>
+
   </div>
 </div>
 
-<div class="projects-section">
-  <h2>완료된 프로젝트</h2>
-  
-  <div class="project-card completed">
-    <div class="project-header">
-      <h3>재구성 가능 제조 시스템 개발</h3>
-      <span class="project-status completed">완료</span>
-    </div>
-    <div class="project-info">
-      <p><strong>기간:</strong> 2021.03 - 2024.02</p>
-      <p><strong>지원기관:</strong> 한국연구재단</p>
-      <p><strong>연구책임자:</strong> 류광열 교수</p>
-    </div>
-    <p class="project-description">
-      시장 변화와 제품 다양성에 신속하게 대응할 수 있는 재구성 가능 제조 시스템의 설계 방법론을 개발했습니다.
-    </p>
-    <div class="project-tags">
-      <span class="tag">RMS</span>
-      <span class="tag">Flexibility</span>
-      <span class="tag">Reconfiguration</span>
-    </div>
-    <div class="project-results">
-      <h4>주요 성과</h4>
-      <ul>
-        <li>SCI 논문 3편 게재</li>
-        <li>국내 특허 2건 출원</li>
-        <li>국제 학술대회 발표 5회</li>
-      </ul>
-    </div>
-  </div>
-  
-  <div class="project-card completed">
-    <div class="project-header">
-      <h3>공급망 최적화 시스템</h3>
-      <span class="project-status completed">완료</span>
-    </div>
-    <div class="project-info">
-      <p><strong>기간:</strong> 2019.06 - 2022.05</p>
-      <p><strong>지원기관:</strong> 산업통상자원부</p>
-      <p><strong>연구책임자:</strong> 류광열 교수</p>
-    </div>
-    <p class="project-description">
-      프랙탈 기반 공급망 관리 시스템을 개발하여 재고 최적화와 배송 효율성을 향상시켰습니다.
-    </p>
-    <div class="project-tags">
-      <span class="tag">Supply Chain</span>
-      <span class="tag">Inventory Management</span>
-      <span class="tag">Fractal</span>
-    </div>
-    <div class="project-results">
-      <h4>주요 성과</h4>
-      <ul>
-        <li>SCIE 논문 2편 게재</li>
-        <li>기업 기술이전 1건</li>
-        <li>박사학위 배출 1명</li>
-      </ul>
-    </div>
-  </div>
-</div>
+<script>
+// Projects 사이드바 네비게이션 스크롤 활성화
+document.addEventListener('DOMContentLoaded', function() {
+  const navLinks = document.querySelectorAll('.intro-nav-link[data-section]');
+  const sections = document.querySelectorAll('.intro-section-block');
+
+  function activateNav() {
+    let currentSection = '';
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop - 150;
+      if (window.scrollY >= sectionTop) {
+        currentSection = section.getAttribute('id');
+      }
+    });
+
+    navLinks.forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('data-section') === currentSection) {
+        link.classList.add('active');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', activateNav);
+  activateNav();
+
+  navLinks.forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      const targetId = this.getAttribute('href').substring(1);
+      const target = document.getElementById(targetId);
+      if (target) {
+        window.scrollTo({
+          top: target.offsetTop - 100,
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+});
+</script>
