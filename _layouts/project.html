@@ -13,85 +13,148 @@ layout: default
 
 <div class="page-content">
   <div class="container">
-    <div class="projects-section project-detail">
-      <article class="project-card {{ page.status | default: 'ongoing' }}">
-        {% if page.image and page.image != "" %}
-          <div class="project-image">
-            <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" loading="lazy" decoding="async">
-          </div>
-        {% endif %}
+    <div class="project-detail">
+        <div class="project-body project-body--toc">
+          {% assign featured_publications_title = page.featured_publications_title | default: '주요성과' %}
+          {% assign featured_publications_limit = page.featured_publications_limit | default: 6 %}
+          {% assign auto_featured_publications = page.auto_featured_publications %}
+          {% if auto_featured_publications == nil %}{% assign auto_featured_publications = true %}{% endif %}
 
-        <div class="project-detail-header">
-          <section class="project-facts" aria-label="Project facts">
-            <div class="project-fact">
-              <div class="project-fact-label">Period</div>
-              <div class="project-fact-value">{{ page.period | default: '추가 예정' }}</div>
-            </div>
-
-            <div class="project-fact">
-              <div class="project-fact-label">Affiliation</div>
-              {% assign raw_affiliations = page.partners | default: '' %}
-              {% assign affiliations = raw_affiliations | split: '·' %}
-              <div class="project-fact-value project-affiliation-value">
-                {% if raw_affiliations == '' %}
-                  추가 예정
-                {% else %}
-                  {% for affiliation in affiliations %}
-                    {% assign aff = affiliation | strip %}
-                    {% if aff != '' %}
-                      <div class="project-affiliation-item">{{ aff }}</div>
-                    {% endif %}
-                  {% endfor %}
-                {% endif %}
-              </div>
-            </div>
-
-            <div class="project-fact">
-              <div class="project-fact-label">Funding Agency</div>
-              <div class="project-fact-value">{{ page.funding_agency | default: '추가 예정' }}</div>
-            </div>
-
-            {% if page.principal_investigator and page.principal_investigator != '' %}
-            <div class="project-fact">
-              <div class="project-fact-label">PI</div>
-              <div class="project-fact-value">{{ page.principal_investigator }}</div>
-            </div>
+          {% assign current_project_url = page.url | default: page.permalink %}
+          {% if current_project_url and current_project_url != '' %}
+            {% assign current_project_url = current_project_url | append: '' %}
+            {% assign current_project_url_last = current_project_url | slice: -1, 1 %}
+            {% if current_project_url_last != '/' %}
+              {% assign current_project_url = current_project_url | append: '/' %}
             {% endif %}
-          </section>
+          {% endif %}
 
-          <section class="project-keywords-box" aria-label="Project keywords">
-            <div class="project-meta-line project-keywords-line">
-              <strong>Keywords</strong>
-              {% assign raw_keywords = page.summary | default: '' | replace: '·', ',' %}
-              {% assign keywords = raw_keywords | split: ',' %}
-              <div class="project-tags">
-                {% if raw_keywords == '' %}
-                  <span class="tag">추가 예정</span>
-                {% else %}
-                  {% for keyword in keywords %}
-                    {% assign kw = keyword | strip %}
-                    {% if kw != '' %}
-                      <span class="tag">{{ kw }}</span>
+          <div class="publications-layout project-toc-layout">
+            <aside class="publications-nav project-toc-nav" aria-label="On this page">
+              <h3>Categories</h3>
+              <nav class="pub-nav-menu project-toc-menu"></nav>
+            </aside>
+
+            <div class="publications-main project-toc-main">
+              <div class="project-toc-content">
+                {{ content }}
+
+                {%- comment -%}
+                  Featured publications (placed at the bottom):
+                  Priority:
+                  1) page.featured_publications (manual)
+                  2) Auto-match from site.data.publications.* by project_link
+                {%- endcomment -%}
+
+                {% assign publication_links = page.publication_links | default: 'true' %}
+
+                {% if page.featured_publications and page.featured_publications.size and page.featured_publications.size > 0 %}
+                  <section class="pub-category-section pub-category-section--compact" aria-label="Featured publications">
+                    <h2 class="highlight-text">{{ featured_publications_title }}</h2>
+                    {% include publication_cards.html pubs=page.featured_publications showTags='false' titleLink='paper' publication_links=publication_links %}
+                  </section>
+                {% elsif auto_featured_publications and current_project_url and current_project_url != '' %}
+                  {% assign has_auto_featured_pubs = false %}
+
+                  {%- comment -%}Liquid doesn't support arrays of arrays reliably across versions; scan each category explicitly.{%- endcomment -%}
+                  {% for pub in site.data.publications.international_sci %}
+                    {% if pub.project_link and pub.project_link != '' and pub.project_link == current_project_url %}
+                      {% assign has_auto_featured_pubs = true %}
+                      {% break %}
                     {% endif %}
                   {% endfor %}
+                  {% if has_auto_featured_pubs == false %}
+                    {% for pub in site.data.publications.international_non_sci %}
+                      {% if pub.project_link and pub.project_link != '' and pub.project_link == current_project_url %}
+                        {% assign has_auto_featured_pubs = true %}
+                        {% break %}
+                      {% endif %}
+                    {% endfor %}
+                  {% endif %}
+                  {% if has_auto_featured_pubs == false %}
+                    {% for pub in site.data.publications.domestic %}
+                      {% if pub.project_link and pub.project_link != '' and pub.project_link == current_project_url %}
+                        {% assign has_auto_featured_pubs = true %}
+                        {% break %}
+                      {% endif %}
+                    {% endfor %}
+                  {% endif %}
+                  {% if has_auto_featured_pubs == false %}
+                    {% for pub in site.data.publications.international_conferences %}
+                      {% if pub.project_link and pub.project_link != '' and pub.project_link == current_project_url %}
+                        {% assign has_auto_featured_pubs = true %}
+                        {% break %}
+                      {% endif %}
+                    {% endfor %}
+                  {% endif %}
+                  {% if has_auto_featured_pubs == false %}
+                    {% for pub in site.data.publications.domestic_conferences %}
+                      {% if pub.project_link and pub.project_link != '' and pub.project_link == current_project_url %}
+                        {% assign has_auto_featured_pubs = true %}
+                        {% break %}
+                      {% endif %}
+                    {% endfor %}
+                  {% endif %}
+
+                  {% if has_auto_featured_pubs %}
+                    <section class="pub-category-section pub-category-section--compact" aria-label="Featured publications">
+                      <h2 class="highlight-text">{{ featured_publications_title }}</h2>
+                      <div class="pub-cards-list">
+                        {% assign featured_count = 0 %}
+
+                        {% for pub in site.data.publications.international_sci %}
+                          {% if featured_count >= featured_publications_limit %}{% break %}{% endif %}
+                          {% if pub.project_link and pub.project_link != '' and pub.project_link == current_project_url %}
+                            {% include publication_card.html pub=pub showTags='false' titleLink='paper' publication_links=publication_links %}
+                            {% assign featured_count = featured_count | plus: 1 %}
+                          {% endif %}
+                        {% endfor %}
+
+                        {% for pub in site.data.publications.international_non_sci %}
+                          {% if featured_count >= featured_publications_limit %}{% break %}{% endif %}
+                          {% if pub.project_link and pub.project_link != '' and pub.project_link == current_project_url %}
+                            {% include publication_card.html pub=pub showTags='false' titleLink='paper' publication_links=publication_links %}
+                            {% assign featured_count = featured_count | plus: 1 %}
+                          {% endif %}
+                        {% endfor %}
+
+                        {% for pub in site.data.publications.domestic %}
+                          {% if featured_count >= featured_publications_limit %}{% break %}{% endif %}
+                          {% if pub.project_link and pub.project_link != '' and pub.project_link == current_project_url %}
+                            {% include publication_card.html pub=pub showTags='false' titleLink='paper' publication_links=publication_links %}
+                            {% assign featured_count = featured_count | plus: 1 %}
+                          {% endif %}
+                        {% endfor %}
+
+                        {% for pub in site.data.publications.international_conferences %}
+                          {% if featured_count >= featured_publications_limit %}{% break %}{% endif %}
+                          {% if pub.project_link and pub.project_link != '' and pub.project_link == current_project_url %}
+                            {% include publication_card.html pub=pub showTags='false' titleLink='paper' publication_links=publication_links %}
+                            {% assign featured_count = featured_count | plus: 1 %}
+                          {% endif %}
+                        {% endfor %}
+
+                        {% for pub in site.data.publications.domestic_conferences %}
+                          {% if featured_count >= featured_publications_limit %}{% break %}{% endif %}
+                          {% if pub.project_link and pub.project_link != '' and pub.project_link == current_project_url %}
+                            {% include publication_card.html pub=pub showTags='false' titleLink='paper' publication_links=publication_links %}
+                            {% assign featured_count = featured_count | plus: 1 %}
+                          {% endif %}
+                        {% endfor %}
+                      </div>
+                    </section>
+                  {% endif %}
                 {% endif %}
               </div>
             </div>
-          </section>
-        </div>
-
-        <div class="project-body">
-          {{ content }}
+          </div>
         </div>
 
         <div class="post-footer">
-          <div class="container">
-            <a href="{{ '/pages/projects.html' | relative_url }}" class="btn-secondary project-back-link" data-projects-href="{{ '/pages/projects.html' | relative_url }}" data-publications-href="{{ '/pages/publications.html' | relative_url }}">
-              <i class="fas fa-arrow-left"></i> 목록으로 돌아가기
-            </a>
-          </div>
+          <a href="{{ '/pages/projects.html' | relative_url }}" class="btn-secondary project-back-link" data-projects-href="{{ '/pages/projects.html' | relative_url }}" data-publications-href="{{ '/pages/publications.html' | relative_url }}">
+            <i class="fas fa-arrow-left"></i> 목록으로 돌아가기
+          </a>
         </div>
-      </article>
     </div>
   </div>
 </div>
@@ -134,5 +197,99 @@ document.addEventListener('DOMContentLoaded', function () {
 
   const projectsHref = backLink.getAttribute('data-projects-href');
   if (projectsHref) backLink.setAttribute('href', projectsHref);
+});
+</script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const tocMenu = document.querySelector('.project-toc-menu');
+  const tocNav = document.querySelector('.project-toc-nav');
+  const tocLayout = document.querySelector('.project-toc-layout');
+  const contentRoot = document.querySelector('.project-toc-content');
+  if (!tocMenu || !tocNav || !tocLayout || !contentRoot) return;
+
+  const headings = Array.from(contentRoot.querySelectorAll('h2'));
+  if (headings.length === 0) {
+    tocLayout.classList.add('project-toc-layout--single');
+    tocNav.style.display = 'none';
+    return;
+  }
+
+  function slugify(text) {
+    return String(text || '')
+      .trim()
+      .toLowerCase()
+      .replace(/[^\w\u3131-\u318E\uAC00-\uD7A3\s-]/g, '')
+      .replace(/\s+/g, '-')
+      .replace(/-+/g, '-')
+      .replace(/^-|-$/g, '');
+  }
+
+  // Build nav
+  const links = [];
+  headings.forEach((h2, index) => {
+    const title = (h2.textContent || '').trim();
+    if (!title) return;
+
+    if (!h2.id) {
+      const base = slugify(title) || `section-${index + 1}`;
+      let candidate = base;
+      let suffix = 2;
+      while (document.getElementById(candidate)) {
+        candidate = `${base}-${suffix}`;
+        suffix += 1;
+      }
+      h2.id = candidate;
+    }
+
+    const a = document.createElement('a');
+    a.href = `#${h2.id}`;
+    a.className = 'pub-nav-link';
+    a.setAttribute('data-target', h2.id);
+
+    const icon = document.createElement('i');
+    icon.className = 'fas fa-hashtag';
+    icon.setAttribute('aria-hidden', 'true');
+    a.appendChild(icon);
+    a.appendChild(document.createTextNode(title));
+    tocMenu.appendChild(a);
+    links.push(a);
+  });
+
+  if (links.length === 0) {
+    tocLayout.classList.add('project-toc-layout--single');
+    tocNav.style.display = 'none';
+    return;
+  }
+
+  // Smooth scroll
+  links.forEach(link => {
+    link.addEventListener('click', function (e) {
+      const targetId = this.getAttribute('data-target');
+      const target = targetId ? document.getElementById(targetId) : null;
+      if (!target) return;
+      e.preventDefault();
+      window.scrollTo({
+        top: target.getBoundingClientRect().top + window.pageYOffset - 100,
+        behavior: 'smooth'
+      });
+    });
+  });
+
+  // Active state on scroll
+  function updateActive() {
+    let currentId = '';
+    headings.forEach(h2 => {
+      const top = h2.getBoundingClientRect().top;
+      if (top <= 150) currentId = h2.id;
+    });
+
+    links.forEach(link => {
+      link.classList.toggle('active', link.getAttribute('data-target') === currentId);
+    });
+  }
+
+  window.addEventListener('scroll', updateActive, { passive: true });
+  updateActive();
 });
 </script>

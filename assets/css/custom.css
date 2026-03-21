@@ -1323,6 +1323,50 @@ body {
   font-size: 1.05rem;
 }
 
+/* Project detail: TOC layout (left categories) */
+.project-detail .project-body.project-body--toc {
+  max-width: none;
+  margin: 0;
+  padding-top: 0;
+  font-size: 1rem;
+}
+
+.project-detail .project-body.project-body--toc .project-toc-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding-top: 0.25rem;
+  font-size: 1.05rem;
+}
+
+.project-detail .project-body.project-body--toc .project-toc-layout.project-toc-layout--single {
+  grid-template-columns: 1fr;
+}
+
+.project-detail .project-body.project-body--toc .project-toc-content h2,
+.project-detail .project-body.project-body--toc .project-toc-content h3 {
+  scroll-margin-top: 110px;
+}
+
+/* Project detail: compact featured publication cards */
+.project-detail .pub-category-section--compact {
+  margin-bottom: 2.5rem;
+}
+
+.project-detail .pub-category-section--compact .pub-card-content {
+  padding: 1.1rem;
+  padding-right: 110px;
+}
+
+.project-detail .pub-category-section--compact .pub-card-title {
+  font-size: 1.05rem;
+  margin-bottom: 0.55rem;
+}
+
+.project-detail .pub-category-section--compact .pub-card-authors,
+.project-detail .pub-category-section--compact .pub-card-journal {
+  margin-bottom: 0.5rem;
+}
+
 .project-detail .project-body p {
   margin: 0 0 1.15rem;
 }
@@ -1636,6 +1680,11 @@ body {
   }
 
   .pub-card-content {
+    padding-right: 1.5rem;
+    padding-top: 3.5rem;
+  }
+
+  .project-detail .pub-category-section--compact .pub-card-content {
     padding-right: 1.5rem;
     padding-top: 3.5rem;
   }
@@ -1994,6 +2043,24 @@ body {
   margin: 0 auto;
 }
 
+/* ----- Shared Sidebar Navigation (Intro/Projects/News/Notices/Publications/Project TOC) ----- */
+.intro-nav h3,
+.publications-nav h3 {
+  font-size: 1.2rem;
+}
+
+.intro-nav-link,
+.pub-nav-link {
+  font-size: 0.95rem;
+  padding: 0.75rem 1rem;
+  gap: 0.75rem;
+}
+
+.intro-nav-link i,
+.pub-nav-link i {
+  width: 20px;
+}
+
 .publications-nav {
   position: sticky;
   top: 100px;
@@ -2185,18 +2252,20 @@ body {
   font-weight: 500;
 }
 
-.pub-card-tags .tag-paper-link {
+.pub-card-tags .tag-paper-link,
+.pub-card-tags .tag-project-link {
   text-decoration: none;
   border: 1px solid var(--border-color);
   display: inline-flex;
   align-items: center;
-  justify-content: center;
-  min-width: 2rem;
+  gap: 0.35rem;
   padding: 0.25rem 0.6rem;
   line-height: 1;
+  white-space: nowrap;
 }
 
-.pub-card-tags .tag-paper-link:hover {
+.pub-card-tags .tag-paper-link:hover,
+.pub-card-tags .tag-project-link:hover {
   background: var(--border-color);
 }
 

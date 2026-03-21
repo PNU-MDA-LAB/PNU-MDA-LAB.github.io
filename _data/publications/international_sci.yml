@@ -7,6 +7,7 @@
   tags: ["Ontology", "Metadata", "Fractal"]
   project_link: "/projects/metadata-management-system/"
   paper_link: "https://doi.org/10.3390/app15137193"
+  description: "Acknowledgments: This work was supported by the project for Smart Manufacturing Innovation R&D funded by Korea Ministry of SMEs and Startups (No. RS-2022-00140411)."
   
 - title: "Monitoring for Adaptability in Human-Robot Collaborative Mold Assembly"
   authors: "Yee Yeng Liau and Kwangyeol Ryu*"
@@ -17,6 +18,7 @@
   tags: ["HRC", "Manufacturing"]
   project_link: "/projects/s-hrc/"
   paper_link: "https://doi.org/10.1080/0951192x.2024.2386994"
+  description: "This work was supported by the National Research Foundation of Korea (NRF) grant funded by the Korea government (Ministry of Science and ICT) (No. 2021R1A2C2009984). This study was financially supported by the 2023 Post-Doc. Development Program of Pusan National University."
   
 - title: "Framework of Knowledge Management for Human-robot Collaborative Mold Assembly using Heterogeneous Cobots"
   authors: "Yee Yeng Liau and Kwangyeol Ryu*"
@@ -27,6 +29,7 @@
   tags: ["HRC", "Knowledge Management"]
   project_link: "/projects/s-hrc/"
   paper_link: "https://doi.org/10.1007/s10845-024-02439-7"
+  description: "This work was supported by the National Research Foundation of Korea (NRF) grant funded by the Korea government (Ministry of Science and ICT) (No. 2021R1A2C2009984). This work was supported by project for Smart Manufacturing Innovation R&D funded by Korea Ministry of SMEs and Startups (No. RS-2022-00140411)."
   
 - title: "Development of the Architecture and Reconfiguration Methods for the Smart, Self-Reconfigurable Manufacturing System"
   authors: "Sangil Lee and Kwangyeol Ryu*"
@@ -37,6 +40,8 @@
   tags: ["Smart Manufacturing", "Reconfiguration"]
   project_link: ""
   paper_link: "https://doi.org/10.3390/app12105172"
+  description: "This work was supported by the National Research Foundation of Korea (NRF) grant funded by the Korea government (Ministry of Science and ICT) (No. 2021R1A2C2009984)."
+
   
 - title: "Genetic Algorithm-based Task Allocation in Multiple Modes of Human-Robot Collaboration Systems with Two Cobots"
   authors: "Yee Yeng Liau and Kwangyeol Ryu*"
@@ -47,6 +52,7 @@
   tags: ["HRC", "Genetic Algorithm"]
   project_link: "/projects/s-hrc/"
   paper_link: "https://doi.org/10.1007/s00170-022-08670-x"
+  description: "This work was supported by the National Research Foundation of Korea(NRF) grant funded by the Korea government(MSIT) (No. NRF-2021R1A2C2009984)."
   
 - title: "The effect of wearing high-heels and carrying a backpack on trunk biomechanics"
   authors: "Yee Yeng Liau, Seulgi Kim, Sangeun Jin*, Kwangyeol Ryu"
@@ -57,6 +63,7 @@
   tags: ["Ergonomics", "Biomechanics"]
   project_link: ""
   paper_link: "https://doi.org/10.1016/j.ergon.2021.103229"
+  description: "This research was supported by the MSIT(Ministry of Science and ICT), Korea, under the Grand Information Technology Research Center support program(IITP-2020-0-01791) supervised by the IITP(Institute for Information & communications Technology Planning & Evaluation). This research was supported by the Basic Science Research Program through the National Research Foundation (NRF) of Korea, funded by the Ministry of Education (NRF-2020R1I1A306953612)."
   
 - title: "Status Recognition using Pre-trained YOLOv5 for Sustainable Human-Robot Collaboration (HRC) System in Mold Assembly"
   authors: "Yee Yeng Liau and Kwangyeol Ryu*"
@@ -67,6 +74,7 @@
   tags: ["HRC", "YOLO", "Sustainability"]
   project_link: "/projects/s-hrc/"
   paper_link: "https://doi.org/10.3390/su132112044"
+  description: "This work was supported by the National Research Foundation of Korea (NRF) grant funded by the Korea government (Ministry of Science and ICT) (No. 2021R1A2C2009984)."
   
 - title: "Development of Multi-Disciplinary Green-BOM to Maintain Sustainability in Reconfigurable Manufacturing Systems"
   authors: "Kezia Amanda Kurniadi and Kwangyeol Ryu*"
@@ -77,6 +85,7 @@
   tags: ["Green Manufacturing", "BOM"]
   project_link: ""
   paper_link: "https://doi.org/10.3390/su13179533"
+  description: "This research was supported by the MSIT (Ministry of Science and ICT), Korea, under the Grand Information Technology Research Center support program (IITP-2021-2020-0-01791) supervised by the IITP (Institute for Information & communications Technology Planning & Evaluation)."
   
 - title: "Product and design feature-based similar process retrieval and modeling for mold manufacturing"
   authors: "Hwaseop Lee and Kwangyeol Ryu*"
@@ -87,6 +96,7 @@
   tags: ["Manufacturing", "Process Modeling"]
   project_link: "/projects/smart-injection-molding/"
   paper_link: "https://doi.org/10.1007/s00170-020-06161-5"
+  description: "This work was supported partially by the National Research Foundation of Korea (NRF) grant funded by the Korea government (MEST) (No. 2016R1A2B4014898) and by the IoT·big data-based value chain innovation support project for mold production of the Korea Institute for Advancement of Technology (KIAT) granted financial resource from the Ministry of Trade, Industry and Energy, Republic of Korea (No. P0001955)."
   
 - title: "Dual-Kernel-Based Aggregated Residual Network for Surface Defect Inspection in Injection Molding Processes"
   authors: "Hwaseop Lee and Kwangyeol Ryu*"
@@ -97,6 +107,7 @@
   tags: ["Deep Learning", "Defect Inspection"]
   project_link: "/projects/smart-injection-molding/"
   paper_link: "https://doi.org/10.3390/app10228171"
+  description: "This work was supported by the National Research Foundation of Korea (NRF) grant funded by the Korea government (MEST) (No. 2016R1A2B4014898), and this work was supported by the IoT·big data-based value chain innovation support project for mold production of the Korea Institute for Advancement of Technology (KIAT) granted financial resource from the Ministry of Trade, Industry and Energy, Republic of Korea (No. P0001955)."
   
 - title: "Maintaining Sustainability in Reconfigurable Manufacturing Systems Featuring Green-BOM"
   authors: "Kezia Amanda Kurniadi, Kwangyeol Ryu*"
@@ -107,6 +118,7 @@
   tags: ["Green Manufacturing", "Sustainability"]
   project_link: ""
   paper_link: "https://doi.org/10.1007/s40684-020-00215-5"
+  description: "This work was supported by the National Research Foundation of Korea (NRF) grant funded by the Korea government (MEST) (No. 2016R1A2B4014898)."
   
 - title: "Model-based Human Robot Collaboration System for Small Batch Assembly with a Virtual Fence"
   authors: "Hwaseop Lee, Yeeyeng Liau, Siku Kim, and Kwangyeol Ryu*"
@@ -117,7 +129,8 @@
   tags: ["HRC", "Virtual Fence"]
   project_link: "/projects/s-hrc/"
   paper_link: "https://doi.org/10.1007/s40684-020-00214-6"
-  
+  description: "This work was supported by the National Research Foundation of Korea (NRF) grant funded by the Korea government (MEST) (No. 2016R1A2B4014898)."
+
 - title: "A two-phased perishable inventory model for production planning in the food industry"
   authors: "Moonsoo Shin, Hwaseop Lee, Kwangyeol Ryu*, Yongju Cho, and Young-Jun Son"
   journal: "Computers & Industrial Engineering"
@@ -127,7 +140,8 @@
   tags: ["Inventory", "Production Planning"]
   project_link: ""
   paper_link: "https://doi.org/10.1016/j.cie.2019.05.010"
-  
+  description: "This research was supported by Basic Science Research Program through the National Research Foundation of Korea (NRF) funded by the Ministry of Education (NRF-2018R1D1A1B07050114)."
+
 - title: "Warehouse capacity sharing via transshipment for an integrated two-echelon supply chain"
   authors: "Xuehao Feng, Ilkyeong Moon, and Kwangyeol Ryu*"
   journal: "Transportation Research Part E: Logistics and Transportation Review"
@@ -137,7 +151,8 @@
   tags: ["Supply Chain", "Warehouse"]
   project_link: ""
   paper_link: "https://doi.org/10.1016/j.tre.2017.04.014"
-  
+  description: "The authors are grateful for the valuable comments from the five anonymous reviewers. This work was supported by the Soft Science Project of Zhejiang Province (No. 2016C35034). We would like to thank Mr. He Yucheng for his coding of the algorithm program."
+
 - title: "Evolutionary Resource Assignment for Workload-based Production Scheduling"
   authors: "Ilkyeong Moon, Sanghyup Lee, Moonsoo Shin, and Kwangyeol Ryu*"
   journal: "Journal of Intelligent Manufacturing"
@@ -147,7 +162,8 @@
   tags: ["Production Scheduling", "Resource Assignment"]
   project_link: ""
   paper_link: "https://doi.org/10.1007/s10845-014-0870-2"
-  
+  description: "This research was supported by Basic Science Research Program through the National Research Foundation of Korea funded by the Ministry of Education(NRF-2011-0022767)."
+
 - title: "Supply chain coordination under budget constraints"
   authors: "Xuehao Feng, Ilkyeong Moon*, and Kwangyeol Ryu"
   journal: "Computers and Industrial Engineering"
@@ -157,7 +173,8 @@
   tags: ["Supply Chain", "Coordination"]
   project_link: ""
   paper_link: "https://doi.org/10.1016/j.cie.2015.08.005"
-  
+  description: "The authors are grateful for the useful comments from an associate editor and three anonymous referees. This work was supported by the National Research Foundation of Korea (NRF) grant funded by the Korea government (MEST) (No. 2012R1A2A2A01012355)."
+
 - title: "Channel Coordination for Multi-stage Supply Chains with Revenue-sharing Contracts under Budget Constraints"
   authors: "Ilkyeong Moon*, Xuehao Feng, and Kwangyeol Ryu"
   journal: "International Journal of Production Research"
@@ -167,7 +184,8 @@
   tags: ["Supply Chain", "Revenue Sharing"]
   project_link: ""
   paper_link: "https://doi.org/10.1080/00207543.2014.993438"
-  
+  description: "The authors are grateful for the useful comments from two anonymous referees. This work was supported by the National Research Foundation of Korea (NRF) grant funded by the Korea government (MEST) [No. 2012R1A2A2A01012355]."
+
 - title: "Labour productivity in modular assembly: a study of automotive module suppliers"
   authors: "Nazim Emre Islamoglu, Kwangyeol Ryu*, and Ilkyeong Moon"
   journal: "International Journal of Production Research"
@@ -177,7 +195,8 @@
   tags: ["Productivity", "Automotive"]
   project_link: ""
   paper_link: "https://doi.org/10.1080/00207543.2014.917773"
-  
+  description: "This research was supported by Basic Science Research Program through the National Research Foundation of Korea funded by the Ministry of Education (NRF-2011-0022767), (No. 2012R1A2A2A01012355)."
+
 - title: "Agent-based Production Simulation of TFT-LCD Fab"
   authors: "Moonsoo Shin, Taebeum Ryu, and Kwangyeol Ryu*"
   journal: "International Journal of Industrial Engineering: Theory, Applications and Practice"
@@ -187,7 +206,8 @@
   tags: ["Simulation", "TFT-LCD"]
   project_link: ""
   paper_link: "https://doi.org/10.23055/ijietap.2014.21.6.1320"
-  
+  description: "This research was supported by Basic Science Research Program through the National Research Foundation of Korea(NRF) funded by the Ministry of Science, ICT & Future Planning (2012R1A1A1013217)."
+
 - title: "Operator Allocation in Cellular Manufacturing Systems by Integrated Genetic Algorithm and Fuzzy Data Envelopment Analysis"
   authors: "Jaehun Park, Hyerim Bae, Thanh-Cong Dinh, and Kwangyeol Ryu*"
   journal: "International Journal of Advanced Manufacturing Technology"
@@ -197,7 +217,8 @@
   tags: ["Cellular Manufacturing", "Genetic Algorithm"]
   project_link: ""
   paper_link: "https://doi.org/10.1007/s00170-014-6103-1"
-  
+  description: "The research was supported by the National Research Foundation of Korea funded by the Ministry of Education (NRF-2011-0022767) (No. 2010-0027309)."
+
 - title: "Capturing Green Information and Mapping with MES Functions for Increasing Manufacturing Sustainability"
   authors: "Hwaseop Lee, Kwangyeol Ryu*, Young-Jun Son, and Yongju Cho"
   journal: "International Journal of Precision Engineering and Manufacturing"
@@ -207,7 +228,8 @@
   tags: ["Green Manufacturing", "MES"]
   project_link: ""
   paper_link: "https://doi.org/10.1007/s12541-014-0523-6"
-  
+  description: "The research was supported by Basic Science Research Program through the National Research Foundation of Korea funded by the Ministry of Education (NRF-2011-0022767)."
+
 - title: "Real-time Adjustment and Fault Detection of Remote Laser Welding Parameters by using ANN"
   authors: "Kezia Amanda Kurniadi, Kwangyeol Ryu*, and Duckyoung Kim"
   journal: "International Journal of Precision Engineering and Manufacturing"
@@ -217,7 +239,8 @@
   tags: ["Laser Welding", "ANN"]
   project_link: ""
   paper_link: "https://doi.org/10.1007/s12541-014-0425-7"
-  
+  description: "This research was supported by the project, ‘Remote Laser Welding Process Control for Eco-Automotive Factories,’ funded by Ministry of Trade, Industry & Energy (MOTIE), Republic of Korea."
+
 - title: "Revenue-Sharing Contracts in an N-stage Supply Chain with Reliability Considerations"
   authors: "Xuehao Feng, Ilkyeong Moon*, and Kwangyeol Ryu"
   journal: "International Journal of Production Economics"
@@ -227,7 +250,8 @@
   tags: ["Supply Chain", "Revenue Sharing"]
   project_link: ""
   paper_link: "https://doi.org/10.1016/j.ijpe.2013.01.002"
-  
+  description: "The authors are grateful for the useful comments from Professor Hartanto Wong, Professor Chin-Yin Huang, and two anonymous referees. This work was supported by the National Research Foundation of Korea (NRF) grant funded by the Korea government (MEST) (No. 2012R1A2A2A01012355). This work was also supported by National Research Foundation of Korea Grant funded by the Korean Government (2009-0087861)."
+
 - title: "Ontology-based process model for business architecture of a virtual enterprise"
   authors: "Cheolhan Kim, Kwangsoo Kim, Jeongsoo Lee, and Kwangyeol Ryu*"
   journal: "International Journal of Computer Integrated Manufacturing"
@@ -237,7 +261,8 @@
   tags: ["Ontology", "Virtual Enterprise"]
   project_link: ""
   paper_link: "https://doi.org/10.1080/0951192x.2012.749529"
-  
+  description: "This research was supported by Grant No. 2009-0076442 from the Basic Research Program of the National Research Foundation of Korea. The helpful suggestions of anonymous referees and of the Editor are gratefully acknowledged."
+
 - title: "A fractal echelon approach for inventory management in supply chain networks"
   authors: "Kwangyeol Ryu*, Ilkyeong Moon, Seungjin Oh, and Mooyoung Jung"
   journal: "International Journal of Production Economics"
@@ -247,7 +272,8 @@
   tags: ["Fractal", "Supply Chain"]
   project_link: ""
   paper_link: "https://doi.org/10.1016/j.ijpe.2012.01.002"
-  
+  description: "This research was supported by Basic Science Research Program through the National Research Foundation of Korea (NRF) funded by the Ministry of Education, Science and Technology (2009-0087861). The authors would like to express their gratitude for the support."
+
 - title: "Reconfiguration Framework of a Supply Network based on Flexibility Strategies"
   authors: "Seungjin Oh, Kwangyeol Ryu, and Mooyoung Jung*"
   journal: "Computers & Industrial Engineering"
@@ -257,7 +283,8 @@
   tags: ["Supply Network", "Flexibility"]
   project_link: ""
   paper_link: "https://doi.org/10.1016/j.cie.2011.11.016"
-  
+  description: "This research was supported by Basic Science Research Program through the National Research Foundation of Korea (NRF) funded by the Ministry of Education, Science and Technology (2009-0077660) and (2009-0087861). The authors would like to express their gratitude for the support."
+
 - title: "A collaborative design framework for the Korean automotive parts industry"
   authors: "Cheolhan Kim, Jeongsoo Lee, Kwangsoo Kim, Jaeyeol Lee, and Kwangyeol Ryu*"
   journal: "International Journal of Computer Integrated Manufacturing"
@@ -267,7 +294,8 @@
   tags: ["Collaborative Design", "Automotive"]
   project_link: ""
   paper_link: "https://doi.org/10.1080/0951192x.2012.681906"
-  
+  description: "This research was supported by Grant No. 2009–0076442 from the Basic Research Program of the National Research Foundation of Korea."
+
 - title: "Reinforcement Learning Approach to Goal-regulation in a Self-evolutionary Manufacturing System"
   authors: "Moonsoo Shin, Kwangyeol Ryu, and Mooyoung Jung*"
   journal: "Expert Systems with Applications"
@@ -277,7 +305,8 @@
   tags: ["Reinforcement Learning", "Manufacturing"]
   project_link: ""
   paper_link: "https://doi.org/10.1016/j.eswa.2012.01.207"
-  
+  description: "This research was supported by the Basic Science Research Program through the National Research Foundation of Korea (NRF) funded by the Ministry of Education, Science, and Technology (2009-0077660). The authors would like to express their gratitude for the support."
+
 - title: "A Novel Modeling Methodology for Collaborative Enterprise Processes"
   authors: "Kwangyeol Ryu*, Sunhwa Lee, Duckyoung Kim, and Young-jun Son"
   journal: "International Journal of Innovative Computing, Information and Control"
@@ -287,7 +316,8 @@
   tags: ["Process Modeling", "Collaboration"]
   project_link: ""
   paper_link: "https://www.researchgate.net/publication/266501992_A_novel_modeling_methodology_for_collaborative_enterprise_processes"
-  
+  description: "This work was supported by the 2010 Specialization Project Research Grant funded by the Pusan National University."
+
 - title: "Function and Service Pattern Analysis for Facilitating The Reconfiguration of Collaboration Systems"
   authors: "Sangil Lee, Kwangyeol Ryu*, Moonsoo Shin, and Gyu-Sung Cho"
   journal: "Computers & Industrial Engineering"
@@ -297,7 +327,8 @@
   tags: ["Collaboration Systems", "Reconfiguration"]
   project_link: ""
   paper_link: "https://doi.org/10.1016/j.cie.2011.11.034"
-  
+  description: "This research was supported by i-Manufacturing projects funded by the Ministry of Knowledge Economy (MKE) and Basic Science Research Program through the National Research Foundation of Korea (NRF) funded by the Ministry of Education, Science and Technology (2009-0087861). The authors would like to express their gratitude for the support."
+
 - title: "Precise Measurement Device for Angular Deviation of Canopy Transparency in Fighter Aircraft"
   authors: "Tae-Sang Moon and Kwangyeol Ryu*"
   journal: "International Journal of Precision Engineering and Manufacturing"
@@ -307,7 +338,8 @@
   tags: ["Measurement", "Aerospace"]
   project_link: ""
   paper_link: "https://doi.org/10.1007/s12541-012-0044-0"
-  
+  description: ""
+
 - title: "Collaborative Fractal-based Supply Chain Management based on a Trust Model for the Automotive Industry"
   authors: "Seungjin Oh, Kwangyeol Ryu*, Ilkyeong Moon, Hyunbo Cho, and Mooyoung Jung*"
   journal: "Flexible Services and Manufacturing Journal"
@@ -317,7 +349,8 @@
   tags: ["Supply Chain", "Trust Model", "Automotive"]
   project_link: ""
   paper_link: "https://doi.org/10.1007/s10696-011-9082-7"
-  
+  description: "This research was supported by the Basic Science Research Program through the National Research Foundation of Korea (NRF) funded by the Ministry of Education, Science, and Technology (2009-0077660 and 2009-0087861). The authors would like to express their gratitude for this support. We also thank the editor and anonymous reviewers for their helpful comments."
+
 - title: "A fuzzy newsvendor approach to supply chain coordination"
   authors: "Kwangyeol Ryu and Enver Yücesan*"
   journal: "European Journal of Operational Research"
@@ -327,7 +360,8 @@
   tags: ["Fuzzy Logic", "Supply Chain"]
   project_link: ""
   paper_link: "https://doi.org/10.1016/j.ejor.2009.01.011"
-  
+  description: "This work was supported by the Korea Research Foundation Grant funded by Korea Government (MOEHRD, Basic Research Promotion Fund) (M01-2004-000-20378-0) as well as by the French Ministry of Foreign Affairs through EGIDE. We would like to express our gratitude for their support. The helpful suggestions of anonymous referees and of the Editor are gratefully acknowledged."
+
 - title: "Goal-balancing Process for Goal Formation in the Fractal Manufacturing System"
   authors: "Youngpil Cha, Moonsoo Shin, Kwangyeol Ryu, and Mooyoung Jung*"
   journal: "International Journal of Production Research"
@@ -337,7 +371,8 @@
   tags: ["Fractal Manufacturing", "Goal Formation"]
   project_link: ""
   paper_link: "https://doi.org/10.1080/00207540600787234"
-  
+  description: "Work was supported by the Korea Research Foundation Grant (No. KRF-2004-041-D00805). The authors would like to express their gratitude for the support."
+
 - title: "CPM: A collaborative process modeling for cooperative manufacturers"
   authors: "Kwangyeol Ryu and Enver Yücesan*"
   journal: "Advanced Engineering Informatics"
@@ -347,7 +382,8 @@
   tags: ["Process Modeling", "Collaboration"]
   project_link: ""
   paper_link: "https://doi.org/10.1016/j.aei.2006.05.003"
-  
+  description: "This work was supported by the Korea Research Foundation Grant funded by Korea Government (MOEHRD, Basic Research Promotion Fund) (M01-2004-000-20378-0) as well as by the Foreign Ministry of France and EGIDE. We would like to express our gratitude for their support."
+
 - title: "Self-reconfigurable Software Architecture: Design and Implementation"
   authors: "Jungtae Mun, Kwangyeol Ryu, and Mooyoung Jung*"
   journal: "International Journal of Computers & Industrial Engineering"
@@ -357,7 +393,8 @@
   tags: ["Software Architecture", "Reconfiguration"]
   project_link: ""
   paper_link: "https://doi.org/10.1016/j.cie.2006.07.008"
-  
+  description: "This work was supported by Korea Research Foundation Grant (KRF-2004-041-D00805)."
+
 - title: "Dynamic Restructuring Process for Self-reconfiguration in the Fractal Manufacturing System"
   authors: "Kwangyeol Ryu, Enver Yücesan, and Mooyoung Jung*"
   journal: "International Journal of Production Research"
@@ -367,7 +404,8 @@
   tags: ["Fractal Manufacturing", "Restructuring"]
   project_link: ""
   paper_link: "https://doi.org/10.1080/00207540500465659"
-  
+  description: "This work was supported by the Korea Research Foundation Grant funded by the Korean Government (MOEHRD, Basic Research Promotion Fund) (M01-2004-000-20378-0). We would like to express our gratitude for their support. We would also like to thank the anonymous referees who reviewed this work. Their comments have helped to significantly improve the paper."
+
 - title: "Conflict Detection and Resolution for Goal Formation in the Fractal Manufacturing System"
   authors: "Moonsoo Shin, Youngpil Cha, Kwangyeol Ryu, and Mooyoung Jung*"
   journal: "International Journal of Production Research"
@@ -377,7 +415,8 @@
   tags: ["Fractal Manufacturing", "Conflict Resolution"]
   project_link: ""
   paper_link: "https://doi.org/10.1080/00207540500142845"
-  
+  description: "This work was supported by Korea Research Foundation Grant (KRF-2003-041-D00622). The authors would like to express their gratitude."
+
 - title: "Goal-orientation Mechanism in the Fractal Manufacturing System"
   authors: "Kwangyeol Ryu and Mooyoung Jung*"
   journal: "International Journal of Production Research"
@@ -387,7 +426,8 @@
   tags: ["Fractal Manufacturing", "Goal Orientation"]
   project_link: ""
   paper_link: "https://doi.org/10.1080/00207540410001661427"
-  
+  description: "This work was supported by grant No. 2001-1-31500-1 from the Basic Research Program of the Korea Science & Engineering Foundation and the BK21 Projects in 2003. The authors would like to express their gratitude for the support."
+
 - title: "Framework for Fractal-based Supply Chain Management of e-Biz Companies"
   authors: "Kwangyeol Ryu, Youngjun Son, and Mooyoung Jung*"
   journal: "Production Planning & Control"
@@ -397,7 +437,8 @@
   tags: ["Supply Chain", "e-Business"]
   project_link: ""
   paper_link: "https://doi.org/10.1080/09537280310001647913"
-  
+  description: "This research was supported in part by grant no. 2001-1-31500-005-1 from the Basic Research Program of the Korea Science and Engineering Foundation and the BK 21 Project in 2002. The authors would like to express their gratitude for the support."
+
 - title: "Agent-based fractal architecture and modelling for developing distributed manufacturing systems"
   authors: "Kwangyeol Ryu and Mooyoung Jung*"
   journal: "International Journal of Production Research"
@@ -407,7 +448,8 @@
   tags: ["Agent-based", "Fractal", "Manufacturing"]
   project_link: ""
   paper_link: "https://doi.org/10.1080/0020754031000149275"
-  
+  description: "This research was supported in part by grant No. 2001-1-31500-005-1 fromthe Basic Research Program of the Korea Science & Engineering Foundation andthe BK 21 Project in 2002. The authors would like to express their gratitude for thesupport and for the referees’ valuable suggestions that improved the originalmanuscript."
+
 - title: "Modeling and Specifications of Dynamic Agents in Fractal Manufacturing Systems"
   authors: "Kwangyeol Ryu, Youngjun Son, and Mooyoung Jung*"
   journal: "Computers in Industry"
@@ -417,3 +459,4 @@
   tags: ["Agent Modeling", "Fractal Manufacturing"]
   project_link: ""
   paper_link: "https://doi.org/10.1016/s0166-3615(03)00099-x"
+  description: "This work was supported in part by the grant No. 2001-1-31500-005-1 from the Basic Research Program of the Korea Science & Engineering Foundation and the BK 21 Project in 2002. The authors would like to express their gratitude for the support."

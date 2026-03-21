@@ -7,6 +7,7 @@
   tags: ["Smart Logistics", "AI"]
   project_link: ""
   paper_link: "https://doi.org/10.18104/kalc.2025.40.1.123"
+  description: ""
   
 - title: "Lasso Regression Model of HSV Color Space Masking Vision Based Whole Coffee Bean Processing Agtron Measurement"
   authors: "Ye Chan Lee, Yi Hyun Noh, Ju Song Kim, Kwangyeol Ryu*, and Byeong Hak Kim"
@@ -17,6 +18,7 @@
   tags: ["Machine Vision", "Lasso Regression"]
   project_link: ""
   paper_link: "https://doi.org/10.5302/j.icros.2024.24.0204"
+  description: ""
   
 - title: "AI-Based Energy Consumption Predictions for Cold-chain Delivery Vehicles"
   authors: "Siku Kim, Kwangyeol Ryu*, and Youngtae Park"
@@ -27,6 +29,7 @@
   tags: ["AI", "Cold-chain", "Energy"]
   project_link: ""
   paper_link: "https://doi.org/10.18104/kaic.2022.37.2.173"
+  description: ""
   
 - title: "AI-based Analysis and Prediction of Cold-chain Products Environment"
   authors: "Youngtae Park, Siku Kim, Hwaseop Lee, and Kwangyeol Ryu*"
@@ -37,6 +40,7 @@
   tags: ["AI", "Cold-chain", "Prediction"]
   project_link: ""
   paper_link: "https://doi.org/10.25052/kscm.2021.10.21.2.53"
+  description: ""
   
 - title: "Development of a Goal Model for Self-Reconfigurable Manufacturing Systems"
   authors: "Sangil Lee and Kwangyeol Ryu*"
@@ -47,6 +51,7 @@
   tags: ["Reconfigurable Manufacturing", "Goal Model"]
   project_link: ""
   paper_link: "https://doi.org/10.7232/jkiie.2021.47.2.160"
+  description: ""
   
 - title: "Study on Strategy for Realization of New Business Model of the Complex in the Hinterland of Busan New Port in the Era of Industry 4.0"
   authors: "Young-tae Park, Kwangyeol Ryu, and Dong Yoon Kim*"
@@ -57,6 +62,7 @@
   tags: ["Industry 4.0", "Business Model", "Port"]
   project_link: ""
   paper_link: "https://doi.org/10.18104/kaic.2020.35.2.325"
+  description: ""
   
 - title: "PMPM: Part-flow Based Manufacturing Process Modeling"
   authors: "Hwaseop Lee, Kwangyeol Ryu*, and Yongju Cho"
@@ -67,6 +73,7 @@
   tags: ["Process Modeling", "Manufacturing"]
   project_link: ""
   paper_link: "https://doi.org/10.7315/cde.2019.103"
+  description: ""
   
 - title: "Design of a System Layout for Reconfigurable Manufacturing System with Theory of Constraints"
   authors: "Kurniadi Kezia Amanda and Kwangyeol Ryu*"
@@ -77,6 +84,7 @@
   tags: ["System Layout", "TOC", "Reconfigurable"]
   project_link: ""
   paper_link: "https://doi.org/10.7315/cde.2017.129"
+  description: ""
   
 - title: "Development of Information Negotiation Model between Manufacturing Facilities for Manufacturing Process Reconfiguration"
   authors: "Sangil Lee, You-Jin Park, and Kwangyeol Ryu*"
@@ -86,6 +94,8 @@
   badge: "Domestic"
   tags: ["Negotiation", "Reconfiguration"]
   project_link: ""
+  paper_link: ""
+  description: ""
   
 - title: "Optimization of Storage Information for Perishable Products in Multi Inventory Systems"
   authors: "Hwaseop Lee, Moonsoo Shin, Kwangyeol Ryu*, Yongju Cho, and You-Jin Park"
@@ -95,6 +105,8 @@
   badge: "Domestic"
   tags: ["Optimization", "Inventory", "Perishable"]
   project_link: ""
+  paper_link: ""
+  description: ""
   
 - title: "A Case Study on Productivity Improvement by a Discrete Event-Driven Simulation System"
   authors: "Sangtae Kim, Moonsoo Shin*, Kwangyeol Ryu, Yongju Cho"
@@ -105,6 +117,7 @@
   tags: ["Simulation", "Productivity"]
   project_link: ""
   paper_link: "https://doi.org/10.11627/jkise.2015.38.4.149"
+  description: ""
   
 - title: "Self-reconfigurable Manufacturing System and Smart Manufacturing Execution System for Facilitating Future Manufacturing Systems"
   authors: "Kwangyeol Ryu"
@@ -114,6 +127,8 @@
   badge: "Domestic"
   tags: ["Smart Manufacturing", "MES"]
   project_link: ""
+  paper_link: ""
+  description: ""
   
 - title: "An On-line System Architecture for Remote Energy Monitoring of CNC Machine Tools"
   authors: "Sung-Ho Nam*, Ki-Hyeong Song, Jae-Yong Baek, Dong-Yoon Lee, and Kwangyeol Ryu"
@@ -124,6 +139,7 @@
   tags: ["Energy Monitoring", "CNC"]
   project_link: ""
   paper_link: "https://doi.org/10.7736/kspe.2013.30.5.480"
+  description: ""
   
 - title: "Development of Green-BOM to Manage Eco-friendly Information on Products and Manufacturing Processes"
   authors: "Yongju Park, Moonsoo Shin, and Kwangyeol Ryu*"
@@ -134,6 +150,7 @@
   tags: ["Green BOM", "Eco-friendly"]
   project_link: ""
   paper_link: "https://doi.org/10.7315/cadcam.2012.387"
+  description: ""
   
 - title: "Process Improvement for PDM/PLM Systems by Using Process Mining"
   authors: "Sangil Lee, Kwangyeol Ryu*, and Minseok Song"
@@ -144,6 +161,7 @@
   tags: ["Process Mining", "PLM"]
   project_link: ""
   paper_link: "https://doi.org/10.7315/cadcam.2012.294"
+  description: ""
   
 - title: "An Integrated Shop Operation System for Multi-Cell Flexible Manufacturing Systems under Job Shop Environments"
   authors: "Sung-Ho Nam*, Kwang-Yeol Ryu, Jeong-Hoon Shin, Ki-Eok Kwon, and Seok-Woo Lee"
@@ -154,6 +172,7 @@
   tags: ["FMS", "Job Shop"]
   project_link: ""
   paper_link: "https://doi.org/10.7736/kspe.2012.29.4.386"
+  description: ""
   
 - title: "The State-of-the-art of Discovering New Suppliers to Build a Supply Chain"
   authors: "Kyungdoc Kim, Boram Jo, Moonsoo Shin, Kwangyeol Ryu, and Hyunbo Cho*"
@@ -164,6 +183,7 @@
   tags: ["Supply Chain", "Supplier Discovery"]
   project_link: ""
   paper_link: "https://doi.org/10.7232/ieif.2012.25.1.021"
+  description: ""
   
 - title: "Assessment Model of Core Manufacturability to Promote Collaboration of Small and Medium Sized Model Companies"
   authors: "Moonsoo Shin, Sangil Lee, Kwangyeol Ryu*, and Jaekoo Joo"
@@ -174,6 +194,7 @@
   tags: ["SME", "Collaboration", "Assessment"]
   project_link: ""
   paper_link: "https://doi.org/10.7232/ieif.2012.25.1.052"
+  description: ""
   
 - title: "Framework for Self-reconfigurable and Collaborative Supply Chains and Revenue Sharing Strategy based on Trust Models of Enterprises"
   authors: "Kiyoul Lee, Kwangyeol Ryu*, Ilkyeong Moon, and Mooyoung Jung"
@@ -184,6 +205,7 @@
   tags: ["Supply Chain", "Revenue Sharing", "Trust"]
   project_link: ""
   paper_link: "https://doi.org/10.7232/jkiie.2011.37.4.323"
+  description: ""
   
 - title: "Development of Web-based Supporting Systems for Process Improvement"
   authors: "Hyunje Cho, Yongju Cho, Sangdo Noh, Youjin Park, Hyerim Bae, and Kwangyeol Ryu"
@@ -193,6 +215,8 @@
   badge: "Domestic"
   tags: ["Web-based", "Process Improvement"]
   project_link: ""
+  paper_link: ""
+  description: ""
   
 - title: "Development of a Real-time Production Operation System for FMC-based Flexible Machining Line"
   authors: "Sungho Nam*, Jeonghoon Shin, Seokwoo Lee, Kieok Kwon, and Kwangyeol Ryu"
@@ -202,6 +226,8 @@
   badge: "Domestic"
   tags: ["Production System", "FMC"]
   project_link: ""
+  paper_link: ""
+  description: ""
   
 - title: "Concept Design of Angular Deviation and Development of Measurement System for Transparency in Aircraft"
   authors: "Taesang Moon, Songjo Woo, Seongil Kwon, and Kwangyeol Ryu*"
@@ -212,6 +238,7 @@
   tags: ["Measurement", "Aircraft", "Aerospace"]
   project_link: ""
   paper_link: "https://doi.org/10.5139/jksas.2010.38.11.1123"
+  description: ""
   
 - title: "Development of a Modeling Methodology to Capture Collaborative Processes and Its Verification"
   authors: "Sunhwa Lee and Kwangyeol Ryu*"
@@ -221,6 +248,8 @@
   badge: "Domestic"
   tags: ["Process Modeling", "Collaboration"]
   project_link: ""
+  paper_link: ""
+  description: ""
   
 - title: "Analysis and Reconfiguration of Collaborative Functions"
   authors: "Kwangyeol Ryu*, Sangil Lee, Haksoo Mok, Wonpyo Hong, and Honzong Choi"
@@ -230,6 +259,8 @@
   badge: "Domestic"
   tags: ["Collaboration", "Reconfiguration"]
   project_link: ""
+  paper_link: ""
+  description: ""
   
 - title: "Analysis of Collaborization and Extraction of Technologies to Develop Collaboration Systems for Manufacturing Companies"
   authors: "Kwangyeol Ryu*, Bohyun Kim, and Honzong Choi"
@@ -239,6 +270,8 @@
   badge: "Domestic"
   tags: ["Collaboration", "Manufacturing"]
   project_link: ""
+  paper_link: ""
+  description: ""
   
 - title: "Evaluation of Remanufacturing System considering Unit Processes"
   authors: "Haksoo Mok*, Kwangyeol Ryu, Changhyo Han, Changsu Jeon, Minjun Song, and Sangjin Park"
@@ -248,6 +281,8 @@
   badge: "Domestic"
   tags: ["Remanufacturing", "Evaluation"]
   project_link: ""
+  paper_link: ""
+  description: ""
   
 - title: "Selection of Function Modules of a System supporting Design Collaboration by Developing Extended Fuzzy-ANP"
   authors: "Kwangyeol Ryu*, Sangsoo Lee, Youngjae Choi, Seokwoo Lee, and Honzong Choi"
@@ -257,6 +292,8 @@
   badge: "Domestic"
   tags: ["Fuzzy ANP", "Design Collaboration"]
   project_link: ""
+  paper_link: ""
+  description: ""
   
 - title: "Collaborative Process Modeling for Embodying e-Manufacturing"
   authors: "Kwangyeol Ryu*, Yongju Cho, Honzong Choi, and Seokwoo Lee"
@@ -266,3 +303,5 @@
   badge: "Domestic"
   tags: ["Process Modeling", "e-Manufacturing"]
   project_link: ""
+  paper_link: ""
+  description: ""

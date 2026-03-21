@@ -13,10 +13,10 @@ description: Research Projects of MDA Lab
     <h3>Categories</h3>
     <nav class="intro-nav-menu">
       <a href="#ongoing" class="intro-nav-link active" data-section="ongoing">
-        On-going
+        <i class="fas fa-spinner" aria-hidden="true"></i> On-going
       </a>
       <a href="#completed" class="intro-nav-link" data-section="completed">
-        Finished
+        <i class="fas fa-flag-checkered" aria-hidden="true"></i> Finished
       </a>
     </nav>
   </aside>
@@ -29,7 +29,14 @@ description: Research Projects of MDA Lab
 
       {% if ongoing_projects and ongoing_projects.size > 0 %}
         {% for project in ongoing_projects reversed %}
+          {%- assign has_detail = project.has_detail_page -%}
+          {%- if has_detail == nil -%}{%- assign has_detail = true -%}{%- endif -%}
+
+          {%- if has_detail -%}
           <a class="project-card project-card-link {{ project.status | default: 'ongoing' }}" href="{{ project.url | relative_url }}">
+          {%- else -%}
+          <div class="project-card {{ project.status | default: 'ongoing' }}">
+          {%- endif -%}
             <div class="project-header">
               <h3>{{ project.title }}</h3>
             </div>
@@ -63,7 +70,11 @@ description: Research Projects of MDA Lab
                 {% endif %}
               </div>
             </div>
+          {%- if has_detail -%}
           </a>
+          {%- else -%}
+          </div>
+          {%- endif -%}
         {% endfor %}
       {% else %}
         <p>No on-going projects are currently registered.</p>
@@ -75,7 +86,14 @@ description: Research Projects of MDA Lab
 
       {% if completed_projects and completed_projects.size > 0 %}
         {% for project in completed_projects reversed %}
+          {%- assign has_detail = project.has_detail_page -%}
+          {%- if has_detail == nil -%}{%- assign has_detail = true -%}{%- endif -%}
+
+          {%- if has_detail -%}
           <a class="project-card project-card-link {{ project.status | default: 'completed' }}" href="{{ project.url | relative_url }}">
+          {%- else -%}
+          <div class="project-card {{ project.status | default: 'completed' }}">
+          {%- endif -%}
             <div class="project-header">
               <h3>{{ project.title }}</h3>
             </div>
@@ -109,7 +127,11 @@ description: Research Projects of MDA Lab
                 {% endif %}
               </div>
             </div>
+          {%- if has_detail -%}
           </a>
+          {%- else -%}
+          </div>
+          {%- endif -%}
         {% endfor %}
       {% else %}
         <p>No finished projects are currently registered.</p>

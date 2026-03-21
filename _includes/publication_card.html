@@ -1,0 +1,67 @@
+
+{%- assign pub = include.pub -%}
+{%- assign show_tags = include.showTags | default: 'false' -%}
+{%- assign title_link = include.titleLink | default: 'none' -%}
+{%- assign publication_links = include.publication_links | default: 'true' -%}
+
+<article class="pub-card-horizontal">
+  {%- if pub.badge and pub.badge != "" -%}
+  <div class="pub-card-badge">{{ pub.badge }}</div>
+  {%- endif -%}
+
+  {%- if pub.award and pub.award != "" -%}
+  <div class="pub-card-award">{{ pub.award }}</div>
+  {%- endif -%}
+
+  <div class="pub-card-content">
+    {%- if pub.title and pub.title != "" -%}
+    <h3 class="pub-card-title">
+      {%- if title_link == 'paper' and pub.paper_link and pub.paper_link != "" -%}
+        <a target="_blank" rel="noopener noreferrer">{{ pub.title }}</a>
+      {%- elsif publication_links == 'true' and pub.detail_link and pub.detail_link != '' -%}
+        <a href="{{ pub.detail_link }}">{{ pub.title }}</a>
+      {%- else -%}
+        {{ pub.title }}
+      {%- endif -%}
+    </h3>
+    {%- endif -%}
+
+    {%- if pub.authors and pub.authors != "" -%}
+    <p class="pub-card-authors">{{ pub.authors }}</p>
+    {%- endif -%}
+
+    {%- assign has_journal_line = false -%}
+    {%- if pub.journal and pub.journal != "" -%}{%- assign has_journal_line = true -%}{%- endif -%}
+    {%- if pub.volume and pub.volume != "" -%}{%- assign has_journal_line = true -%}{%- endif -%}
+    {%- if pub.date and pub.date != "" -%}{%- assign has_journal_line = true -%}{%- endif -%}
+
+    {%- if has_journal_line -%}
+    <p class="pub-card-journal">
+      {%- if pub.journal and pub.journal != "" -%}<em>{{ pub.journal }}</em>{%- endif -%}
+      {%- if pub.volume and pub.volume != "" -%}{% if pub.journal and pub.journal != "" %}, {% endif %}{{ pub.volume }}{%- endif -%}
+      {%- if pub.date and pub.date != "" -%}{% if pub.journal and pub.journal != "" or pub.volume and pub.volume != "" %}, {% endif %}{{ pub.date }}{%- endif -%}
+    </p>
+    {%- endif -%}
+
+    {%- assign has_actions = false -%}
+    {%- if pub.paper_link and pub.paper_link != "" -%}{%- assign has_actions = true -%}{%- endif -%}
+    {%- if show_tags == 'true' and pub.tags and pub.tags.size and pub.tags.size > 0 -%}{%- assign has_actions = true -%}{%- endif -%}
+
+    {%- if has_actions -%}
+    <div class="pub-card-tags">
+      {%- if pub.paper_link and pub.paper_link != "" -%}
+      <a class="tag tag-paper-link" href="{{ pub.paper_link }}" target="_blank" rel="noopener noreferrer" title="논문 링크 열기" aria-label="논문 링크 열기">
+        <i class="fas fa-file-alt" aria-hidden="true"></i>
+        <span class="tag-link-label">Paper</span>
+      </a>
+      {%- endif -%}
+
+      {%- if show_tags == 'true' and pub.tags and pub.tags.size and pub.tags.size > 0 -%}
+        {%- for tag in pub.tags -%}
+        <span class="tag">{{ tag }}</span>
+        {%- endfor -%}
+      {%- endif -%}
+    </div>
+    {%- endif -%}
+  </div>
+</article>

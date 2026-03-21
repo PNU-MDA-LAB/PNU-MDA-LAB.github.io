@@ -6,6 +6,6 @@ status: ongoing  # ongoing | completed
 period: "2026.03 ~ 2029.03"
 partners: "MDA Lab, Pusan National University"
 funding_agency: "National Research Foundation of Korea"
-image: ""  # e.g. /assets/images/projects/ev-battery-smart-hrc.webp
+principal_investigator: "류광열"
 summary: "Hierarchical Federated Learning · Spatial AR · AI Agents"
 ---

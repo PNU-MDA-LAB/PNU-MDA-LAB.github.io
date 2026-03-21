@@ -6,6 +6,5 @@ status: completed  # ongoing | completed
 period: "2022. 04 ~ 2025. 12"
 partners: "POSCO · MDA Lab · Research Institute of Industrial Science & Technology · Inc. withFUTURE"
 funding_agency: " Ministry of SMEs and Startups"
-image: ""  # e.g. /assets/images/projects/metadata-management-system.webp
 summary: "온톨로지 기반 표준 · 메타데이터 관리 플랫폼 · 기업 연계 데이터 공유 API"
 ---

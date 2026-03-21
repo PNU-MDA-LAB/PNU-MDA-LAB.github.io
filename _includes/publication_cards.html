@@ -1,0 +1,13 @@
+
+{%- assign pubs = include.pubs | default: page.featured_publications -%}
+{%- assign show_tags = include.showTags | default: 'false' -%}
+{%- assign title_link = include.titleLink | default: 'none' -%}
+{%- assign publication_links = include.publication_links | default: 'true' -%}
+
+{%- if pubs and pubs.size and pubs.size > 0 -%}
+<div class="pub-cards-list">
+  {%- for pub in pubs -%}
+  {% include publication_card.html pub=pub showTags=show_tags titleLink=title_link publication_links=publication_links %}
+  {%- endfor -%}
+</div>
+{%- endif -%}
