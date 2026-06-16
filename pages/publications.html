@@ -24,6 +24,9 @@ description: MDA Lab Research Achievements
       <a href="#domestic-conf" class="pub-nav-link" data-category="domestic-conf">
         <i class="fas fa-user-friends"></i> Domestic Conferences
       </a>
+      <a href="#book-chapters" class="pub-nav-link" data-category="book-chapters">
+        <i class="fas fa-book-open"></i> Book Chapters
+      </a>
     </nav>
   </aside>
 
@@ -276,6 +279,60 @@ description: MDA Lab Research Achievements
                   {% assign pub_project_sep = '?' %}
                 {% endif %}
               <a class="tag tag-project-link" href="{{ pub_project_href }}{{ pub_project_sep }}from=publications&cat=domestic-conf" title="프로젝트 열기" aria-label="프로젝트 열기">
+                <i class="fas fa-folder-open" aria-hidden="true"></i>
+                <span class="tag-link-label">Project</span>
+              </a>
+              {% endif %}
+              {% if pub.paper_link and pub.paper_link != "" %}
+              <a class="tag tag-paper-link" href="{{ pub.paper_link }}" target="_blank" rel="noopener noreferrer" title="논문 링크 열기" aria-label="논문 링크 열기">
+                <i class="fas fa-file-alt" aria-hidden="true"></i>
+                <span class="tag-link-label">Paper</span>
+              </a>
+              {% endif %}
+              {% if pub.tags and pub.tags.size > 0 %}
+                {% for tag in pub.tags %}
+                <span class="tag">{{ tag }}</span>
+                {% endfor %}
+              {% endif %}
+            </div>
+            {% endif %}
+          </div>
+        </article>
+        {% endfor %}
+      </div>
+    </section>
+
+    <!-- Book Chapters -->
+    <section id="book-chapters" class="pub-category-section">
+      <h2 class="highlight-text">Book Chapters</h2>
+      <div class="pub-cards-list">
+        {% for pub in site.data.publications.book_chapters %}
+        <article class="pub-card-horizontal">
+          <div class="pub-card-badge">{{ pub.badge }}</div>
+          {% if pub.award and pub.award != "" %}
+          <div class="pub-card-award">{{ pub.award }}</div>
+          {% endif %}
+          <div class="pub-card-content">
+            <h3 class="pub-card-title">
+              {{ pub.title }}
+            </h3>
+            <p class="pub-card-authors">{{ pub.authors }}</p>
+            <p class="pub-card-journal"><em>{{ pub.journal }}</em>, {{ pub.volume }}, {{ pub.date }}</p>
+            {% if pub.tags and pub.tags.size > 0 or pub.paper_link and pub.paper_link != "" or pub.project and pub.project != "" or pub.project_link and pub.project_link != "" %}
+            <div class="pub-card-tags">
+              {% if pub.project and pub.project != "" %}
+              <a class="tag tag-project-link" href="{{ '/projects/' | append: pub.project | append: '/' | relative_url }}?from=publications&cat=book-chapters" title="프로젝트 열기" aria-label="프로젝트 열기">
+                <i class="fas fa-folder-open" aria-hidden="true"></i>
+                <span class="tag-link-label">Project</span>
+              </a>
+              {% elsif pub.project_link and pub.project_link != "" %}
+                {% assign pub_project_href = pub.project_link | relative_url %}
+                {% if pub_project_href contains '?' %}
+                  {% assign pub_project_sep = '&' %}
+                {% else %}
+                  {% assign pub_project_sep = '?' %}
+                {% endif %}
+              <a class="tag tag-project-link" href="{{ pub_project_href }}{{ pub_project_sep }}from=publications&cat=book-chapters" title="프로젝트 열기" aria-label="프로젝트 열기">
                 <i class="fas fa-folder-open" aria-hidden="true"></i>
                 <span class="tag-link-label">Project</span>
               </a>

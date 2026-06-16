@@ -95,6 +95,14 @@ layout: default
                       {% endif %}
                     {% endfor %}
                   {% endif %}
+                  {% if has_auto_featured_pubs == false %}
+                    {% for pub in site.data.publications.book_chapters %}
+                      {% if pub.project_link and pub.project_link != '' and pub.project_link == current_project_url %}
+                        {% assign has_auto_featured_pubs = true %}
+                        {% break %}
+                      {% endif %}
+                    {% endfor %}
+                  {% endif %}
 
                   {% if has_auto_featured_pubs %}
                     <section class="pub-category-section pub-category-section--compact" aria-label="Featured publications">
@@ -135,6 +143,14 @@ layout: default
                         {% endfor %}
 
                         {% for pub in site.data.publications.domestic_conferences %}
+                          {% if featured_count >= featured_publications_limit %}{% break %}{% endif %}
+                          {% if pub.project_link and pub.project_link != '' and pub.project_link == current_project_url %}
+                            {% include publication_card.html pub=pub showTags='false' titleLink='paper' publication_links=publication_links %}
+                            {% assign featured_count = featured_count | plus: 1 %}
+                          {% endif %}
+                        {% endfor %}
+
+                        {% for pub in site.data.publications.book_chapters %}
                           {% if featured_count >= featured_publications_limit %}{% break %}{% endif %}
                           {% if pub.project_link and pub.project_link != '' and pub.project_link == current_project_url %}
                             {% include publication_card.html pub=pub showTags='false' titleLink='paper' publication_links=publication_links %}

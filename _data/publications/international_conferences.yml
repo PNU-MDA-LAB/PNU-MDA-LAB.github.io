@@ -1,5 +1,5 @@
 - title: Collaborative Robot Operation Framework Based on Fractal Fuzzy Ontology Modeling
-  authors: Siku Kim, kwangyeol Ryu
+  authors: Siku Kim, Kwangyeol Ryu
   journal: 25th Asia Pacific Industrial Engineering & Management System Conference (APIEMS 2025), Hangzhou
   volume: China, Nov. 7-11.
   date: November 2025
@@ -11,7 +11,7 @@
   project_link: ''
   award: ''
 - title: Depth -Vision Based Monitioring for Collision Aovidance in Multi-Cobot Collaboration Systems
-  authors: Jianming Lei, kwangyeol Ryu
+  authors: Jianming Lei, Solbin Jung, Kwangyeol Ryu
   journal: 25th Asia Pacific Industrial Engineering & Management System Conference (APIEMS 2025), Hangzhou
   volume: China, Nov. 7-11.
   date: November 2025
@@ -19,6 +19,16 @@
   tags: []
   project_link: ''
   award: Excellent Paper Award
+- title: Multi-Objective Modeling for Resilient and Risk-Aware Design of Perishable Logistics Considering Uncertainty
+  authors: Jianming Lei, Kwangyeol Ryu*, Siku Kim, Gyusung Cho, and Youngtae Park
+  journal: 19th International Conference on Innovative Computing Information and Control (ICICIC2025)
+  volume: Kitakyushu, Japan, Aug. 26-29
+  date: August 2025
+  badge: Intl. Conf.
+  tags: 
+  - Logistics
+  - Optimization
+  - Uncertainty
 - title: Introducing Smart Human-Robot Collaboration with Heterogeneous Cobots for Assembly Operations
   authors: Yee Yeng Liau, Kwangyeol Ryu
   journal: The 51st International Conference on Computers and Industrial Engineering (CIE51), UNSW Sydney
