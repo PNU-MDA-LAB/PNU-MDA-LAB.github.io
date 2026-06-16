@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "2026 대한산업공학회 춘계학술대회 참가"
+title: "2026 대한산업공학회 춘계공동학술대회 참가"
 date: 2026-06-04
 author: "MDA Lab"
 image: /assets/images/posts/2026-06-04-kiie-conference-5.webp
 ---
 
-MDA Lab이 **2026 대한산업공학회 춘계학술대회**에 참가하였습니다.
+MDA Lab이 **2026 대한산업공학회 춘계공동학술대회**에 참가하였습니다.
 
 - **일시**: 2026.06.04
 
