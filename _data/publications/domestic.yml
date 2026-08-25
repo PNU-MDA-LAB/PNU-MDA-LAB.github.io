@@ -1,3 +1,14 @@
+- title: "A Constraint Programming-based Approach for Personalized Course Timetabling Optimization"
+  authors: "Wonjun Choi, Seung Hyeon Roh, Harin Park, Dong Yun Park, Kwangyeol Ryu*, and Dowon Kim*"
+  journal: "Journal of the Korean Institute of Industrial Engineers"
+  volume: "51(4), 299-313"
+  date: "August 2025"
+  badge: "Domestic"
+  tags: ["Constraint Programming", "Timetabling", "Optimization"]
+  project_link: ""
+  paper_link: "https://doi.org/10.7232/JKIIE.2025.51.4.299"
+  description: ""
+  
 - title: "Problems and Solutions of Smart Logistics Centers in the Era of Global AI"
   authors: "Young-Tae Park, Yeonsung Cho, Ryan Sungpyo Sohn, and Kwangyeol Ryu"
   journal: "Korea International Commerce Review"
