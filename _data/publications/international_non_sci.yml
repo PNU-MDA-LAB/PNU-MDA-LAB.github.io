@@ -1,7 +1,7 @@
 - title: "Multi-Objective Modeling for Resilient and Risk-Aware Design of Perishable Logistics Considering Uncertainty"
   authors: "Jianming Lei, Kwangyeol Ryu*, Siku Kim, Gyusung Cho, and Youngtae Park"
-  journal: "19th International Conference on Innovative Computing Information and Control (ICICIC2025)"
-  volume: "TBA"
+  journal: "ICIC Express Letters, Part B, Applications"
+  volume: "20(12)"
   date: "July 2025"
   badge: "Scopus"
   tags: ["Optimization", "Uncertainty"]
@@ -9,7 +9,7 @@
   paper_link: ""
   description: ""
   
-- title: "Introducing Smart Human-Robot Collaboration with Heterogeneous Cobots for Assembly Operations"
+- title: "INTRODUCING SMART HUMAN-ROBOT COLLABORATION WITH HETEROGENEOUS COBOTS FOR ASSEMBLY OPERATIONS"
   authors: "Yee Yeng Liau and Kwangyeol Ryu*"
   journal: "The 51st International Conference on Computers and Industrial Engineering (CIE51)"
   volume: "TBA"
@@ -20,7 +20,7 @@
   paper_link: "https://www.proceedings.com/content/079/079578webtoc.pdf"
   description: ""
   
-- title: "A Framework for Integrating Mixed Reality and Artificial Intelligence Technologies to Enhance Human-Robot Interaction"
+- title: "A FRAMEWORK FOR INTEGRATING MIXED REALITY AND ARTIFICIAL INTELLIGENCE TECHNOLOGIES TO ENHANCE HUMAN-ROBOT INTERACTION"
   authors: "Siku Kim and Kwangyeol Ryu*"
   journal: "The 51st International Conference on Computers and Industrial Engineering (CIE51)"
   volume: "TBA"
@@ -32,7 +32,7 @@
   description: ""
 
   
-- title: "Framework of Implementing Sensor Fusion for Enabling Human Cognitive Abilities in Collaborative Robot"
+- title: "FRAMEWORK OF IMPLEMENTING SENSOR FUSION FOR ENABLING HUMAN COGNITIVE ABILITIES IN COLLABORATIVE ROBOTS"
   authors: "Jianming Lei and Kwangyeol Ryu*"
   journal: "The 51st International Conference on Computers and Industrial Engineering (CIE51)"
   volume: "TBA"
